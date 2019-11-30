@@ -3,17 +3,201 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
-.landing {
-  &__logo {
+@keyframes cloud {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 125%;
+  }
+}
 
+@keyframes smokeleft {
+	0% {
+    transform: scale(0.2) translate(0, 0);
+  }
+  10% {
+    opacity: 0.6;
+    transform: scale(0.2) translate(0, -10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(-20px, -200px);
+  }
+}
+
+@keyframes smokeright {
+	0% {
+    transform: scale(0.2) translate(0, 0);
+  }
+	10% {
+    opacity: 0.6;
+    transform: scale(0.2) translate(0, -10px);
+  }
+	100% {
+    opacity: 0;
+    transform: scale(1) translate(20px, -200px);
+  }
+}
+
+@keyframes birdflap {
+	100% {
+		background-position: -900px 0;
+	}
+}
+
+@keyframes birdfly {
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../assets/images/skyline.png"), linear-gradient($color-blue 20%, white);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  &__cloud {
+    z-index: 1;
+    position: absolute;
+    left: -25%;
+    opacity: 0.5;
+    width: 300px;
+    animation: cloud linear infinite;
+  }
+  &--cloud-1 {
+    top: 2%;
+    animation-duration: 40s;
+    animation-delay: 0s;
+  }
+  &--cloud-2 {
+    top: 10%;
+    animation-duration: 30s;
+    animation-delay: 3s;
+  }
+  &--cloud-3 {
+    top: 20%;
+    animation-duration: 25s;
+    animation-delay: 5s;
+  }
+  &__smoke {
+    z-index: 2;
+    position: absolute;
+    left: 1455px;
+    top: 460px;
+    opacity: 0;
+    border: 50px solid white;
+    border-radius: 50px;
+  }
+  &--smoke-1 {
+    animation: smokeleft 10s 0s infinite;
+  }
+  &--smoke-2 {
+    animation: smokeright 10s 1s infinite;
+  }
+  &--smoke-3 {
+    animation: smokeleft 10s 2s infinite;
+  }
+  &--smoke-4 {
+    animation: smokeright 10s 3s infinite;
+  }
+  &--smoke-5 {
+    animation: smokeleft 10s 4s infinite;
+  }
+  &--smoke-6 {
+    animation: smokeright 10s 5s infinite;
+  }
+  &--smoke-7 {
+    animation: smokeleft 10s 6s infinite;
+  }
+  &--smoke-8 {
+    animation: smokeright 10s 7s infinite;
+  }
+  &--smoke-9 {
+    animation: smokeleft 10s 8s infinite;
+  }
+  &--smoke-10 {
+    animation: smokeright 10s 9s infinite;
+  }
+  &__bird-container {
+    z-index: 3;
+    left: 0%;
+    position: absolute;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation: birdfly linear infinite;
+  }
+  &__bird-container-1 {
+    top: 4%;
+		animation-duration: 20s;
+		animation-delay: 0s;
+  }
+  &__bird-container-2 {
+    top: 10%;
+		animation-duration: 25s;
+		animation-delay: 4s;
+  }
+  &__bird {
+    background-image: url("../../assets/images/bird.svg");
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+    animation-name: birdflap;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+  }
+  &--bird-1 {
+		animation-duration: 1s;
+		animation-delay: -0.5s;
+  }
+  &--bird-2 {
+    animation-duration: 0.9s;
+		animation-delay: -0.75s;
+  }
+  &__logo {
+    z-index: 4;
+    width: 450px;
+    margin-bottom: 50px;
   }
   &__heading {
-
+    z-index: 4;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
   }
   &__subheading {
-
+    z-index: 4;
+    font-size: 30px;
+    margin-bottom: 40px;
   }
   &__button {
-    
+    z-index: 4;
   }
 }

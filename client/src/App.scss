@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .App {
   box-sizing: border-box;
 }
@@ -6,4 +10,6 @@
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;
 }

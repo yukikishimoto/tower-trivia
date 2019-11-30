@@ -4,10 +4,10 @@ import './styles.scss';
 function Tower() {
   return (
     <section className="tower">
-      <img className="tower__cloud-1" src="" alt="Cloud" />
-      <img className="tower__cloud-2" src="" alt="Cloud" />
-      <img className="tower__cloud-3" src="" alt="Cloud" />
-      <img className="tower__cloud-4" src="" alt="Cloud" />
+      <img className="tower--cloud-1" src="" alt="Cloud" />
+      <img className="tower--cloud-2" src="" alt="Cloud" />
+      <img className="tower--cloud-3" src="" alt="Cloud" />
+      <img className="tower--cloud-4" src="" alt="Cloud" />
       <img className="tower__crane" src="" alt="Tower crane" />
       <div className="tower__score">
         <span className="tower__score-label">HEIGHT</span>
