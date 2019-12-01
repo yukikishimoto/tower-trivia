@@ -4,5 +4,6 @@
 @import '../../styles/buttons';
 
 .game {
-  
+  display: flex;
+  flex-wrap: wrap;
 }

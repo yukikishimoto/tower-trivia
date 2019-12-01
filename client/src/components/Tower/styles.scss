@@ -3,44 +3,98 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
+@keyframes cloud {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+
 .tower {
-  &__cloud-1 {
-
+  width: 40vw;
+  height: 100vh;
+  background: linear-gradient($color-blue 20%, white);
+  &__cloud {
+    z-index: 1;
+    position: absolute;
+    left: -25%;
+    opacity: 0.5;
+    width: 250px;
+    animation: cloud linear infinite;
   }
-  &__cloud-2 {
-    
+  &--cloud-1 {
+    top: 5%;
+    animation-duration: 30s;
+    animation-delay: 0s;
   }
-  &__cloud-3 {
-    
+  &--cloud-2 {
+    top: 20%;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    animation-direction: reverse;
   }
-  &__cloud-4 {
-    
+  &--cloud-3 {
+    top: 40%;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-direction: alternate-reverse;
   }
-  &__crane {
-
+  &--cloud-4 {
+    top: 70%;
+    transform: scaleX(-1);
+    animation-duration: 15s;
+    animation-delay: 0.5s;
   }
   &__score {
-
+    z-index: 2;
+    position: absolute;
+    bottom: 170px;
+    left: 7vw;
+    transform: translateY(+50%);
+    width: 200px;
+    font-size: 30px;
   }
   &__score-label {
-
+    display: block;
+    font-weight: 500;
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
   }
   &__score-value {
-
+    display: block;
+    padding-top: 6px;
   }
-  &__block-1 {
-
+  &__block-container {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 20vw;
+    transform: translateX(-50%);
+    width: 170px;
   }
-  &__block-2 {
-
+  &__hook {
+    width: 100%;
   }
-  &__block-3 {
-
+  &__block {
+    width: 100%;
   }
-  &__block-4 {
-
+  &--block-1 {
+    order: 5;
   }
-  &__block-5 {
-
+  &--block-2 {
+    order: 4;
+  }
+  &--block-3 {
+    order: 3;
+  }
+  &--block-4 {
+    order: 2;
+  }
+  &--block-5 {
+    order: 1;
   }
 }

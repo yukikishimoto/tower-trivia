@@ -3,32 +3,252 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
-.trivia {
-  &__question {
+@keyframes elasticdown {
+	0% {
+		transform: translateY(0%);
+	}
+	4% {
+		transform: translateY(0.08%);
+	}
+	8% {
+		transform: translateY(0.1%);
+	}
+	18% {
+		transform: translateY(-0.52%);
+	}
+	20% {
+		transform: translateY(-0.39%);
+	}
+	28% {
+		transform: translateY(2.35%);
+	}
+	30% {
+		transform: translateY(2.39%);
+	}
+	38% {
+		transform: translateY(-9.27%);
+	}
+	40% {
+		transform: translateY(-11.75%);
+	}
+	60% {
+		transform: translateY(111.75%);
+	}
+	62% {
+		transform: translateY(109.27%);
+	}
+	70% {
+		transform: translateY(97.61%);
+	}
+	72% {
+		transform: translateY(97.65%);
+	}
+	80% {
+		transform: translateY(100.39%);
+	}
+	82% {
+		transform: translateY(100.52%);
+	}
+	90% {
+		transform: translateY(99.97%);
+	}
+	92% {
+		transform: translateY(99.9%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
 
+@keyframes elasticup {
+	0% {
+		transform: translateY(0%);
+	}
+	4% {
+		transform: translateY(-0.08%);
+	}
+	8% {
+		transform: translateY(-0.1%);
+	}
+	18% {
+		transform: translateY(0.52%);
+	}
+	20% {
+		transform: translateY(0.39%);
+	}
+	28% {
+		transform: translateY(-2.35%);
+	}
+	30% {
+		transform: translateY(-2.39%);
+	}
+	38% {
+		transform: translateY(9.27%);
+	}
+	40% {
+		transform: translateY(11.75%);
+	}
+	60% {
+		transform: translateY(-111.75%);
+	}
+	62% {
+		transform: translateY(-109.27%);
+	}
+	70% {
+		transform: translateY(-97.61%);
+	}
+	72% {
+		transform: translateY(-97.65%);
+	}
+	80% {
+		transform: translateY(-100.39%);
+	}
+	82% {
+		transform: translateY(-100.52%);
+	}
+	90% {
+		transform: translateY(-99.97%);
+	}
+	92% {
+		transform: translateY(-99.9%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+.trivia {
+  z-index: 3;
+  width: 60vw;
+  height: 100vh;
+  background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  &__question {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -1200px;
+    left: 50px;
+    width: 750px;
+    height: 927px;
+    text-align: center;
+    transform: translateY(0%);
+    will-change: transform;
+    animation-name: elasticdown;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+  &__board {
+    // position: absolute;
+  }
+  &__tower {
+    position: absolute;
+    top: 472px;
+    width: 750px;
+    height: 432px;
+  }
+  &__tower-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__tower-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  &__result {
+    position: absolute;
+    top: 500px;
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
   }
   &__result-heading {
-
+    font-size: 100px;
+    font-weight: 500;
+    margin-bottom: 40px;
   }
   &__result-name {
-
+    font-size: 40px;
+    margin-bottom: 20px;
   }
   &__result-location {
-
+    font-size: 30px;
+    margin-bottom: 40px;
   }
   &__button {
 
   }
   &__answers {
-
+    position: absolute;
+    bottom: -800px;
+    left: 40vw;
+    width: 100%;
+    height: 600px;
   }
   &__answer-1 {
-
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translateY(0%);
+    will-change: transform;
+    animation-name: elasticup;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
   }
   &__answer-2 {
-
+    position: absolute;
+    top: 170px;
+    left: 370px;
+    transform: scale(0.9);
+    transform: translateY(0%);
+    will-change: transform;
+    animation-name: elasticup;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
   }
   &__answer-3 {
-    
+    position: absolute;
+    top: -10px;
+    left: 700px;
+    transform: translateY(0%);
+    will-change: transform;
+    animation-name: elasticup;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+  }
+  &__answer-image {
+    width: 300px;
+  }
+  &__answer-text {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    // color: white;
+    font-size: 50px;
+    font-weight: 500;
   }
 }
