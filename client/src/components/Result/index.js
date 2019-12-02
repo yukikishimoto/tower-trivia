@@ -1,6 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {AwesomeButton} from 'react-awesome-button';
-import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss';
 import './styles.scss';
 
 function Result() {
@@ -13,8 +13,10 @@ function Result() {
         <label className="result__form-label" for="name">ENTER YOUR NAME:</label>
         <input className="result__form-field" type="text" id="name" />
       </form>
-      <AwesomeButton className="result__button" cssModule={AwesomeButtonStyles} type="secondary">VIEW HIGH SCORES</AwesomeButton>
-      <AwesomeButton className="result__button" cssModule={AwesomeButtonStyles} type="anchor">PLAY AGAIN</AwesomeButton>
+      <Link to="/highscores">
+        <AwesomeButton className="result__button-1" type="secondary">SUBMIT YOUR SCORE</AwesomeButton>
+      </Link>
+        <AwesomeButton className="result__button-2" type="primary">PLAY AGAIN</AwesomeButton>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss'; // This is technically "never used" but is needed to render button styles on the site
 import Home from './pages/Home';
 import Game from './pages/Game';
 import HighScores from './pages/HighScores';

@@ -12,7 +12,7 @@ function Trivia() {
       <div className="trivia__question">
         <img className="trivia__board" src={question} alt="Question board" />
         <div className="trivia__tower">
-          <img className="trivia__tower-image" src="" alt="Test image" />
+          <img className="trivia__tower-image" src="" alt="" />
           <div className="trivia__tower-overlay"></div>
         </div>
         <div className="trivia__result">
@@ -23,15 +23,15 @@ function Trivia() {
         </div>
       </div>
       <div className="trivia__answers">
-        <div className="trivia__answer-1">
+        <div className="trivia__answer trivia--answer-1">
           <img className="trivia__answer-image" src={answer1} alt="Answer sign" />
           <span className="trivia__answer-text">ITALY</span>
         </div>
-        <div className="trivia__answer-2">
+        <div className="trivia__answer trivia--answer-2">
           <img className="trivia__answer-image" src={answer2} alt="Answer sign" />
           <span className="trivia__answer-text">FRANCE</span>
         </div>
-        <div className="trivia__answer-3">
+        <div className="trivia__answer trivia--answer-3">
           <img className="trivia__answer-image" src={answer3} alt="Answer sign" />
           <span className="trivia__answer-text">USA</span>
         </div>

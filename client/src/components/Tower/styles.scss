@@ -3,7 +3,7 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes cloud {
+@keyframes towercloud {
   0% {
     left: -25%;
   }
@@ -22,7 +22,7 @@
     left: -25%;
     opacity: 0.5;
     width: 250px;
-    animation: cloud linear infinite;
+    animation: towercloud linear infinite;
   }
   &--cloud-1 {
     top: 5%;
@@ -67,7 +67,7 @@
     padding-top: 6px;
   }
   &__block-container {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     display: flex;
     flex-direction: column;

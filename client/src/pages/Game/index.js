@@ -8,7 +8,8 @@ class Game extends React.Component {
   render() {
     return (
       <main className="game">
-        <Tower />
+        {/* <Tower /> */}
+        <Result />
         <Trivia />
       </main>
     )

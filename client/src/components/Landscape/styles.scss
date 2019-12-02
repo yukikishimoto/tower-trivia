@@ -3,7 +3,7 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes cloud {
+@keyframes landscapecloud {
   0% {
     left: -25%;
   }
@@ -80,7 +80,7 @@
     left: -25%;
     opacity: 0.5;
     width: 300px;
-    animation: cloud linear infinite;
+    animation: landscapecloud linear infinite;
   }
   &--cloud-1 {
     top: 2%;
