@@ -13,7 +13,7 @@ class Result extends React.Component {
     this.setState({
       name: event.target.value.toUpperCase()
     });
-    console.log(this.state.name); // Why does this lag by 1 char?
+
     if (event.target.value) {
       this.setState({
         blankNameError: false

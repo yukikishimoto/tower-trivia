@@ -10,6 +10,7 @@ class Game extends React.Component {
     trivia: [],
     currentQuestion: 1,
     isQuestionAnswered: false,
+    optionSelected: "",
     isAnswerCorrect: false,
     isGameOver: false,
     didPlayerWin: false,
@@ -52,9 +53,10 @@ class Game extends React.Component {
 
   answerClickHandler = (event) => {
     this.setState({
-      isQuestionAnswered: true
+      isQuestionAnswered: true,
+      optionSelected: event.target.parentElement.innerText
     });
-    if (event.target.innerText === this.state.trivia[this.state.currentQuestion - 1].correctAnswer) {
+    if (event.target.parentElement.innerText === this.state.trivia[this.state.currentQuestion - 1].correctAnswer) {
       this.setState({
         isAnswerCorrect: true,
         score: this.state.score + 100
@@ -82,12 +84,12 @@ class Game extends React.Component {
 
   render() {
     const {history} = this.props;
-    const {trivia, currentQuestion, isQuestionAnswered, isAnswerCorrect, isGameOver, didPlayerWin, score} = this.state;
+    const {trivia, currentQuestion, isQuestionAnswered, optionSelected, isAnswerCorrect, isGameOver, didPlayerWin, score} = this.state;
 
     return (
       <main className="game">
         {isGameOver ? <Result history={history} didPlayerWin={didPlayerWin} score={score} playAgainClickHandler={this.playAgainClickHandler} /> : <Tower score={score} />}
-        <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
+        <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} optionSelected={optionSelected} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
       </main>
     )
   }

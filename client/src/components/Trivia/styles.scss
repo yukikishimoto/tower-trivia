@@ -130,7 +130,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -1260px;
+    top: -1300px;
     left: 50px;
     width: 750px;
     height: 927px;
@@ -143,6 +143,14 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+  }
+  &__question-text {
+    position: absolute;
+    top: 935px;
+    right: 0px;
+    font-size: 31px;
+    font-weight: 500;
+    color: grey;
   }
   &__board {
 
