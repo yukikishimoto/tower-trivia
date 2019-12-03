@@ -19,6 +19,9 @@ class HighScores extends React.Component {
         highScores: response.data
       })
     })
+    .catch(() => {
+      alert("There was an error in the request for high scores data the server.");
+    });
   }
 
   render() {
@@ -29,7 +32,7 @@ class HighScores extends React.Component {
         <img className="scores__logo" src={logo} alt="Tower Trivia logo" />
         <h1 className="scores__heading">HIGH SCORES</h1>
         <div className="scores__entries">
-          {highScores.sort((a, b) => (a.name.toUpperCase() < b.name.toUpperCase()) ? -1 : 1).sort((a, b) => (a.score > b.score) ? -1 : 1).map(highScore => <div className="scores__entry">{highScore.name.toUpperCase()}&emsp;{highScore.score}m</div>)}
+          {highScores.sort((a, b) => (a.name.toUpperCase() < b.name.toUpperCase()) ? -1 : 1).sort((a, b) => (a.score > b.score) ? -1 : 1).map(highScore => <div className="scores__entry" key={highScore.id}>{highScore.name.toUpperCase()}&emsp;{highScore.score}m</div>)}
         </div>
         <Link to="/game">
           <AwesomeButton className="scores__button" type="primary">PLAY AGAIN</AwesomeButton>

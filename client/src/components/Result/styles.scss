@@ -10,7 +10,12 @@
   align-items: center;
   width: 40vw;
   height: 100vh;
-  background: linear-gradient($color-green 20%, white);
+  &--won {
+    background: linear-gradient($color-green 20%, white);
+  }
+  &--lost {
+    background: linear-gradient($color-red 20%, white);
+  }
   &__heading {
     font-size: 100px;
     font-weight: 500;
@@ -47,6 +52,18 @@
     border-bottom: 2px solid dimgrey;
     margin-bottom: 80px;
     outline: none;
+  }
+  &__form-errors {
+    position: absolute;
+    top: 625px;
+    left: 20vw;
+    transform: translateX(-50%);
+    font-size: 17px;
+    color: darkred;
+    text-align: center;
+  }
+  &__form-error {
+
   }
   &__button-1 {
     margin-bottom: 10px;

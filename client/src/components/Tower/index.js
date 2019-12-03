@@ -10,7 +10,9 @@ import block4 from '../../assets/images/block4.svg';
 import block5 from '../../assets/images/block5.svg';
 import './styles.scss';
 
-function Tower() {
+function Tower(props) {
+  const {score} = props;
+
   return (
     <section className="tower">
       <img className="tower__cloud tower--cloud-1" src={cloud1} alt="Cloud" />
@@ -19,7 +21,7 @@ function Tower() {
       <img className="tower__cloud tower--cloud-4" src={cloud1} alt="Cloud" />
       <div className="tower__score">
         <span className="tower__score-label">HEIGHT</span>
-        <span className="tower__score-value">100m</span>
+        <span className="tower__score-value">{score}m</span>
       </div>
       <div className="tower__block-container">
         <img className="tower__hook" src={hook} alt="Tower crane hook" />

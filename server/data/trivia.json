@@ -122,14 +122,14 @@
     "id": "018",
     "name": "N Seoul Tower",
     "image": "https://previews.dropbox.com/p/thumb/AApOFlXxaohrFaIPZa92CSdo4TotKd_WXQ3iPNXtytiLzF7Xa9mxQWRazA2Sz-POoAwyDkU68L-4Ccm-ruPP8Gbq6xGOyicRq71WXYbq5lTfHQSBosp7Fp_NC8EX1TvwpW9n0X8U0dhmacF6FIe8KHuodGC8hjr2XK-H7PQqctQXs3TpDBojJCYBXp45XQYhbuuU8M07c_Au7qtev-RxRuP0iypLMnbxOe1v2DFTUTMIHO0CQY6rOATUpRlYOB6Bi5-SV4GCijOL3jrk_OyMODCDoKZPuFpANzBR77V5zECs55_iaQRNK1ni37gH4nEkCVnj-r7VhJPu52Wkhdv_Tr6x/p.jpeg?fv_content=true&size_mode=5",
-    "options": ["Switzerland", "United Arab Emirates", "South Korea"],
+    "options": ["South Korea", "United Arab Emirates", "Switzerland"],
     "correctAnswer": "South Korea"
   },
   {
     "id": "019",
     "name": "Shanghai World Financial Center",
     "image": "https://previews.dropbox.com/p/thumb/AApxzyGJpE2F0wPFlo0J_CdS77F_K7khQ2lChSTWTjzsd4urx4kHtP8Uf-d_JKDg3TFsWocmdjLuihCD1mM-xRJw87UUW8mCvQS7NhksmKusqOXqaUV9ajOaEYA6IFzSfvlxNjFQEWQDvvSGWYHc-oE2jGwiEJx7GYsYNYnZJsIVavW_ivNnhljwxTej37-tDtRidbaLigq5Z95MyDgGGADArwPAQpGEbt_Ec2lMmFOePlM1GdawUWeU2KKe2-1ppyTPTAg1Vltrf14LBtIz1smPMvwZIcUfN1C77DyZ7083jJpgUsbAXi3YDJ_6A68BbajB-Eg28l294osKkpUFPsr8/p.jpeg?fv_content=true&size_mode=5",
-    "options": ["China", "Taiwan", "South Korea"],
+    "options": ["China", "South Korea", "Taiwan"],
     "correctAnswer": "China"
   },
   {
