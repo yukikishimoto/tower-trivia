@@ -1,7 +1,7 @@
 import React from 'react';
-import cloud1 from '../../assets/images/cloud-1.png';
-import cloud2 from '../../assets/images/cloud-2.png';
-import cloud3 from '../../assets/images/cloud-3.png';
+import cloud1 from '../../assets/images/cloud1.png';
+import cloud2 from '../../assets/images/cloud2.png';
+import cloud3 from '../../assets/images/cloud3.png';
 import './styles.scss';
 
 function Landscape() {

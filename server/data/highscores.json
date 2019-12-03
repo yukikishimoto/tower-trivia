@@ -2,16 +2,16 @@
   {
     "id": "001",
     "name": "Yash",
-    "score": "500m"
+    "score": 500
   },
   {
     "id": "002",
     "name": "Josh",
-    "score": "400m"
+    "score": 400
   },
   {
     "id": "003",
     "name": "Roy",
-    "score": "400m"
+    "score": 400
   }
 ]
