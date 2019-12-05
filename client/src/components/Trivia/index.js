@@ -22,15 +22,15 @@ function Trivia(props) {
         <img className="trivia__board" src={question} alt="Question board" />
         <div className="trivia__tower">
           <img className="trivia__tower-image" src={trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].image : ""} alt="Famous tower" />
-          {isQuestionAnswered ? <div className="trivia__tower-overlay"></div> : null}
+          {isQuestionAnswered ? <div className="trivia__tower-overlay trivia--fade-in"></div> : null}
         </div>
         {
           isQuestionAnswered ? (isAnswerCorrect ? 
             <div className="trivia__result">
-              <h1 className="trivia__result-heading">CORRECT</h1>
-              <h2 className="trivia__result-name">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].name : ""}</h2>
-              <h3 className="trivia__result-location">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].correctAnswer : ""}</h3>
-              {(currentQuestion === 4) ? null : <AwesomeButton className="trivia__button" type="primary" onPress={nextQuestionClickHandler}>NEXT QUESTION</AwesomeButton>}
+              <h1 className="trivia__result-heading trivia--fade-in">CORRECT</h1>
+              <h2 className="trivia__result-name trivia--fade-in-down">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].name : ""}</h2>
+              <h3 className="trivia__result-location trivia--fade-in-down">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].correctAnswer : ""}</h3>
+              {(currentQuestion === 4) ? null : <AwesomeButton className="trivia__button trivia--fade-in" type="primary" onPress={nextQuestionClickHandler}>NEXT QUESTION</AwesomeButton>}
             </div> 
             : 
             <div className="trivia__result">
