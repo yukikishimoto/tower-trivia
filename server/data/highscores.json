@@ -1,17 +1,1 @@
-[
-  {
-    "id": "001",
-    "name": "Yash",
-    "score": 500
-  },
-  {
-    "id": "002",
-    "name": "Josh",
-    "score": 400
-  },
-  {
-    "id": "003",
-    "name": "Roy",
-    "score": 400
-  }
-]
+[{"id":"001","name":"YASH","score":500},{"id":"002","name":"JOSH","score":400},{"id":"003","name":"ROY","score":400},{"id":"b0e9ae","name":"YUKI","score":100}]
