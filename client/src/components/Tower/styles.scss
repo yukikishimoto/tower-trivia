@@ -89,6 +89,42 @@
   }
 }
 
+@keyframes upBlock2 {
+  0% {
+    transform: translateY(-840px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upBlock3 {
+  0% {
+    transform: translateY(-680px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upBlock4 {
+  0% {
+    transform: translateY(-520px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upBlock5 {
+  0% {
+    transform: translateY(-360px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .tower {
   width: 40vw;
   height: 100vh;
@@ -181,7 +217,57 @@
     width: 160px;
   }
   &__hook {
+    position: relative;
     width: 100%;
+    animation-iteration-count: 1;
+  }
+  &--hook-2 {
+    animation-name: dropBlock2;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-duration: 2s;
+  }
+  &--hook-3 {
+    animation-name: dropBlock3;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-duration: 1.75s;
+  }
+  &--hook-4 {
+    animation-name: dropBlock4;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-duration: 1.5s;
+  }
+  &--hook-5 {
+    animation-name: dropBlock5;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-duration: 1.25s;
+  }
+  &--hook-2-up {
+    animation-name: upBlock2;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  &--hook-3-up {
+    animation-name: upBlock3;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 1.75s;
+    animation-fill-mode: forwards;
+  }
+  &--hook-4-up {
+    animation-name: upBlock4;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+  &--hook-5-up {
+    animation-name: upBlock5;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
   }
   &__block {
     width: 100%;

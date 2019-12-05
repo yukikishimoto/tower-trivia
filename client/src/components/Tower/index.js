@@ -12,7 +12,7 @@ import block5 from '../../assets/images/block5.svg';
 import './styles.scss';
 
 function Tower(props) {
-  const {score} = props;
+  const {score, hook2Class, hook3Class, hook4Class, hook5Class} = props;
 
   const towerScoreClass = () => {
     if (score === 100) {
@@ -44,7 +44,10 @@ function Tower(props) {
         <span>m</span>
       </div>
       <div className="tower__block-container">
-        <img className="tower__hook" src={hook} alt="Tower crane hook" />
+        {score === 200 ? <img className={hook2Class} src={hook} alt="Tower crane hook" /> : null}
+        {score === 300 ? <img className={hook3Class} src={hook} alt="Tower crane hook" /> : null}
+        {score === 400 ? <img className={hook4Class} src={hook} alt="Tower crane hook" /> : null}
+        {score === 500 ? <img className={hook5Class} src={hook} alt="Tower crane hook" /> : null}
         <img className="tower__block tower--block-1" src={block1} alt="Tower block 1" />
         {score >= 200 ? <img className="tower__block tower--block-2" src={block2} alt="Tower block 2" /> : null}
         {score >= 300 ? <img className="tower__block tower--block-3" src={block3} alt="Tower block 3" /> : null}
