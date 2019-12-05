@@ -44,6 +44,7 @@ class Game extends React.Component {
     this.setState({
       currentQuestion: 1,
       isQuestionAnswered: false,
+      optionSelected: "",
       isAnswerCorrect: false,
       isGameOver: false,
       didPlayerWin: false,
@@ -52,6 +53,9 @@ class Game extends React.Component {
   }
 
   answerClickHandler = (event) => {
+    if (this.state.isQuestionAnswered) {
+      return;
+    }
     this.setState({
       isQuestionAnswered: true,
       optionSelected: event.target.parentElement.innerText
@@ -62,10 +66,10 @@ class Game extends React.Component {
         score: this.state.score + 100
       });
       if (this.state.currentQuestion === 4) {
-        this.setState({
+        setTimeout(() => this.setState({
           isGameOver: true,
           didPlayerWin: true
-        });
+        }), 3550);
       }
     } else {
       this.setState({
@@ -78,6 +82,7 @@ class Game extends React.Component {
     this.setState({
       currentQuestion: this.state.currentQuestion + 1,
       isQuestionAnswered: false,
+      optionSelected: "",
       isAnswerCorrect: false
     })
   }

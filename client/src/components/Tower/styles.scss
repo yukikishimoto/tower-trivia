@@ -12,6 +12,83 @@
   }
 }
 
+@keyframes scoreHeight100 {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
+@keyframes scoreHeight200 {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
+@keyframes scoreHeight300 {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
+@keyframes scoreHeight400 {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
+@keyframes scoreHeight500 {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(-117px);
+  }
+}
+
+@keyframes dropBlock2 {
+  0% {
+    transform: translateY(-840px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropBlock3 {
+  0% {
+    transform: translateY(-680px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropBlock4 {
+  0% {
+    transform: translateY(-520px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropBlock5 {
+  0% {
+    transform: translateY(-360px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .tower {
   width: 40vw;
   height: 100vh;
@@ -50,11 +127,38 @@
   &__score {
     z-index: 2;
     position: absolute;
-    bottom: 160px;
     left: 7vw;
     transform: translateY(+50%);
     width: 200px;
     font-size: 30px;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+  }
+  &__score--100 {
+    bottom: 0px;
+    animation-name: scoreHeight100;
+  }
+  &__score--200 {
+    bottom: 160px;
+    animation-name: scoreHeight200;
+    animation-delay: 2s;
+  }
+  &__score--300 {
+    bottom: 320px;
+    animation-name: scoreHeight300;
+    animation-delay: 1.75s;
+  }
+  &__score--400 {
+    bottom: 480px;
+    animation-name: scoreHeight400;
+    animation-delay: 1.5s;
+  }
+  &__score--500 {
+    bottom: 640px;
+    animation-name: scoreHeight500;
+    animation-delay: 1.25s;
   }
   &__score-label {
     display: block;
@@ -63,7 +167,7 @@
     border-bottom: 1px solid black;
   }
   &__score-value {
-    display: block;
+    display: inline-block;
     padding-top: 6px;
   }
   &__block-container {
@@ -81,20 +185,34 @@
   }
   &__block {
     width: 100%;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-iteration-count: 1;
   }
   &--block-1 {
     order: 5;
   }
   &--block-2 {
     order: 4;
+    position: relative;
+    animation-name: dropBlock2;
+    animation-duration: 2s;
   }
   &--block-3 {
     order: 3;
+    position: relative;
+    animation-name: dropBlock3;
+    animation-duration: 1.75s;
   }
   &--block-4 {
     order: 2;
+    position: relative;
+    animation-name: dropBlock4;
+    animation-duration: 1.5s;
   }
   &--block-5 {
     order: 1;
+    position: relative;
+    animation-name: dropBlock5;
+    animation-duration: 1.25s;
   }
 }
