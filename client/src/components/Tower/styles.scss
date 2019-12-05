@@ -91,37 +91,37 @@
 
 @keyframes upBlock2 {
   0% {
-    transform: translateY(-840px);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-840px);
   }
 }
 
 @keyframes upBlock3 {
   0% {
-    transform: translateY(-680px);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-680px);
   }
 }
 
 @keyframes upBlock4 {
   0% {
-    transform: translateY(-520px);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-520px);
   }
 }
 
 @keyframes upBlock5 {
   0% {
-    transform: translateY(-360px);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-360px);
   }
 }
 
@@ -244,28 +244,24 @@
   &--hook-2-up {
     animation-name: upBlock2;
     animation-timing-function: linear;
-    animation-direction: reverse;
     animation-duration: 2s;
     animation-fill-mode: forwards;
   }
   &--hook-3-up {
     animation-name: upBlock3;
     animation-timing-function: linear;
-    animation-direction: reverse;
     animation-duration: 1.75s;
     animation-fill-mode: forwards;
   }
   &--hook-4-up {
     animation-name: upBlock4;
     animation-timing-function: linear;
-    animation-direction: reverse;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
   }
   &--hook-5-up {
     animation-name: upBlock5;
     animation-timing-function: linear;
-    animation-direction: reverse;
     animation-duration: 1.25s;
     animation-fill-mode: forwards;
   }
