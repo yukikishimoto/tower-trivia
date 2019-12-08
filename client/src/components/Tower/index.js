@@ -49,10 +49,10 @@ function Tower(props) {
         {score === 400 ? <img className={hook4Class} src={hook} alt="Tower crane hook" /> : null}
         {score === 500 ? <img className={hook5Class} src={hook} alt="Tower crane hook" /> : null}
         <img className="tower__block tower--block-1" src={block1} alt="Tower block 1" />
-        {score >= 200 ? <img className="tower__block tower--block-2" src={block2} alt="Tower block 2" /> : null}
-        {score >= 300 ? <img className="tower__block tower--block-3" src={block3} alt="Tower block 3" /> : null}
-        {score >= 400 ? <img className="tower__block tower--block-4" src={block4} alt="Tower block 4" /> : null}
-        {score >= 500 ? <img className="tower__block tower--block-5" src={block5} alt="Tower block 5" /> : null}
+        {score >= 200 ? <img className="tower__block tower--block-down tower--block-2" src={block2} alt="Tower block 2" /> : null}
+        {score >= 300 ? <img className="tower__block tower--block-down tower--block-3" src={block3} alt="Tower block 3" /> : null}
+        {score >= 400 ? <img className="tower__block tower--block-down tower--block-4" src={block4} alt="Tower block 4" /> : null}
+        {score >= 500 ? <img className="tower__block tower--block-down tower--block-5" src={block5} alt="Tower block 5" /> : null}
       </div>
     </section>
   );

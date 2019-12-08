@@ -1,9 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes landscapecloud {
+@keyframes landscapeCloud {
   0% {
     left: -25%;
   }
@@ -12,7 +11,7 @@
   }
 }
 
-@keyframes smokeleft {
+@keyframes smokeLeft {
 	0% {
     transform: scale(0.2) translate(0, 0);
   }
@@ -26,7 +25,7 @@
   }
 }
 
-@keyframes smokeright {
+@keyframes smokeRight {
 	0% {
     transform: scale(0.2) translate(0, 0);
   }
@@ -40,13 +39,13 @@
   }
 }
 
-@keyframes birdflap {
+@keyframes birdFlap {
 	100% {
 		background-position: -900px 0;
 	}
 }
 
-@keyframes birdfly {
+@keyframes birdFly {
 	0% {
 		transform: scale(0.3) translateX(-10vw);
 	}
@@ -80,7 +79,7 @@
     left: -25%;
     opacity: 0.5;
     width: 300px;
-    animation: landscapecloud linear infinite;
+    animation: landscapeCloud linear infinite;
   }
   &--cloud-1 {
     top: 2%;
@@ -107,34 +106,34 @@
     border-radius: 50px;
   }
   &--smoke-1 {
-    animation: smokeleft 10s 0s infinite;
+    animation: smokeLeft 10s 0s infinite;
   }
   &--smoke-2 {
-    animation: smokeright 10s 1s infinite;
+    animation: smokeRight 10s 1s infinite;
   }
   &--smoke-3 {
-    animation: smokeleft 10s 2s infinite;
+    animation: smokeLeft 10s 2s infinite;
   }
   &--smoke-4 {
-    animation: smokeright 10s 3s infinite;
+    animation: smokeRight 10s 3s infinite;
   }
   &--smoke-5 {
-    animation: smokeleft 10s 4s infinite;
+    animation: smokeLeft 10s 4s infinite;
   }
   &--smoke-6 {
-    animation: smokeright 10s 5s infinite;
+    animation: smokeRight 10s 5s infinite;
   }
   &--smoke-7 {
-    animation: smokeleft 10s 6s infinite;
+    animation: smokeLeft 10s 6s infinite;
   }
   &--smoke-8 {
-    animation: smokeright 10s 7s infinite;
+    animation: smokeRight 10s 7s infinite;
   }
   &--smoke-9 {
-    animation: smokeleft 10s 8s infinite;
+    animation: smokeLeft 10s 8s infinite;
   }
   &--smoke-10 {
-    animation: smokeright 10s 9s infinite;
+    animation: smokeRight 10s 9s infinite;
   }
   &__bird-container {
     z-index: 3;
@@ -142,7 +141,7 @@
     position: absolute;
     transform: scale(0) translateX(-10vw);
     will-change: transform;
-    animation: birdfly linear infinite;
+    animation: birdFly linear infinite;
   }
   &__bird-container-1 {
     top: 4%;
@@ -160,7 +159,7 @@
     width: 88px;
     height: 125px;
     will-change: background-position;
-    animation-name: birdflap;
+    animation-name: birdFlap;
     animation-timing-function: steps(10);
     animation-iteration-count: infinite;
   }

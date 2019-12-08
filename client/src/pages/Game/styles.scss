@@ -1,6 +1,5 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 .game {
@@ -33,11 +32,9 @@
     font-size: 30px;
     margin-bottom: 30px;
   }
-  &__tower-description {
-
-  }
 }
 
+// Styling for modal:
 .ReactModal {
   &__Overlay {
     z-index: 5;
@@ -53,6 +50,7 @@
   }
 }
 
+// Styling for carousel (in the modal):
 .slick {
   &-prev, &-next {
     width: 50px !important;
@@ -60,13 +58,17 @@
   }
   &-prev {
     left: -65px !important;
+    &:before {
+      font-size: 50px !important;
+      color: grey !important;
+    }
   }
   &-next {
     right: -65px !important;
-  }
-  &-prev:before, &-next:before {
-    font-size: 50px !important;
-    color: grey !important;
+    &:before {
+      font-size: 50px !important;
+      color: grey !important;
+    }
   }
   &-dots {
     bottom: -50px !important;

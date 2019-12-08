@@ -1,9 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes elasticdown {
+@keyframes elasticDown {
 	0% {
 		transform: translateY(0%);
 	}
@@ -60,7 +59,7 @@
 	}
 }
 
-@keyframes elasticup {
+@keyframes elasticUp {
 	0% {
 		transform: translateY(0%);
 	}
@@ -145,19 +144,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
-  &--fade-in {
+  &--fade {
     opacity: 0;
-    animation-name: fadeIn;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
+  &--fade-in {
+    animation-name: fadeIn;
+  }
   &--fade-in-down {
-    opacity: 0;
     animation-name: fadeInDown;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   &__question {
     position: relative;
@@ -171,7 +168,7 @@
     text-align: center;
     transform: translateY(0%);
     will-change: transform;
-    animation-name: elasticdown;
+    animation-name: elasticDown;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -185,9 +182,6 @@
     font-size: 31px;
     font-weight: 500;
     color: grey;
-  }
-  &__board {
-
   }
   &__tower {
     position: absolute;
@@ -248,63 +242,47 @@
     height: 600px;
   }
   &__answer {
-
+    &:hover {
+      filter: brightness(150%);
+      cursor: pointer;
+    }
   }
-  &__answer:hover {
-    filter: brightness(150%);
-    cursor: pointer;
-  }
-  &--answer-1 {
+  &--answer {
     position: absolute;
-    top: 50px;
-    left: 50px;
     transform: translateY(0%);
     will-change: transform;
-    animation-name: elasticup;
+    animation-name: elasticUp;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 2s;
+  }
+  &--answer-1 {
+    top: 50px;
+    left: 50px;
     animation-delay: 0.5s;
   }
   &--answer-2 {
-    position: absolute;
     top: 160px;
     left: 370px;
     transform: scale(0.9);
-    transform: translateY(0%);
-    will-change: transform;
-    animation-name: elasticup;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
     animation-delay: 1s;
   }
   &--answer-3 {
-    position: absolute;
     top: -10px;
     left: 700px;
-    transform: translateY(0%);
-    will-change: transform;
-    animation-name: elasticup;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
     animation-delay: 1.5s;
   }
   &__answer-image {
     width: 300px;
-  }
-  &__answer-image-3 {
-    width: 310px;
   }
   &__answer-text {
     position: absolute;
     top: 150px;
     left: 150px;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
     width: 180px;
     height: 108px;
     overflow: hidden;
@@ -313,19 +291,13 @@
     font-weight: 500;
   }
   &--answer-text-1 {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
   &--answer-text-2 {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
   &--answer-text-3 {
     left: 155px;
-    display: flex;
-    justify-content: center;
     align-self: flex-start;
     margin-top: 45px;
   }

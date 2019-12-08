@@ -23,19 +23,16 @@ class Game extends React.Component {
       didPlayerWin: false,
       score: 100,
       showModal: false,
-      hook2Class: "tower__hook tower--hook-2",
-      hook3Class: "tower__hook tower--hook-3",
-      hook4Class: "tower__hook tower--hook-4",
-      hook5Class: "tower__hook tower--hook-5"
+      hook2Class: "tower__hook tower__hook-down tower--hook-2-down",
+      hook3Class: "tower__hook tower__hook-down tower--hook-3-down",
+      hook4Class: "tower__hook tower__hook-down tower--hook-4-down",
+      hook5Class: "tower__hook tower__hook-down tower--hook-5-down"
     }
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
 
-  componentDidMount() {
-    // Bind modal to element with className="game":
-    Modal.setAppElement('.game');
-
+  gameGetRequest = () => {
     axios
     .get("http://localhost:8080/game")
     .then((response) => {
@@ -49,16 +46,8 @@ class Game extends React.Component {
   }
 
   playAgainClickHandler = () => {
-    axios
-    .get("http://localhost:8080/game")
-    .then((response) => {
-      this.setState({
-        trivia: response.data
-      });
-    })
-    .catch(() => {
-      alert("There was an error in the request for trivia data from the server.");
-    });
+    this.gameGetRequest();
+
     this.setState({
       currentQuestion: 1,
       isQuestionAnswered: false,
@@ -86,10 +75,12 @@ class Game extends React.Component {
     if (this.state.isQuestionAnswered) {
       return;
     }
+
     this.setState({
       isQuestionAnswered: true,
       optionSelected: event.target.parentElement.innerText
     });
+
     if (event.target.parentElement.innerText === this.state.trivia[this.state.currentQuestion - 1].correctAnswer) {
       this.setState({
         isAnswerCorrect: true,
@@ -118,21 +109,28 @@ class Game extends React.Component {
     
     if (this.state.currentQuestion === 1) {
       this.setState({
-        hook2Class: "tower__hook tower--hook-2-up"
+        hook2Class: "tower__hook tower__hook-up tower--hook-2-up"
       })
     } else if (this.state.currentQuestion === 2) {
       this.setState({
-        hook3Class: "tower__hook tower--hook-3-up"
+        hook3Class: "tower__hook tower__hook-up tower--hook-3-up"
       })
     } else if (this.state.currentQuestion === 3) {
       this.setState({
-        hook4Class: "tower__hook tower--hook-4-up"
+        hook4Class: "tower__hook tower__hook-up tower--hook-4-up"
       })
     } else if (this.state.currentQuestion === 4) {
       this.setState({
-        hook5Class: "tower__hook tower--hook-5-up"
+        hook5Class: "tower__hook tower__hook-up tower--hook-5-up"
       })
     }
+  }
+
+  componentDidMount() {
+    // Bind modal to element with className="game":
+    Modal.setAppElement('.game');
+
+    this.gameGetRequest();
   }
 
   render() {
@@ -158,7 +156,7 @@ class Game extends React.Component {
                     <img className="game__tower-image" src={answer.image} alt="Famous tower" />
                     <h1 className="game__tower-name">{answer.name}</h1>
                     <h2 className="game__tower-location">{answer.correctAnswer}</h2>
-                    <p className="game__tower-description">{answer.description}</p>
+                    <p>{answer.description}</p>
                   </div>
                 )
               :

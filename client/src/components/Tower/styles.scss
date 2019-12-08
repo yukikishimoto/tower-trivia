@@ -1,9 +1,8 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes towercloud {
+@keyframes towerCloud {
   0% {
     left: -25%;
   }
@@ -135,7 +134,7 @@
     left: -25%;
     opacity: 0.5;
     width: 250px;
-    animation: towercloud linear infinite;
+    animation: towerCloud linear infinite;
   }
   &--cloud-1 {
     top: 5%;
@@ -221,79 +220,73 @@
     width: 100%;
     animation-iteration-count: 1;
   }
-  &--hook-2 {
-    animation-name: dropBlock2;
+  &__hook-down {
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  &--hook-2-down {
+    animation-name: dropBlock2;
     animation-duration: 2s;
   }
-  &--hook-3 {
+  &--hook-3-down {
     animation-name: dropBlock3;
-    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     animation-duration: 1.75s;
   }
-  &--hook-4 {
+  &--hook-4-down {
     animation-name: dropBlock4;
-    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     animation-duration: 1.5s;
   }
-  &--hook-5 {
+  &--hook-5-down {
     animation-name: dropBlock5;
-    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     animation-duration: 1.25s;
+  }
+  &__hook-up {
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
   }
   &--hook-2-up {
     animation-name: upBlock2;
-    animation-timing-function: linear;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
   }
   &--hook-3-up {
     animation-name: upBlock3;
-    animation-timing-function: linear;
     animation-duration: 1.75s;
-    animation-fill-mode: forwards;
   }
   &--hook-4-up {
     animation-name: upBlock4;
-    animation-timing-function: linear;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;
   }
   &--hook-5-up {
     animation-name: upBlock5;
-    animation-timing-function: linear;
     animation-duration: 1.25s;
-    animation-fill-mode: forwards;
   }
   &__block {
     width: 100%;
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     animation-iteration-count: 1;
   }
+  &--block-down {
+    position: relative;
+  }
   &--block-1 {
     order: 5;
   }
   &--block-2 {
     order: 4;
-    position: relative;
     animation-name: dropBlock2;
     animation-duration: 2s;
   }
   &--block-3 {
     order: 3;
-    position: relative;
     animation-name: dropBlock3;
     animation-duration: 1.75s;
   }
   &--block-4 {
     order: 2;
-    position: relative;
     animation-name: dropBlock4;
     animation-duration: 1.5s;
   }
   &--block-5 {
     order: 1;
-    position: relative;
     animation-name: dropBlock5;
     animation-duration: 1.25s;
   }

@@ -9,6 +9,13 @@ class Result extends React.Component {
     blankNameError: false
   }
 
+  formKeyDownHandler = (event) => {
+    // Prevent the page from refreshing when the player if focused on an input form field and presses "enter" on the keyboard:
+    if (event.key === "Enter") {
+      event.preventDefault();
+    };
+  }
+
   nameChangeHandler = (event) => {
     this.setState({
       name: event.target.value.toUpperCase()
@@ -49,19 +56,19 @@ class Result extends React.Component {
   }
 
   render() {
-    const {currentQuestion, didPlayerWin, score, playAgainClickHandler, handleOpenModal} = this.props;
+    const {didPlayerWin, score, playAgainClickHandler, handleOpenModal} = this.props;
     const {blankNameError} = this.state;
 
     const resultHTML = 
       <>
         <h2 className="result__subheading">YOUR SCORE:</h2>
         <span className="result__score">{score}m</span>
-        <form className="result__form">
+        <form className="result__form" onKeyDown={this.formKeyDownHandler}>
           <label className="result__form-label" htmlFor="name">ENTER YOUR NAME:</label>
           <input className="result__form-field" type="text" id="name" onChange={this.nameChangeHandler} />
           <div className="result__form-errors">
-            {blankNameError ? <p className="result__form-error">Name cannot be blank.</p> : null}
-            {(this.state.name.length > 10) ? <p className="result__form-error">Name cannot exceed 10 characters.</p> : null}
+            {blankNameError ? <p>Name cannot be blank.</p> : null}
+            {(this.state.name.length > 10) ? <p>Name cannot exceed 10 characters.</p> : null}
           </div>
         </form>
         <AwesomeButton className="result__button-1" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>

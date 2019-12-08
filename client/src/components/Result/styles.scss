@@ -1,6 +1,5 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 @keyframes flash {
@@ -65,15 +64,12 @@
   }
   &__form-errors {
     position: absolute;
-    top: 600px;
+    top: 605px;
     left: 20vw;
     transform: translateX(-50%);
     font-size: 17px;
     color: darkred;
     text-align: center;
-  }
-  &__form-error {
-
   }
   &__button-1 {
     margin-bottom: 10px;
@@ -87,9 +83,9 @@
     text-align: center;
     cursor: pointer;
     animation: flash 2s infinite;
-  }
-  &__learn-more:hover {
-    color: darkred;
-    animation: unset;
+    &:hover {
+      color: darkgreen;
+      animation: unset;
+    }
   }
 }

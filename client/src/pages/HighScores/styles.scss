@@ -1,6 +1,5 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
-@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 .scores {
@@ -34,18 +33,18 @@
     text-align: right;
     font-size: 30px;
     margin-bottom: 40px;
-  }
-  &__entries::-webkit-scrollbar {
-    width: 15px;
-  }
-  &__entries::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0.5;
-    border-radius: 15px;
-  }
-  &__entries::-webkit-scrollbar-thumb {
-    background: $color-green;
-    border-radius: 15px;
+    &::-webkit-scrollbar {
+      width: 15px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0.5;
+      border-radius: 15px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color-green;
+      border-radius: 15px;
+    }
   }
   &__entry {
     z-index: 4;

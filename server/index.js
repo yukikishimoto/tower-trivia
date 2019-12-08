@@ -21,10 +21,7 @@ app.post('/highscores', (request, response) => {
     "score": request.body.score
   };
   highscores.push(newHighScore);
-  fs.writeFile('./data/highscores.json', JSON.stringify(highscores), (err) => {
-    if (err) throw err;
-    console.log("write file worked");
-  });
+  fs.writeFileSync('./data/highscores.json', JSON.stringify(highscores));
   response.send(highscores);
 })
 
