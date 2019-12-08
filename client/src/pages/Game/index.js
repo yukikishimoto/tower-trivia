@@ -154,8 +154,11 @@ class Game extends React.Component {
             {
               questionsSeen[0] ? 
                 questionsSeen.map(answer => 
-                  <div key={answer.id}>
+                  <div className="game__tower-carousel-tab" key={answer.id}>
                     <img className="game__tower-image" src={answer.image} alt="Famous tower" />
+                    <h1 className="game__tower-name">{answer.name}</h1>
+                    <h2 className="game__tower-location">{answer.correctAnswer}</h2>
+                    <p className="game__tower-description">{answer.description}</p>
                   </div>
                 )
               :

@@ -3,6 +3,16 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
+@keyframes flash {
+  0%, 30%, 70%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 .result {
   display: flex;
   flex-direction: column;
@@ -73,11 +83,13 @@
   }
   &__learn-more {
     font-size: 18px;
-    color: $color-red;
+    color: forestgreen;
     text-align: center;
     cursor: pointer;
+    animation: flash 2s infinite;
   }
   &__learn-more:hover {
     color: darkred;
+    animation: unset;
   }
 }

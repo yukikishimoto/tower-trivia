@@ -2,6 +2,7 @@
   {
     "id": "001",
     "name": "Tokyo Skytree",
+    "description": "Tokyo Skytree is a broadcasting and observation tower. It is known for being the second tallest structure in the world (after the Burj Khalifa in the United Arab Emirates). It is 634m high and was built with earthquake resistance.",
     "image": "https://previews.dropbox.com/p/thumb/AAriHo25ncbUeTRTcS4hghNa_aaIKIZFYoENhc8V6sVqDLFEJRG-EgihoNShyP3udUB1C61kpq8x4GONrYsngJvY3Fq0087NBINHcwunzNNDKtS_m2b8AvQDfkthXavJKfIuV5iwahprDkE79kdth-3vf5C2XkEnAoKv1sK6dH0jNd_NFazg2RDB_sNgSn5seRxGpjW9twd7bG1uNDV_m5Ev_qCz5ZV-ApacQPJ-oJPJJwjbUTTQghdOtiCknPcbQcLHKCzfIXLHikq0ZCTOMiSUOMwW6GbhcNiRI_lfciND07mJLJq3EEAdzspgz3ry5n1SrXa37crOhEFZ0XAjFuAk/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Japan", "China", "Malaysia"],
     "correctAnswer": "Japan"
@@ -9,6 +10,7 @@
   {
     "id": "002",
     "name": "CN Tower",
+    "description": "The CN Tower is a 553m-high communications and observation tower located in Toronto, Ontario. For 32 years, the CN Tower held the title of being the tallest freestanding structure in the world. The tower was named one of the Seven Wonders of the Modern World by the American Society of Civil Engineers in 1994.",
     "image": "https://previews.dropbox.com/p/thumb/AAoT8W-CW5IH_Q4yq_ps-nZdr0RfKqa3zCQn2yRd4IMrBumz_xldpF7QK_SbxQJBD3Sj0fA8qyrCYQIX4ZDb99UOb0nz4awrX9wfZHrKJFAqy_eTFyIHDjEdNd_Nz9CmIbUTSahjadgJ3RwKfd5Fth_BZvKm-30vAAHQH-7S5zkzr0h6mKXN-6iqION0whGafYBSCnc18FBSpGuB0GAGe_5dVYOhHen3-dqqMOqNQ2GoN_XCu7x2ah_TETCJbkE4fGOZ9UtCGGzr_RgRss3cxyHvBeOGt8qNTKfst69K1BUKkvRjGesQtDtHJsvUXpHib1jrv2iItRZPEIkkbu4aimoU/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Australia", "Canada", "Germany"],
     "correctAnswer": "Canada"
@@ -16,6 +18,7 @@
   {
     "id": "003",
     "name": "Eiffel Tower",
+    "description": "As a global icon, the Eiffel Tower in Paris is the most-visited paid monument in the world. The structure is a wrought-iron lattice that stands 324m tall. For 41 years, the tower held the title of being the tallest man-made structure in the world.",
     "image": "https://previews.dropbox.com/p/thumb/AAqOvKqOx6_oTutg7n6i9H-gYotg2i0yR9okbd72j2DeL2y8RW2N3iasu0m5xVZdT_jeY1kLXyRVorhhdSEWyk2dIjr6Avuqp7sJXpeLle90VdjBpqkkUErWDTAiv599EkzED_SdnYeIaI7V_EpDQLmM2CuLA_gP8xNnXb-lKTrLZU38Bm3M6SQc69PXBVK22zsvommfOjlwbeROpKR85GRzo7F8sI6cdG5pxbY2kp8mAgh7P_iOftZ9_Ow8ywyqa6aZV8Fq2kLg_OJeM6QtYNf8IWZ5-nQ5L8jbu0iSnrm-ekiTLBRCxitlOEX6urVbzl2VwoTwMg8kM6AMgwQI9Dth/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Ukraine", "Italy", "France"],
     "correctAnswer": "France"
@@ -23,6 +26,7 @@
   {
     "id": "004",
     "name": "Leaning Tower of Pisa",
+    "description": "The Leaning Tower of Pisa is a bell tower for the city of Pisa's cathedral. Due to an unstable foundation, the structure leans by almost 4 degrees. The tower is approximately 56m high and is made of marble and stone. Its construction was completed in 1372.",
     "image": "https://previews.dropbox.com/p/thumb/AAqBZ7VpfYYjwMWJHhxNOOdm_N8azV2VSo799QQp6oZf8pnU8H9ZA2VJAy3PSJEEfyGn4mybnCfHjzju8uixqZCroNkN3EZg9pPFi81iTQtc8F8Mv7BsIDcI2ia1-FN9e5IJzamyXS7GLMWr-Kw1U-slXhKtXUKHiv1nmiRAmnxBuTesIXtCaPdceVXpRp-X3AVbGGKqFOqztr84dDZoDAsbHWRk3EQMcXugm2depDQFXACkYXGlY8c2Aan7glHHTWte1eHcGNQoikH7RKPrDbM6_yVilVm-DT3_1nXWnIYPZi2SyeXnYm9xkpUi1bNPwlWUVHnPcdyZcMraX3gtRPyV/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Italy", "Germany", "Australia"],
     "correctAnswer": "Italy"
@@ -30,6 +34,7 @@
   {
     "id": "005",
     "name": "Space Needle",
+    "description": "Constructed in 1962, the Space Needle is an iconic observation tower located in Seattle, Washington. The 184m-high structure is seismically resistant and has 25 lightning rods that help protect the structure from lightning strikes.",
     "image": "https://previews.dropbox.com/p/thumb/AAqYIHXHIXx8ZGcu8JcPTmX6YduZuc41a5YVdr93bzKG3kh1CtSJXfa7Zt2qhwe7cCy1QtsJEM_hgBWL9OblG6u2370yFNwamprUdsvBkbwCMV2jZc81pij5FDYt9XpgD7a9X9TsQd9Mj1ozbAAHGvryYGkhR7arXK8HIPLs4YBI812T2iz73fLYldyI61CC5oPRYszNEjlY-FSNW23Eogom6zk_kcFGctLVvipztnxvCUjL_INvz-KPQAee-lvHVpzFgzok3sFPlYXdtMmakALrmthsw3JzvJ2YVIo99LRTIpZxdgN8R5qKBA8K4btJDFbjoIhzUUmbAxUz9LNRqeXe/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Japan", "United States", "Hong Kong"],
     "correctAnswer": "United States"
@@ -37,6 +42,7 @@
   {
     "id": "006",
     "name": "Canton Tower",
+    "description": "The 604m-high Canton Tower is located in the city of Guangzhou (historically known as Canton). It was the tallest tower in the world for 2 years (2009-2011), and is now the second tallest. The structure was built for the 2010 Asian Games and is currently used for observation and telecommunications.",
     "image": "https://previews.dropbox.com/p/thumb/AApt3cxZqtSotzGxbcH8-qSURIU6eOiB6dV_E08_tnAyGL749CgcoUcYtwQBdmeuBouTLRKiYUX3iSGHWzA9u2qtClrRt77bfVo4SWe4Xg36f3qKQ2uLHhN6yoURsVzOsTgeL5gWVkaRV7wQoTv0xZ5aM6o7CX2-3Aj8lgDkeAeIwzNADlews5MivAw-8wbCl7Nw7ixgfhbGq2wiWwwO10nUPj6gmkwVfksoke3PJ5Hk88aAwdDnb6PD7kniogl1pUzKL2M0qZP8ZThXEAk8FotBlCQyT-rsm4QVVjWdQziRqJsPVAPRXiDSN3odBtNAOvVcqSaDLf6Kjkd53FO0ufZw/p.jpeg?fv_content=true&size_mode=5",
     "options": ["India", "Peru", "China"],
     "correctAnswer": "China"
@@ -44,6 +50,7 @@
   {
     "id": "007",
     "name": "Oriental Pearl Tower",
+    "description": "The Oriental Pearl Tower is a radio and television tower located in Shanghai. Completed in 1994, it stands at a height of 468m and uniquely features 11 spheres of varying sizes, linked by three columns.",
     "image": "https://previews.dropbox.com/p/thumb/AAobrtfQKispaMk27c4mT-IhffeLjsKJ4YOhcv6_TVf6cYIsfP0LJlWJ3DHeDzVkE_piJl7SsFdWsoVVhPTYWHrQFqS1uA7DrWoSSFsS1X3LIlnp1CCs7ZPkZCW-nCGZacQA9pFGm7ECj3qJzNIR8MZI1vzLdcf5HKUa9aA-qHUh4u3VdNBSdN5E1PUJ3iIcQUASHwS0zr2xxSVTsueAryjxLg5DqVqMFiNymGrNxq48Fw04eo567j613qR0wPl3I2XOjUKAhNABf-NlnOh7zISzkE8PaLSKmNZswjQ5Cws3Wss2_qG_XACf2bzzxvkdLVehMc6oobYPut3_tiF510OR/p.jpeg?fv_content=true&size_mode=5",
     "options": ["China", "Estonia", "Belgium"],
     "correctAnswer": "China"
@@ -51,6 +58,7 @@
   {
     "id": "008",
     "name": "Ostankino Tower",
+    "description": "The Ostankino Tower is a concrete radio and television tower in Moscow. It stands tall at 540m and was the tallest free-standing structure in the world for 7 years (between 1967 and 1974).",
     "image": "https://previews.dropbox.com/p/thumb/AApFrhTJIWYurg--hcLQWWGS_PXC7xlWN4q0GbUaTUN_B_A1zmsPokQb4Rf8mPekCToZTAXTzoyJb_Kw9hqjr7oSn7GsVEy0xAEoc0-pYkrNy-IIrC8UWTeqClXJnGo2fnrn9bMbID8D8HzsQFnVEiNhudWLsJ_Pa9NwpMzTdpWaaNB4L1zVZlp5suipf93EocLvRz6KCBS9koD7V7eqKuHAa6_wlJyUbJHlwDkMC52v0Z3k_yMGRDkV1BUNmWSytv4kBfqFk0Vz0bBTk36nazIa0cuW7O3fHGfpWxd0gu2YBYgFylnX8-7qY2lNlr3qtLxn1GNhGdR_XAmFvQEZBw5M/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Austria", "Russia", "Uzbekistan"],
     "correctAnswer": "Russia"
@@ -58,6 +66,7 @@
   {
     "id": "009",
     "name": "Macau Tower",
+    "description": "The 338m-high Macau Tower is used for tourism, observation, telecommunications, and broadcasting. Recently, the tower has been used for adventurous activities such as bungee jumping. It was constructed in 2001 and features great views of Macau.",
     "image": "https://previews.dropbox.com/p/thumb/AArDb_eqbnMnWnyXYj8K_3E-qlz5ZBjprlhQoXeQE2sFpkNlmRX-GP_CERhJY7pMATrJdYMt7zyPKOztv8To59wjMof9yv6L-sSILoGu5xpPKMOincJL6R-Zx6RCZPuWW4xmOIflNJk6T5Y6on-C13F55_ExqdhVGyvDcJ4DDRHBSMQh5il6Iys-EH_btTZRD0PbwAonrcSaqMX1DxVoaGRdml3qqHgCTtbhWcbPt-nwBAOr5NZd6X-tn2lOZAPCzujCp9omyTpldodoKCFVCsoUFHAPijH-QAtsNkgc3Wzc4dimNhBL9z-JuztF09WmtcJmZJE_he69Zf1w_vvpy8Cf/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Ukraine", "Sri Lanka", "China"],
     "correctAnswer": "China"
@@ -65,6 +74,7 @@
   {
     "id": "010",
     "name": "Kuala Lumpur Tower",
+    "description": "Also known as the Menara Kuala Lumpur, the 421m-high Kuala Lumpur Tower is the 7th tallest freestanding tower in the world. It features an Islamic Lunar observatory and is generally open to the public. Annual races allow athletes to race up the stairs to the top.",
     "image": "https://previews.dropbox.com/p/thumb/AArxhMSH7HwfY52fHearEoRnISa1GhtYve4d9Da7c9jMrIgy5f8YQeGJQDAU74icRR1eRzAucp73mkI9Vb916L9gj9Rmd3TgoCSxn-yV0DpckqtCCwo5EMuMeRTwlwKpVOYa2PUcGbCTPv0y543-8gI6XHzLgcevUpbBGUdNJLYugJbJoRPw0Ln8TaP6OaxF3ha2k7go8Ot8qNzvAt95Ft64reGcJpenJ6SfdO5PERlgtFjIdVU3LHDulROjzIH0cxJa49YlJDZ0bCMtdCLcVatvD8v5pElicjdy2aNyUUVim2ehIEecEtBkzJ38tpYYBHzcs8PszTa9p8rq54-1O8g4/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Malaysia", "Indonesia", "Nepal"],
     "correctAnswer": "Malaysia"
@@ -72,6 +82,7 @@
   {
     "id": "011",
     "name": "Al Hamra Tower",
+    "description": "The Al Hamra Tower in Kuwait City was built in 2011 and is the tallest carved concrete skyscraper in the world. The structure measures 414m in height. Its flared walls and column-free, 24m-high lobby are unique features of the tower.",
     "image": "https://previews.dropbox.com/p/thumb/AArhwzopQHBnvty9n5xxVsDVbYVOAXa5jtBfnlxccJX46f2MG63T7yNfBGCELyqKHESnCbTcUPJV0aMaALG4oGGk7q3-7VfqAfXSncBqQfvYwC0scVhmtm0QKJ9AQUb5WLPFKnh20C8St9vwR3Ptv-gjrlZkBhBhwERTlTHUMeehM0Hg5t42ULgoXfrw8MXoYmXuwTHin37C8gxGk8Ja_Dh2cUTFpT0M6sBqK97Tw54NKXtGSsYqOaZM9NC8wRJnlPfLv9ZYPgYjq72G8e16xIh5zHE5KczXzQRnQwxJu8x8kjcuKB2-mU6wnDsy4lXRphgNZEOyB4HS8_I2VIscVLkL/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Latvia", "Kuwait", "Iran"],
     "correctAnswer": "Kuwait"
@@ -79,6 +90,7 @@
   {
     "id": "012",
     "name": "Empire State Building",
+    "description": "The 102-storey Empire State Building in New York City was the world's tallest building for almost 40 years (until the late 1970s). It is named for New York state's nickname, 'Empire State'. The structure's design was changed 15 times to make sure that it would be the world's tallest building. Approximately 4 million people visit the building's observatories annually.",
     "image": "https://previews.dropbox.com/p/thumb/AApzx92HLEZtaHjOP6D_c5b_cHF52Q5lbjdVbQlhUduRHYboIGQFBvwEmYDVmzwlwa4PhJjhlsC7R4OM7HJv-9SxR6VEEZ2Av96pysy1cATbwTn5C44tZHbH1I_z8MWMGWC6fsLJmbPx8azFQJpgSrvqcoPKVTs7RQtJ405gB4ee7dJbqABw8WNjiucQA253Qyi3nlQIm5udJT__48k__QGizdHshQ2NRQTn9gfNUJPp_fHOljYrDLAFHAKrebFeZv-nosZXBRk50zcr1O0x0LGpeJBaDOxEYZZIaVs4Nk5IRCFNvVhbgM8Gez0WbcGoGGHtN2hJKt3zIITtuU35YLB1/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Italy", "Russia", "United States"],
     "correctAnswer": "United States"
@@ -86,6 +98,7 @@
   {
     "id": "013",
     "name": "Spinnaker Tower",
+    "description": "Also known as the Emirates Spinnaker Tower, this landmark was opened in 2005 in the city of Portsmouth. It is a 170m-high observation tower located in the city's harbour area. The tower's design was inspired by a spinnaker, which is a type of sail that arcs outward in the wind.",
     "image": "https://previews.dropbox.com/p/thumb/AAr9f0TI-pwNE0xoOzY3aC5P3hY57QY2Pv1Jmdt3pOr97WD9p5gU-dYO1lX6hHfe2zzIc_zMnhl1T7Hv41lr-doZrxTuiMmr3SjToWHTJfzqEzWrjeidFZkR894aayprxa8huNR7UpjXxCJkpCgPXjeVSHoMqFPKxSQPqOGr1aScAHt2hXADLaotKCsCitGa9J2FVQhwmxzWRR_4l-xLy-Vj5ixocm3J7koukY1OjsysQ_hUQ0D6CJ5gF4aj0ry34O-Lk038AKwFJYd18FLf-ThUq7V4IEOAk9EVPWbqvwmfayIQ9s8tWTQO2ZD_5LqBIq22a_HzA00Mt6xs0XlsBEWH/p.jpeg?fv_content=true&size_mode=5",
     "options": ["England", "Norway", "Bulgaria"],
     "correctAnswer": "England"
@@ -93,6 +106,7 @@
   {
     "id": "014",
     "name": "Tokyo Tower",
+    "description": "Tokyo Tower is a 333m-tall observation and communications tower. It is painted every 4 years in white and international orange to meet air safety regulations; painting the tower takes one year! The tower's construction was completed in 1958 and still stands prominent in Tokyo's skyline.",
     "image": "https://previews.dropbox.com/p/thumb/AArZnWSKrwlOyc0p7n4trr3LUhX4UJPNfKzIvIeVONSCX2OA-pMtXiSU14CYMocxO1OS_UXQBpPGcEyHFuE1nWjiEs9Nc8c_PYTDmdMr2-ZXzngspOQZ8fo-E4S2jqLdHKDm1VziiRHzdtm-MywWCKDjjcJaeRnOi4ArzdIGAHIOXYLlTPJRN6ctBbSe3YxFyZHD0gNfBix546oxeMMTLcu42On7UCeDEWBDFkBe0OkzIJGKEg_xbulicgzU-8UInbAlW20QRdTWGPNYTQ0sPJcrLvoSWwaZW1Cvvcx_nejDwXHBUem3sZGLIDESK_BrFA9LtOoSCA1i2L8vxtSX2N38/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Spain", "Japan", "Malaysia"],
     "correctAnswer": "Japan"
@@ -100,6 +114,7 @@
   {
     "id": "015",
     "name": "Petronas Towers",
+    "description": "Also called the Petronas Twin Towers, these skyscrapers were the tallest buildings in the world for 6 years (until 2004). The structures are 452m tall, have 88 floors, and are constructed mostly of concrete. The glass and steel facade was designed to mimic Islamic art themes.",
     "image": "https://previews.dropbox.com/p/thumb/AApwqpE_FOLhop-Ft7jsvlsDzvwrAC2HPb-AhtwHBfDKUv-lTHS_36CyBIJYctKWZaMd1tHVtsdE7eyzDz7FE4dHZT_xXTv1nx9Sme6F8dguW0hSFlOdLK3Z6KXKc3N_7IP1ffz-uCbloS9hgRBNz_IQC5mQxwPn3ciNA7a2UfuJBAqwDYw6UnXg4m_xtcc8fdvX328ESQ6mP7SokgLmF949q227ayotSAJ4XtrihmmSnrdGc6LDKRUoYlYJj89uqnkdOxkWhXlIHtM1ksuvJC1ETP5uPpZwq6yE54D7GZurG5ZP8IuUrFloe-UKQ9aDv7mFHUtHp95FNhmDTYgXCJJF/p.jpeg?fv_content=true&size_mode=5",
     "options": ["England", "New Zealand", "Malaysia"],
     "correctAnswer": "Malaysia"
@@ -107,6 +122,7 @@
   {
     "id": "016",
     "name": "Taipei 101",
+    "description": "Taipei 101 was the world's tallest building for 6 years (from 2004 to 2010). It is certified Platinum by the Leadership in Energy and Environmental Design (LEED) certification program, which recognizes its exceptional environmental responsibility and efficient use of resources. The building is known for the 101 fireworks displays on New Year's Eve.",
     "image": "https://previews.dropbox.com/p/thumb/AAoLEAqK185HlanhEUpLIgBQLYmPPDEwMgmsiybWStJ6TQfeJIiV7hFJGlMlN1pUU9tI2aJRvvrzBfZHS9P76jK4NHq9qr4ui4l-N7sG7KgfI59DleSoqSD9xfvwgXju9rIkH9TBVjqLOAWV75tziiQngLaJe3xCiyM4lSrrCn6KGP-Tert0nn_5-XnISsIvpEY80NZv8zkSOJR3Unz2ELvUR2V-eD2uLI4fdmDa8VIUBINcUHEir8tvF4ktv4Wi198Mv7XOInmfrrv9biKwJmq-3zgohXKEzClTGqvbJR63pOyWzMDjLIPSz4y6u-Jvu5jkWhTVXptlyP6fsWah-seT/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Taiwan", "Estonia", "China"],
     "correctAnswer": "Taiwan"
@@ -114,6 +130,7 @@
   {
     "id": "017",
     "name": "Calgary Tower",
+    "description": "The 191m-high Calgary Tower was conceived as part of Canada's centennial celebrations in 1967. It is an observation tower and popular tourist attraction in downtown Calgary. The tower's column was built in a continual pour of concrete that took place over 24 days, which is a notable accomplishment of workmanship.",
     "image": "https://previews.dropbox.com/p/thumb/AAofxo2uygX8IzLsAc92RdCPs1g4udHQbwjZoQ7vef3mq2J6CA_p6Wob_3TOjBHEWpMK2EXibnqtucpn7_zoEepvffn6JkE9d2dB0JmHXer7tvRmKM1ilieSS-Vo3kP9LbCUYRpqZJeMkbNAC4AN2wg4jjiQ_zuTILq4nMQPqkmrhwUHHa4yRCxBmKe_nz245485ANUT330AepoNPAmQFIaK1q8qoTnuqXa80qtHEH_LQGB5GoE-sXVh_AbB4BlbsDG1wqu1qu-vdwXvBg-HrsyajYW706pQ3B27lOB2ZykcFiC4N58Ii5M-5uzemM83i6lguS8_7cfhMOA0yoWOtnJX/p.jpeg?fv_content=true&size_mode=5",
     "options": ["United States", "Canada", "South Africa"],
     "correctAnswer": "Canada"
@@ -121,6 +138,7 @@
   {
     "id": "018",
     "name": "N Seoul Tower",
+    "description": "More commonly known as the Namsan Tower or Seoul Tower, the 236m-high N Seoul Tower is a communication and observation tower located on Namsan Mountain in Seoul. The tower was constructed in 1971 and opened to the public 9 years later; it has now become one of the city's notable landmarks.",
     "image": "https://previews.dropbox.com/p/thumb/AApOFlXxaohrFaIPZa92CSdo4TotKd_WXQ3iPNXtytiLzF7Xa9mxQWRazA2Sz-POoAwyDkU68L-4Ccm-ruPP8Gbq6xGOyicRq71WXYbq5lTfHQSBosp7Fp_NC8EX1TvwpW9n0X8U0dhmacF6FIe8KHuodGC8hjr2XK-H7PQqctQXs3TpDBojJCYBXp45XQYhbuuU8M07c_Au7qtev-RxRuP0iypLMnbxOe1v2DFTUTMIHO0CQY6rOATUpRlYOB6Bi5-SV4GCijOL3jrk_OyMODCDoKZPuFpANzBR77V5zECs55_iaQRNK1ni37gH4nEkCVnj-r7VhJPu52Wkhdv_Tr6x/p.jpeg?fv_content=true&size_mode=5",
     "options": ["South Korea", "United Arab Emirates", "Switzerland"],
     "correctAnswer": "South Korea"
@@ -128,6 +146,7 @@
   {
     "id": "019",
     "name": "Shanghai World Financial Center",
+    "description": "The Shanghai World Financial Center is a mixed-use skyscraper housing shopping malls, offices, hotels, museums, and observation decks. Its construction was completed in 2008, has 101 storeys, and stands tall at 492m.",
     "image": "https://previews.dropbox.com/p/thumb/AApxzyGJpE2F0wPFlo0J_CdS77F_K7khQ2lChSTWTjzsd4urx4kHtP8Uf-d_JKDg3TFsWocmdjLuihCD1mM-xRJw87UUW8mCvQS7NhksmKusqOXqaUV9ajOaEYA6IFzSfvlxNjFQEWQDvvSGWYHc-oE2jGwiEJx7GYsYNYnZJsIVavW_ivNnhljwxTej37-tDtRidbaLigq5Z95MyDgGGADArwPAQpGEbt_Ec2lMmFOePlM1GdawUWeU2KKe2-1ppyTPTAg1Vltrf14LBtIz1smPMvwZIcUfN1C77DyZ7083jJpgUsbAXi3YDJ_6A68BbajB-Eg28l294osKkpUFPsr8/p.jpeg?fv_content=true&size_mode=5",
     "options": ["China", "South Korea", "Taiwan"],
     "correctAnswer": "China"
@@ -135,6 +154,7 @@
   {
     "id": "020",
     "name": "Washington Monument",
+    "description": "The Washington Monument, located in Washington, D.C., is an obelisk that was constructed to honor George Washington (the first president of the United States). The 169m-high structure is made of stone (including marble, granite, and bluestone gneiss). The Egyptian-style structure was the world's tallest structure from 1884 to 1889.",
     "image": "https://previews.dropbox.com/p/thumb/AAohvoPdKCejPF11y-tAcXT9U32ipfkOanMr4Ha77k5eevA08SSD7L2yVoyp8KMEiS74pJMcuiZo94OTyIJnGfX36-2w0bVBi-D0scZ9jkLZPTpqJK4jH6AwDwk30W1HHUoSmWMYn3VE31vasFrGlkAFAQer6YxPKAMLv9LYsqX_xRcmxgVEKPS5QYgLyzQkekkkDcTkhpn7m2tJ62N8X3bUmiRKZAX7YpksL-2JDJirGpbwMsaO7nLLXp9EktvyD6oE2mUw3TLJGvVRvIeLgBBlzbWVaDauyDh5swC9y-doU7WQLEQEd8dwDSswnAVSsaKbwptGzB9cYUZ-UBRvCG-W/p.jpeg?fv_content=true&size_mode=5",
     "options": ["France", "United States", "Canada"],
     "correctAnswer": "United States"
@@ -142,6 +162,7 @@
   {
     "id": "021",
     "name": "Stratosphere Tower",
+    "description": "Located on Las Vegas Boulevard in Nevada, the Stratosphere Tower is the tallest freestanding observation tower in the United States. The $70 million tower was opened in 1996. It features two observation decks and several amusement park attractions at the top.",
     "image": "https://previews.dropbox.com/p/thumb/AAqcQbHl4cphe8BIJ2GlJW76WFWPqAJVm1W12T1KeA68d38m0-bW1oaCkWzg_D1ICGy2VnsJdIeppq-lB9-OfS5z3HOYw1VJnZqscVutapHF3XACe6pMDPTx0GSKbbz3ZUUUVvWGX-f5aVM4vfR0XNKN4RfWJ93ydumgnDlG8A2IHbx46mCA08gQjyMnd5-dcHgJp1IkaoNzAHeCf1VEzDS5jmAYDFdSZBb5ErBcorEEr-RxXx5MFIPdqvB3BgiANGdmRJrJuUgSOT_GHe9evJC1w6nQNYSFjQTZIYidVlu67rRrsjJuVWUUL00EbxmP2NkXZEIi1HwHkpdn9Gr8nFeD/p.jpeg?fv_content=true&size_mode=5",
     "options": ["United Arab Emirates", "Singapore", "United States"],
     "correctAnswer": "United States"
@@ -149,6 +170,7 @@
   {
     "id": "022",
     "name": "Sydney Tower",
+    "description": "Located in Sydney's central business district, the 309m-high tower functions as an observation tower that is open to the public. Built in 1981, it has now become one of Sydney's most prominent attractions.",
     "image": "https://previews.dropbox.com/p/thumb/AAorPhDsNUmBIjFWTQO6zY1g5Ck-B5co9OvzYmyfojAC2eZIZ_6i3vtyuv59nCQ6EVnz1m1w-RVYM5Nr0sArpMa6KkEbpQgDM_96lrcuuONU-xjqe7V842hB2nIN1UFAhdDQ_7QzeLJhFcoReBQ5h3VUxLVzn_3eBWtPmnJWThY24E3SNTqkx9JPgBeEx7XBjGspbBMk-GqNK6lmTyBYCvMRWqcZc_ksvrInKeWQeA5S9NNq1Po6PzsKs9n55xl-6DEyFcnBS1iqDyCkpPPEPX9p1lEg3KNJtZ07WxKLdPqXh4ibUTORFAAwROLnVL2QqFyLGSiHvLPRT8ijqhIhdoD2/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Australia", "New Zealand", "United States"],
     "correctAnswer": "Australia"
@@ -156,6 +178,7 @@
   {
     "id": "023",
     "name": "Burj Khalifa",
+    "description": "Since 2009, the Burj Khalifa has held the record for being the tallest structure and building in the world, standing at 828m high--that's almost one kilometer! The tower was conceived to help Dubai gain international recognition, and its design was inspired by Islamic architecture in the area. The primarily concrete structure took 5 years to construct.",
     "image": "https://previews.dropbox.com/p/thumb/AAohppxlEbfbPDQ6S0xbyJNOcOFQK9wlZ-ny4t8J6BJt-XG2yJFPFOb-GvuKb5bgjTFFOX_F9mvALGQwwPwPz_E4quATyz4sE0B5DDDUF3XnY7G4KrrmTt2jogLxQd9T53FEH6sNKPDbpTRm-gZ2pWGRzacmQDGsLk-UdT3U4fi-TxC8pHJ7MomjKuOsWgzrimyGyfcPkcyzgzYO-_42L0SQRbdKrC2tIJSMnJcd7dBGymtZbODsMMApN-c8XJsY7gUP3-y07PJdU4P2ToqRa-_Xm34gVcSh1zw0AYsYuthHgyN-5NxMxz_CY7KO7ldtSmtnT-4QDEn6ShApzQitazSg/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Sweden", "United Arab Emirates", "Ireland"],
     "correctAnswer": "United Arab Emirates"
@@ -163,6 +186,7 @@
   {
     "id": "024",
     "name": "Olympic Stadium",
+    "description": "Located in Montreal, the Olympic Stadium was built in the 1970s for the 1976 Summer Olympics. It is nicknamed 'The Big O' after the doughnut shape of the stadium's roof as well as its huge construction cost ($1.47 billion). The stadium can accommodate concerts and baseball, soccer, and football games. At the north base of the stadium is the 175m-high Montreal Tower, the world's tallest inclined tower.",
     "image": "https://previews.dropbox.com/p/thumb/AApPAFwhOFmgBGBEXkitekyYjTZnsFVS_ByflBhCF1VpVYswJyO2hlVE3N2lOLqOIVojLD2fs7dUXk_HoW42_29c4HonW9eMDwbogFhHt9OQ2WDO3MfzUVLUpWyM2Ue46BhmlQUGFIErC48gkY97IzVNUOqVEf-iDSZJxTpSPZ0YaAspPsfYLUEvOESzWNwSwqwrCt0CIlWSRJljc08rXmCllN7DOv5WXYqKETos1vf8C1d95k7GzwOApPmHxmyYQt4dG5koYYwBcEZLa4WbDeSI38tVU14LgeVU15niewsDzWopWJIzusGrHkPOedDODVDom8K1ptF7wZWn1cMcMZhb/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Netherlands", "Israel", "Canada"],
     "correctAnswer": "Canada"
@@ -170,6 +194,7 @@
   {
     "id": "025",
     "name": "Kuwait Towers",
+    "description": "The Kuwait Towers, built in 1979, consist of three water towers in a larger system of 34 towers. It stands by the Persian Gulf and has now become a prominent landmark of modern Kuwait. The tallest of the three towers is 187m high; its lower sphere holds water and as well as a restaurant and reception hall; its upper sphere holds a revolving cafe.",
     "image": "https://previews.dropbox.com/p/thumb/AArOZ3MVG0x6o2wNFiOygZPgxCMAPADn6wo291r_uiA64lyNz74Wl1w1voHRH9ZwwJZphZN-kE1cwNQvvGThKjgYueDKn9ZPxRIIUOrqjNq8YQ58CQy-nZEeaSviqKTRkGbF1kmprq_FlpsYejy1kZihaIaUA2F4pa0ByhiIf62NQ7T534mbwDwshWHtX3IRc2GPjqdU2prTJ3MOWQHy3V4pOtK_qSZFhw5FmUyBfNM9tebCDwsZEo9cEO0DY1e3H0NOmcQK45kpD3zJ4mCzLlWit-tDDfZpiy88Q7xIA2eDC8EyNCwVIMFPlYQRbYyMwZxBm5mydbO1kdVbwytGj9aE/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Kuwait", "Malaysia", "Denmark"],
     "correctAnswer": "Kuwait"
@@ -177,6 +202,7 @@
   {
     "id": "026",
     "name": "Cologne Cathedral",
+    "description": "Also known as the Cathedral Church of Saint Peter, the Cologne Cathedral is Germany's most-visited landmark (over 20,000 people a day). Being 157m tall, it is the world's tallest twin-spired church. Construction began in 1248 and was halted for centuries until it was finally completed in 1880.",
     "image": "https://previews.dropbox.com/p/thumb/AArRh6rMznsVHroqEQAPLNm_S38jG2NoYph3lUd4kc9ZbZnuwfcu028qYM0iFHOtirc3omA8bAfADzpofTvxgumB0rUum0t2-JnawTJ0iYI3eO4xAaZzj1OlVMWjL_4XP9bOiW8L5cJD2f-irO9WemDfCgvgW7r91zTZrJx45ujy448sbDFS38FxEEnVuITaVlXdiz7Tlyy3-lY7lT_oTPyvSUv4y9Q4TcSDfWzDpJyN-TwtnfB8ZwlpLxKbi952a-k1F8GWIcSgO_pfhrgsYAp37FGdFN6tbLCnj8LtuKU4VVjkrjesPih0KqLAX8ZBFuANMkrzFiwzKfLWQTXhQkv1wWpEZwyhYWi2qLTQKXZ7UXPT0n98_KhBTrK0aMg_zag9tYdoHcor2sTW5iqi9LHH/p.jpeg?size=2048x1536&size_mode=3",
     "options": ["France", "Germany", "Portugal"],
     "correctAnswer": "Germany"
@@ -184,6 +210,7 @@
   {
     "id": "027",
     "name": "Blackpool Tower",
+    "description": "Blackpool Tower, located on the Lancashire coast in northwest England, is 158m tall tower built in 1894. 5 million bricks, 3,500 tons of steel, and 360 tons of cast iron were used in its construction. The top of the tower features a flagpole, while underneath the foundation stone of the tower lies a time capsule!",
     "image": "https://previews.dropbox.com/p/thumb/AArG2-49qCps3vTvFfiiovHkjlvPww5rZcPfRNDvICVxlmYU-OerAMB3q642YOYgYntpb4Qe9NHIZ44Xh_1h2W95lPeSRDG7L6e9GEK1hu4YXVXthfcjxmhiFEyUWtbyBzKlC-i5WoiWBvOzqBy6y1KZ5opm9mgqmy5FmGHRyL1eC_FI50iidiv--6e3Wf5CVhiI77952ttV0cNh5FXOrtRR3DdPA-I6v8hepLV5uXVIHAZufiJzFj0GDSv-ie4QWg7hmAhoZvkq1rzl4JLjdLY_hSNG1jrPuKiI_1fK86Bm_gjUZIjxIoUvHV2yyZZjk_gFgCiLXlmV9mP4NxTpiiSU/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Qatar", "Austria", "England"],
     "correctAnswer": "England"
@@ -191,6 +218,7 @@
   {
     "id": "028",
     "name": "Sky Tower",
+    "description": "The Sky Tower, located in Auckland, is an observation and telecommunications tower that stands 328m tall. It is the tallest freestanding structure in the Southern Hemisphere and, with three observation towers, it attracts almost half a million visitors annually. The tower features a SkyJump attraction that allows jumpers to reach up to 85 km/hr speeds!",
     "image": "https://previews.dropbox.com/p/thumb/AApnMH8VTD5QVR107m-u2QIbdMbLilhwX88kIkmP61EZi6Jxft4fxGfjhlR1vL0ih2bpMvzgVY39te-Efr2iexII-WctpQmSDWQq-syLzSSGA2PGlsa2WRYmNcCEuDnExazs-3KTBT3A0WIiy6agUZrhy6zVdTnaHQfdi1gasx_LlxY9e3apNc-1Q7AnGPTqI3Oon5e3aH_wqjnPvA6yT3K7Sr_Xz7sS7B4wWFkpiwLUWSPuwFgEulIQHXqpRNsVsgNrszG2vp8q3jV44QkEbhEltsghHsJL9Kz0o2hIgyskLcgh3MAHk260GSJVSctIu6efuWZJpE9X_okK7IXM1gmJ/p.jpeg?fv_content=true&size_mode=5",
     "options": ["New Zealand", "Romania", "Iceland"],
     "correctAnswer": "New Zealand"
@@ -198,6 +226,7 @@
   {
     "id": "029",
     "name": "One World Trade Center",
+    "description": "Also known as the Freedom Tower, the One World Trade Center is the main building of the reconstructed World Trade Center complex in New York City (following the terrorist attacks of September 11, 2001). It is the tallest building in the United States, and the seventh tallest building in the world.",
     "image": "https://previews.dropbox.com/p/thumb/AAr6FCRcDTRUKeAE08iVKNSuG5Aof5HmVh5NcCazfjGuNdAHOVrcIgaSUq-DETWdzJpZBLLTZ9jQx-qLaO2CeaG-VknJjqkaA8fcDMZMuaCCoNgU7D3AnfOjuQN0KLsKaVgngx3cBYsd8jDHN-0olnKiXiHuQKsUF2Jf8XZbw62GoTifZQezn4BmENiw-eOAtT4bXbjVkzpan6VlkMo2o6tcfMK34RWdoCq_h2IFiq45rq3VtPEVrgKH3dBZDjGc1bz_-0Ot632ztKfgdM6-o0EHrIpfxqVD9trWL7kXgtsql-aI4Ti4Ho61G2KA1_IXRBvw17HEvFJi32saHb0Dk1XOWwvE2yhoQUSyC4FjO4lF6dk-bqYzUZz_c9E0M2kPkujlioiepexFhdYFbOpTpCmK/p.jpeg?size=2048x1536&size_mode=3",
     "options": ["China", "United States", "Japan"],
     "correctAnswer": "United States"
@@ -205,6 +234,7 @@
   {
     "id": "030",
     "name": "Bank of China Tower",
+    "description": "The Bank of China Tower stands prominent in Hong Kong's skyline, at 367m high. Its triangular patterned glass facade is distinct. Opened in 1990, it was the first skyscraper outside of the United States to break the 305m (1,000ft) height mark.",
     "image": "https://previews.dropbox.com/p/thumb/AAoW2mOgEQdnUrJ53Xn6IZaetjTsELWS9g03YefIM6L0_7kEsjFEDWJQHpjh6JxvNTzrMKc-k2wxiqQ3B_GW6vVdD7fKpZYUmhpaPKXlhrzxiSik0NZF-SstT51D4ey5JO1c0qIA6ZfNIJpwc1amUw_vfIKFvOjBxVJhBF8pYzkrEwk4O0NG_WbZDF-EJ1cJ0VwUN_WRvnbs4JpDSILYnVr0uOp_yjuZPM9qD6ZN0fp4wwuUrcJ-uIACw8pgzHUT7RqlG-yZBCd2ypy4utNoAv7179OXVuyMU5sHOHwagAHjnEI8PRh6I8EhsL9MV-vuNHE_TTCz7riRGvIciiW9q5s4/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Philippines", "Finland", "Hong Kong"],
     "correctAnswer": "Hong Kong"
