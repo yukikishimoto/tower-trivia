@@ -49,7 +49,7 @@ class Result extends React.Component {
   }
 
   render() {
-    const {didPlayerWin, score, playAgainClickHandler} = this.props;
+    const {currentQuestion, didPlayerWin, score, playAgainClickHandler, handleOpenModal} = this.props;
     const {blankNameError} = this.state;
 
     const resultHTML = 
@@ -66,6 +66,7 @@ class Result extends React.Component {
         </form>
         <AwesomeButton className="result__button-1" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
         <AwesomeButton className="result__button-2" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
+        <p className="result__learn-more" onClick={handleOpenModal}>&raquo;&ensp;Click here to learn more about the structures you saw in the game!&ensp;&laquo;</p>
       </>
     
     return (

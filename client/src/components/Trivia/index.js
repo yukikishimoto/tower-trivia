@@ -35,6 +35,8 @@ function Trivia(props) {
             : 
             <div className="trivia__result">
               <h1 className="trivia__result-heading">INCORRECT</h1>
+              <h2 className="trivia__result-name trivia--fade-in-down">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].name : ""}</h2>
+              <h3 className="trivia__result-location trivia--fade-in-down">{trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].correctAnswer : ""}</h3>
             </div>
           ) 
           : 

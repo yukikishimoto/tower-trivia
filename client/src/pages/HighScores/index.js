@@ -20,7 +20,7 @@ class HighScores extends React.Component {
       })
     })
     .catch(() => {
-      alert("There was an error in the request for high scores data the server.");
+      alert("There was an error in the request for high scores data from the server.");
     });
   }
 

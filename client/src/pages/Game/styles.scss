@@ -6,4 +6,55 @@
 .game {
   display: flex;
   flex-wrap: wrap;
+  &__modal-close {
+    position: absolute;
+    width: 40px;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  &__tower-image {
+    width: 100%;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.ReactModal {
+  &__Overlay {
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.8) !important;
+  }
+  &__Content {
+    top: 60px !important;
+    left: 550px !important;
+    right: 550px !important;
+    bottom: 60px !important;
+    padding: 80px 100px !important;
+    border-radius: 10px !important;
+  }
+}
+
+.slick {
+  &-prev, &-next {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  &-prev {
+    left: -65px !important;
+  }
+  &-next {
+    right: -65px !important;
+  }
+  &-prev:before, &-next:before {
+    font-size: 50px !important;
+    color: grey !important;
+  }
+  &-dots {
+    bottom: -50px !important;
+  }
+  &-dots li button:before {
+    font-size: 13px !important;
+  }
 }

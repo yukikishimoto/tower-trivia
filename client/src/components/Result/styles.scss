@@ -55,7 +55,7 @@
   }
   &__form-errors {
     position: absolute;
-    top: 625px;
+    top: 600px;
     left: 20vw;
     transform: translateX(-50%);
     font-size: 17px;
@@ -69,6 +69,15 @@
     margin-bottom: 10px;
   }
   &__button-2 {
-    
+    margin-bottom: 30px;
+  }
+  &__learn-more {
+    font-size: 18px;
+    color: $color-red;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__learn-more:hover {
+    color: darkred;
   }
 }

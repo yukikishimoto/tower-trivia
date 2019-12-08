@@ -1,1 +1,8 @@
-[{"id":"001","name":"YASH","score":500},{"id":"002","name":"JOSH","score":400},{"id":"003","name":"ROY","score":400},{"id":"b0e9ae","name":"YUKI","score":100}]
+[
+  { "id": "a016cb", "name": "AMY", "score": 500 },
+  { "id": "cbaeb8", "name": "MIKE", "score": 300 },
+  { "id": "5338db", "name": "SARA", "score": 500 },
+  { "id": "ae01ab", "name": "1CHRIS", "score": 500 },
+  { "id": "e458c8", "name": "ROY LEE", "score": 200 },
+  { "id": "4e7f08", "name": "1AROYLEE", "score": 500 }
+]
