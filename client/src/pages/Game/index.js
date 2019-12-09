@@ -52,7 +52,11 @@ class Game extends React.Component {
       isAnswerCorrect: false,
       isGameOver: false,
       didPlayerWin: false,
-      score: 100
+      score: 100,
+      hook2Class: "tower__hook tower__hook-down tower--hook-2-down",
+      hook3Class: "tower__hook tower__hook-down tower--hook-3-down",
+      hook4Class: "tower__hook tower__hook-down tower--hook-4-down",
+      hook5Class: "tower__hook tower__hook-down tower--hook-5-down"
     })
   }
 
