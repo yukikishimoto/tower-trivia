@@ -238,5 +238,85 @@
     "image": "https://previews.dropbox.com/p/thumb/AAoW2mOgEQdnUrJ53Xn6IZaetjTsELWS9g03YefIM6L0_7kEsjFEDWJQHpjh6JxvNTzrMKc-k2wxiqQ3B_GW6vVdD7fKpZYUmhpaPKXlhrzxiSik0NZF-SstT51D4ey5JO1c0qIA6ZfNIJpwc1amUw_vfIKFvOjBxVJhBF8pYzkrEwk4O0NG_WbZDF-EJ1cJ0VwUN_WRvnbs4JpDSILYnVr0uOp_yjuZPM9qD6ZN0fp4wwuUrcJ-uIACw8pgzHUT7RqlG-yZBCd2ypy4utNoAv7179OXVuyMU5sHOHwagAHjnEI8PRh6I8EhsL9MV-vuNHE_TTCz7riRGvIciiW9q5s4/p.jpeg?fv_content=true&size_mode=5",
     "options": ["Philippines", "Finland", "Hong Kong"],
     "correctAnswer": "Hong Kong"
+  },
+  {
+    "id": "031",
+    "name": "Marina Bay Sands Hotel Towers",
+    "description": "The three 194m-high hotel towers at the Marina Bay Sands Hotel are topped by a 340m-long SkyPark, the world's largest public cantilevered platform. The hotel was opened in 2010 as part of a large resort and casino complex. The design of the towers was inspired by a deck of cards.",
+    "image": "https://previews.dropbox.com/p/thumb/AArwa7YLK4mfJtF8b27as-p0cMiH9aMtdYkyLzzCh86SCppSwqlqkGuZNNBXXY272nFJ6T5yP88STSrHnDqMQBPogojWaOFg0S_o0wtx_YtqALYW11K_T9O5ElIEcb9XSlJYejIr50z4obuOGEr_T30gMpy67bVP7I2IaLyQlevA-2RkzdtOcoc5Kw2g6IYGcVujeUacoUCVFc1_dqvO6UM7PlmJm7-6DjKcKvHmhrmpMY0_EBRSGpL8yOStEQ1jMaZHxxYFwHW1CjtiUYS50rgM3uqVts5TiBS6MYcGEzUu_ucoKs024VAdjsnOWWgzyEB29MyB_a_NWcamI1kcaHMC/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["Singapore", "Hong Kong", "Malaysia"],
+    "correctAnswer": "Singapore"
+  },
+  {
+    "id": "032",
+    "name": "Makkah Royal Clock Tower",
+    "description": "The Makkah Royal Clock Tower, located in the city of Mecca, is the central tower in a complex of seven skyscraper hotels. It has the world's largest clock face and, with a height of 601m, it is the fifth tallest freestanding structure in the world.",
+    "image": "https://previews.dropbox.com/p/thumb/AApZF7KyN-BXYUy7ZVU7ftKxPH7tdxolxMe2hppxB9ZM5F5g4oluZurFI5Hrb2ytg-HqzRWL75LM9Ug-EcnWTCkFrihOH8vq7c4DyyeaiZqBGxcdTCg9D6O1JYQ11LbYMen2M_p-Gb_gsBBuoyOPWBZAR5d5NR2ADUdfrGCKPUgl2-1o644paLk4CIy3YnHsmY_TsN4hzNf4Z6tbBLx4kqLSBwcQzRfmYV_feiQdkR9TIHVAx_pDgOMyhBwHhVaxxhkqwS8cACisBjecy1tWWs-B5Gu-sLRoX2Dcn6m0-LKP66w0p06nvQ45zy1wgfO2CiANVbuD50ypPV3g3PU2TW8z/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["Saudi Arabia", "United Arab Emirates", "Malaysia"],
+    "correctAnswer": "Saudi Arabia"
+  },
+  {
+    "id": "033",
+    "name": "Lotte World Tower",
+    "description": "The Lotte World Tower is a 555m-high skyscraper in Seoul that was opened to the public in 2017. The building holds offices, a hotel, residential spaces, and retail spaces. The design of the building was changed more than five times.",
+    "image": "https://previews.dropbox.com/p/thumb/AApM3Ae-TMW-SULNOx2aSfu2yXu0e_xs5BQdODs1owhHAbfGVfaGlp5Y6wxyiqhh5MXvX1c2IFhqXdsLJGaZJA9sdV3NTNu0Acym_ANGJ6653WCWD55vf5lhtthXvdKOpgZNrXYMt_gZhnAek0MXLHD95MISxYTFArr-Lfqjl5dZdazmqV8w8e14JZ_CN_wFnjoiUXUjw6baNApbtEbZ3LwSHYvk3AQLpm3l2_IQmAOsq2TL4yczG41fchfZDmp1qSTey0eJDyra5lqBBmapE9R_dLkDiS_UzIagmtNKxkhpf8nZGADhcP5noep_6hQ935RRXDVHhYibwxMmjNn1W8Ah/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["South Korea", "Australia", "England"],
+    "correctAnswer": "South Korea"
+  },
+  {
+    "id": "034",
+    "name": "The Shard",
+    "description": "Also known as the Shard of Glass and the Shard London Bridge, The Shard is a 310m-high tower designed by an Italian architect and built in 2012. It was designed to be a slender, spire-like building emerging from the River Thames.",
+    "image": "https://previews.dropbox.com/p/thumb/AApt50Ir-1WSZO7CC5Oqxr5s8zP9oB96mCWGqk69utplDjmCMInx_NsXN-iA8yjrMyjZBUmfFRu-3byHmUxyCinE6PheSJcJyRQI65SzXul8-tmTFAJaO_5rfHWR7pegRBzXzv3vzI2P3CdXsKOoSLrV4u5fq1hMZ2--WfHufANoOQ7NwLeFP7M7rYjYoSm_ahCF_WHDIZhsVq2m9W7DfmuGblvpvZqoTI1qok4FeMiaTl9PmFNbDxIfEmcFASIByDt7Q6n00-BBAszZgDfpQ_HQNJSUVd50KsyKG3wt8U2YKRomqYGhMTNfhXLxaEwHo9ezBpLFKybgkwVUOLCA4tLS3HFksUiYsdRHFrHij5Ifd4hazzzo3fv_ArggNuq5oIMsWuuQo1i2rz52qMs1usWw/p.jpeg?size=1600x1200&size_mode=5",
+    "options": ["Sweden", "Iceland", "England"],
+    "correctAnswer": "England"
+  },
+  {
+    "id": "035",
+    "name": "Chrysler Building",
+    "description": "The 319m-high Chrysler Building is the tallest brick building in the world with a steel framework. An icon of New York City, it was the world's tallest building for 11 months until the record was broken by the Empire State Building, located in the very same city, in 1931.",
+    "image": "https://previews.dropbox.com/p/thumb/AAqSzzjDr5hmIpWWXUfdxvalneaMRIeTYGVmFJB6svjxq_lSOXRiAZyqj0i8V7HKOE6xVJYRRbwiNvVl-XP3p7G4b7iJljLA0S0kVMPyk_-3Ekpp-xNXIuDvbnBqP6iV0mZ_beYMJIoxXafAI5vqgk57wZ0odOVKKeTGp5sAPlCLYtvRyrbQklKFMkpA6EzDtBKw_zeCcAzmV9PzVHNefOw9OusmN2kIquoTXtE9Hwo8XvDEh_sUZXXrh2VEILdqQ25O5snVfdzsUfJ9b0F9I2_Uy86MSsWxDaS5eT1WEskMA5uSeQwMnEUQSRi-cZKonlGlbc8vR53NUJnqB3-F1w5F/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["United States", "Germany", "Australia"],
+    "correctAnswer": "United States"
+  },
+  {
+    "id": "036",
+    "name": "Lakhta Center",
+    "description": "Located in Saint Petersburg, Lakhta Center is the tallest building in Europe. It is 462m tall and is meant to become the new headquarters of a Russian energy company when it opens in 2020. About 3,000 people are employed to construct the structure!",
+    "image": "https://previews.dropbox.com/p/thumb/AApX2dscQQ0jOebHC9xzr2j8FN08QBf8ANWLKfKFPhC2Uq7COCALGlGTscZ-E8HEAHi0Imsbxi9iYF7m2o9K_EmUWPcrHy48sXv9SNbTGj40XJTbBrT6cTx0-MGQDHkgMGFroYMVYQqZqrSVuVW10IRqfUHL5B5pqRrbBsz6z4cUb_bHj-pIFV7GumSyd9N4KACZ532WKEBpxXx7Kv9CqZ1FzVyV0u635WGi2Bdm4jdf7QN0bcIcW02vlBTMMfru2EPgacjs_4Ck7qD8agqbb0VrsH3anhoZ0MX0pL1hi1jMy9qy2fGEDXXenyLAtowlQd_IiEbD8ho1gD6TtfVDvmvY/p.jpeg?size=2048x1536&size_mode=5",
+    "options": ["Ukraine", "Italy", "Russia"],
+    "correctAnswer": "Russia"
+  },
+  {
+    "id": "037",
+    "name": "Landmark 81",
+    "description": "Landmark 81 is a 461m-high skyscraper located in Ho Chi Minh City. It is located in a mixed-use urban area surrounded by other high rises. The structure's construction finished in 2018 and its Skyview observation deck has opened in 2019.",
+    "image": "https://previews.dropbox.com/p/thumb/AAomAH0UqBow_GzPm9OTfW98X2iNbE98i7ajFxzu-P342yve_UfH0h-8X1Gc_2UOtGEO1oSqmNSwHiml0p1b7pbigUtn2zFoB6kAZfTR4Mr9dwrJW721IeS-EL4xXb7k1IYP_viTqTj5vrN8l8uE1_dm5eI2GpivDQaz5diT0PAg-yEBmut4ypZxHYRtTkaQwIKbR8c88gIc2yelPGknHdlU3JpAhtBHEbOaVQCVb7TFWP_DCw44kTX3XoyRlv9WZBrsZs-o3NlnxQwFcIXzOr2lEQfKQWJ38hHEe92KyUL08W95YfiHiKmeh7oxbOjnKj6RuZ4gb43_wMDpXB9_iyOh/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["China", "Vietnam", "Thailand"],
+    "correctAnswer": "Vietnam"
+  },
+  {
+    "id": "038",
+    "name": "Shanghai Tower",
+    "description": "Shanghai Tower, which is 632m high, is the second-tallest building in the world. Along with the Ping An Financial Center, it has the world's highest observation deck (at 562m high). The structure has 106 elevators! It was completed in 2014 and publicly opened in 2016.",
+    "image": "https://previews.dropbox.com/p/thumb/AArG_klm2P0q3OazmjKQL_xzS2e9mVuz9ORp4ccKnt4UV-gfcC5AZjsccq4rsnuHazVr9WBAks6h14IkMRPfDRhBI8GqYyp239zTsoxWkILIy3q09ememl_0KH8Ic9ZNScxOvC8KiZL5dAjci4f2Sft_ELr_0UG3KLvs7lTYP0QWw_eodt3XnMmIsDbxLT0TIMbCIe2nQ76H35tKZJUDm8SFG6p1LBKvGBFEjgLQJjT33THiXSQjyWxee_6snTWVwhDAVnl2hEawHFkZW0d0w1Z67XowAWJtPSJfAm7gDFcreHqG_IX5mIDvZ0E4EmAp-DbmJ-JG2I82sZEjJaIe2bB7/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["Singapore", "Malaysia", "China"],
+    "correctAnswer": "China"
+  },
+  {
+    "id": "039",
+    "name": "30 St Mary Axe",
+    "description": "Nicknamed The Gherkin, 30 St Mary Axe is a 180m-high skyscraper in the city of London. It was completed in 2013 and functions as a 41-storey office building. It has a neo-futuristic architectural style, which came about in the late 20th to early 21st centuries.",
+    "image": "https://previews.dropbox.com/p/thumb/AAq6oLJ4ZGhl7phjEbzlPa1sTS_IQEBM3tlDnrkD_uGYeVJ4eQQeGLJ-f_BXAR1rJB6oEbGOrIsMKKiFu9oDRriBGeI9YRo_kcTDEUnjNr5m9YeJfiqw65VDO1gsoZVDaUD7Y4NG2AJZT3kIcxgzh2XI_9wZIRqyUbuw4FvaVc0GW_jwfs8B-tCmSTU5ppwzs1164_qAT8VjLFhan7FiRtEnSCG0N0Zk2Xf0ZA7Isdi86EYVtttBgdG-uGmIXyygVQvgFGPc_by4Ti8CJhlnQji9dhAh9JX7QDTfIgstp325wKzjGDKk3x1fM8Xu7Hy65w_OLbQitqQR8fx7mhUtXDpB/p.jpeg?fv_content=true&size_mode=5",
+    "options": ["Bulgaria", "Poland", "England"],
+    "correctAnswer": "England"
+  },
+  {
+    "id": "040",
+    "name": "Ryugyong Hotel",
+    "description": "The 330m-high Ryugyong Hotel, located in Pyongyang, is the tallest unoccupied building in the world. The pyramid-shaped structure is nicknamed the 105 Building, referencing its number of floors. Although the building's exterior was completed in 2011 and an LED display was fitted to the side of the building in 2018, the building has yet to be completed to this day--its future remains a mystery.",
+    "image": "https://previews.dropbox.com/p/thumb/AArSCfXdJqXSVzXofOfBRMCvafovngueO2mDJzPdBYTlYf_Anjkej3pvMPaj7DtwW5KnqnC6A1k45jiJY6NoXWXGAKSAgtHoj0A_NkRjpFICE5ExTyPSSNQ4tLMFoGbS27JdfXapQODZQGRNVn2NLkgarn4gLWcJEDXvgKWSIjjFfIC4IuEr2CKn41XPB8ja3ksEteZvyGu5xQIU9UBBZ3zynKptIuwQGPC9uO6RGKTS1dbwbnm7S3ah6Q4mVEFqU4OtAjutNhXlEFHzOmucyz3SY03sE_l47aEu-8-UqITkMguLVhd4GWeI1pdQnd6uCDN7BQCoonKQ2sfRIE0kyUS2eiSYensdffqQnP_vlHYUIMef2ehU7iP_zm99pAyr_yXYUxB9_zBIFY3fZL-nfMhLbPmEOoOj3YKoxmz9770qmQ--3nSirgWFX0V8n5qYdhuoTMJktZAWXuDjtGlUbZo4iddhins7nQQZBxnhK8M__42DIXokpuzeRFgBqgQkSF4y2Py1_nsncP0pLW2eYtZV/p.jpeg?size=1600x1200&size_mode=5",
+    "options": ["North Korea", "Vietnam", "Indonesia"],
+    "correctAnswer": "North Korea"
   }
 ]
