@@ -28,7 +28,20 @@
   &__heading {
     font-size: 100px;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+  }
+  &__learn-more {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    cursor: pointer;
+    animation: flash 2s infinite;
+    &:hover {
+      color: black;
+      animation: unset;
+    }
   }
   &__subheading {
     font-size: 30px;
@@ -73,19 +86,5 @@
   }
   &__button-1 {
     margin-bottom: 10px;
-  }
-  &__button-2 {
-    margin-bottom: 30px;
-  }
-  &__learn-more {
-    font-size: 18px;
-    color: forestgreen;
-    text-align: center;
-    cursor: pointer;
-    animation: flash 2s infinite;
-    &:hover {
-      color: darkgreen;
-      animation: unset;
-    }
   }
 }

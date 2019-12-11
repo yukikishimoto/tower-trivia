@@ -61,6 +61,7 @@ class Result extends React.Component {
 
     const resultHTML = 
       <>
+        <p className="result__learn-more" onClick={handleOpenModal}>Click here to learn more<br />about the structures you saw in the game!</p>
         <h2 className="result__subheading">YOUR SCORE:</h2>
         <span className="result__score">{score}m</span>
         <form className="result__form" onKeyDown={this.formKeyDownHandler}>
@@ -73,7 +74,6 @@ class Result extends React.Component {
         </form>
         <AwesomeButton className="result__button-1" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
         <AwesomeButton className="result__button-2" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
-        <p className="result__learn-more" onClick={handleOpenModal}>&raquo;&ensp;Click here to learn more about the structures you saw in the game!&ensp;&laquo;</p>
       </>
     
     return (
