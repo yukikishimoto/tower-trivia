@@ -1,18 +1,12 @@
 [
-  { "id": "a016cb", "name": "AMY", "score": 500 },
   { "id": "cbaeb8", "name": "MIKE", "score": 300 },
-  { "id": "5338db", "name": "SARA", "score": 500 },
-  { "id": "ae01ab", "name": "1CHRIS", "score": 500 },
   { "id": "e458c8", "name": "ROY LEE", "score": 200 },
   { "id": "4e7f08", "name": "1AROYLEE", "score": 500 },
-  { "id": "01c55c", "name": "LINDSAY", "score": 500 },
   { "id": "df0d86", "name": "VALENTINO", "score": 300 },
-  { "id": "c738b4", "name": "PAUL", "score": 500 },
-  { "id": "ef0e16", "name": "KINGSLEY", "score": 500 },
-  { "id": "0456ae", "name": "JESSICA", "score": 500 },
+  { "id": "0456ae", "name": "JESSICA", "score": 200 },
   { "id": "1446df", "name": "CHRISTIAN", "score": 100 },
-  { "id": "913310", "name": "PAT<3", "score": 500 },
+  { "id": "913310", "name": "PAT<3", "score": 200 },
   { "id": "5f53e5", "name": "YENA", "score": 500 },
   { "id": "1942b0", "name": "GILL", "score": 300 },
-  { "id": "f0bf4b", "name": "GILLYBEAN", "score": 500 }
+  { "id": "f0bf4b", "name": "GILLYBEAN", "score": 400 }
 ]
