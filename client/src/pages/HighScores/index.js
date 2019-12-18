@@ -35,7 +35,7 @@ class HighScores extends React.Component {
           {highScores.sort((a, b) => (a.name.toUpperCase() < b.name.toUpperCase()) ? -1 : 1).sort((a, b) => (a.score > b.score) ? -1 : 1).map(highScore => <div className="scores__entry" key={highScore.id}>{highScore.name.toUpperCase()}&emsp;{highScore.score}m</div>)}
         </div>
         <Link to="/game">
-          <AwesomeButton className="scores__button" type="primary">PLAY AGAIN</AwesomeButton>
+          <AwesomeButton className="scores__button" type="primary">PLAY</AwesomeButton>
         </Link>
       </main>
     );

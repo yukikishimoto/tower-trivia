@@ -1,8 +1,27 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
+@import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes landscapeCloud {
+@keyframes landscapeCloudMobile {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes landscapeCloudTablet {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes landscapeCloudDesktop {
   0% {
     left: -25%;
   }
@@ -45,7 +64,34 @@
 	}
 }
 
-@keyframes birdFly {
+@keyframes birdFlyMobile {
+	0% {
+		transform: scale(0.15) translateX(-10vw);
+	}
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.2);
+	}
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.25);
+	}
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.3);
+	}
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.3);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.3);
+	}
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.3);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.3);
+  }
+}
+
+@keyframes birdFlyTablet {
 	0% {
 		transform: scale(0.3) translateX(-10vw);
 	}
@@ -76,82 +122,119 @@
   &__cloud {
     z-index: 1;
     position: absolute;
-    left: -25%;
+    left: -100%;
     opacity: 0.5;
-    width: 300px;
-    animation: landscapeCloud linear infinite;
+    width: 100px;
+    animation: landscapeCloudMobile linear infinite;
+    @include tablet-and-up {
+      left: -40%;
+      width: 200px;
+      animation: landscapeCloudTablet linear infinite;
+    }
+    @include desktop-only {
+      left: -25%;
+      width: 300px;
+      animation: landscapeCloudDesktop linear infinite;
+    }
   }
   &--cloud-1 {
     top: 2%;
-    animation-duration: 40s;
+    animation-duration: 35s;
     animation-delay: 0s;
+    @include desktop-only {
+      animation-duration: 40s;
+    }
   }
   &--cloud-2 {
     top: 10%;
-    animation-duration: 30s;
+    animation-duration: 25s;
     animation-delay: 3s;
+    @include desktop-only {
+      animation-duration: 30s;
+    }
   }
   &--cloud-3 {
     top: 20%;
-    animation-duration: 25s;
+    animation-duration: 20s;
     animation-delay: 5s;
+    @include desktop-only {
+      animation-duration: 25s;
+    }
   }
-  &__smoke {
-    z-index: 2;
-    position: absolute;
-    left: 1454px;
-    top: 460px;
-    opacity: 0;
-    border: 50px solid white;
-    border-radius: 50px;
-  }
-  &--smoke-1 {
-    animation: smokeLeft 10s 0s infinite;
-  }
-  &--smoke-2 {
-    animation: smokeRight 10s 1s infinite;
-  }
-  &--smoke-3 {
-    animation: smokeLeft 10s 2s infinite;
-  }
-  &--smoke-4 {
-    animation: smokeRight 10s 3s infinite;
-  }
-  &--smoke-5 {
-    animation: smokeLeft 10s 4s infinite;
-  }
-  &--smoke-6 {
-    animation: smokeRight 10s 5s infinite;
-  }
-  &--smoke-7 {
-    animation: smokeLeft 10s 6s infinite;
-  }
-  &--smoke-8 {
-    animation: smokeRight 10s 7s infinite;
-  }
-  &--smoke-9 {
-    animation: smokeLeft 10s 8s infinite;
-  }
-  &--smoke-10 {
-    animation: smokeRight 10s 9s infinite;
-  }
+  // &__smoke {
+  //   z-index: 2;
+  //   position: absolute;
+  //   left: 1454px;
+  //   top: 460px;
+  //   opacity: 0;
+  //   border: 50px solid white;
+  //   border-radius: 50px;
+  // }
+  // &--smoke-1 {
+  //   animation: smokeLeft 10s 0s infinite;
+  // }
+  // &--smoke-2 {
+  //   animation: smokeRight 10s 1s infinite;
+  // }
+  // &--smoke-3 {
+  //   animation: smokeLeft 10s 2s infinite;
+  // }
+  // &--smoke-4 {
+  //   animation: smokeRight 10s 3s infinite;
+  // }
+  // &--smoke-5 {
+  //   animation: smokeLeft 10s 4s infinite;
+  // }
+  // &--smoke-6 {
+  //   animation: smokeRight 10s 5s infinite;
+  // }
+  // &--smoke-7 {
+  //   animation: smokeLeft 10s 6s infinite;
+  // }
+  // &--smoke-8 {
+  //   animation: smokeRight 10s 7s infinite;
+  // }
+  // &--smoke-9 {
+  //   animation: smokeLeft 10s 8s infinite;
+  // }
+  // &--smoke-10 {
+  //   animation: smokeRight 10s 9s infinite;
+  // }
   &__bird-container {
     z-index: 3;
-    left: 0%;
+    left: -10%;
     position: absolute;
     transform: scale(0) translateX(-10vw);
     will-change: transform;
-    animation: birdFly linear infinite;
+    animation: birdFlyMobile linear infinite;
+    @include tablet-and-up {
+      animation: birdFlyTablet linear infinite;
+    }
+    @include desktop-only {
+      left: 0%;
+    }
   }
   &__bird-container-1 {
-    top: 4%;
-		animation-duration: 20s;
-		animation-delay: 0s;
+    top: 0;
+		animation-duration: 8s;
+    animation-delay: 0s;
+    @include tablet-and-up {
+      animation-duration: 13s;
+    }
+    @include desktop-only {
+      animation-duration: 20s;
+    }
   }
   &__bird-container-2 {
-    top: 10%;
-		animation-duration: 25s;
-		animation-delay: 4s;
+    top: 2%;
+		animation-duration: 10s;
+    animation-delay: 4s;
+    @include tablet-and-up {
+      animation-duration: 15s;
+    }
+    @include desktop-only {
+      animation-duration: 25s;
+    }
   }
   &__bird {
     background-image: url("../../assets/images/bird.svg");

@@ -46,28 +46,20 @@ function Trivia(props) {
       <div className="trivia__answers">
         {
           trivia[currentQuestion - 1] ? 
-            <div className="trivia__answer trivia--answer trivia--answer-1" onClick={answerClickHandler}>
-              <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[0]) ? (isAnswerCorrect ? answer1Correct : answer1Wrong) : answer1} alt="Answer sign" />
-              <span className="trivia__answer-text trivia--answer-text-1">{trivia[currentQuestion - 1].options[0]}</span>
-            </div>
-            :
-            null
-        }
-        {
-          trivia[currentQuestion - 1] ? 
-            <div className="trivia__answer trivia--answer trivia--answer-2" onClick={answerClickHandler}>
-              <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[1]) ? (isAnswerCorrect ? answer2Correct : answer2Wrong) : answer2} alt="Answer sign" />
-              <span className="trivia__answer-text trivia--answer-text-2">{trivia[currentQuestion - 1].options[1]}</span>
-            </div>
-            :
-            null
-        }
-        {
-          trivia[currentQuestion - 1] ? 
-            <div className="trivia__answer trivia--answer trivia--answer-3" onClick={answerClickHandler}>
-              <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[2]) ? (isAnswerCorrect ? answer3Correct : answer3Wrong) : answer3} alt="Answer sign" />
-              <span className="trivia__answer-text trivia--answer-text-3">{trivia[currentQuestion - 1].options[2]}</span>
-            </div>
+            <>
+              <div className="trivia__answer trivia--answer trivia--answer-1" onClick={answerClickHandler}>
+                <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[0]) ? (isAnswerCorrect ? answer1Correct : answer1Wrong) : answer1} alt="Answer sign" />
+                <span className="trivia__answer-text trivia--answer-text-1">{trivia[currentQuestion - 1].options[0]}</span>
+              </div>
+              <div className="trivia__answer trivia--answer trivia--answer-2" onClick={answerClickHandler}>
+                <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[1]) ? (isAnswerCorrect ? answer2Correct : answer2Wrong) : answer2} alt="Answer sign" />
+                <span className="trivia__answer-text trivia--answer-text-2">{trivia[currentQuestion - 1].options[1]}</span>
+              </div>
+              <div className="trivia__answer trivia--answer trivia--answer-3" onClick={answerClickHandler}>
+                <img className="trivia__answer-image" src={(optionSelected === trivia[currentQuestion - 1].options[2]) ? (isAnswerCorrect ? answer3Correct : answer3Wrong) : answer3} alt="Answer sign" />
+                <span className="trivia__answer-text trivia--answer-text-3">{trivia[currentQuestion - 1].options[2]}</span>
+              </div>
+            </>
             :
             null
         }
