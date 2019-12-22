@@ -162,10 +162,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -1250px;
-    left: 50px;
-    width: 750px;
-    height: 927px;
     text-align: center;
     transform: translateY(0%);
     will-change: transform;
@@ -175,20 +171,45 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+    @include desktop-1440 {
+      top: -930px;
+      left: 35px;
+      width: 550px;
+      height: 680px;
+    }
+    @include desktop-1920 {
+      top: -1290px;
+      left: 50px;
+      width: 750px;
+      height: 927px;
+    }
   }
   &__question-text {
     position: absolute;
-    top: 935px;
     right: 0px;
-    font-size: 31px;
     font-weight: 500;
     color: grey;
+    @include desktop-1440 {
+      top: 685px;
+      font-size: 22px;
+    }
+    @include desktop-1920 {
+      top: 935px;
+      font-size: 30px;
+    }
   }
   &__tower {
     position: absolute;
-    top: 472px;
-    width: 750px;
-    height: 432px;
+    @include desktop-1440 {
+      top: 346px;
+      width: 550px;
+      height: 317px;
+    }
+    @include desktop-1920 {
+      top: 472px;
+      width: 750px;
+      height: 432px;
+    }
   }
   &__tower-image {
     width: 100%;
@@ -206,41 +227,79 @@
   }
   &__result {
     position: absolute;
-    top: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: white;
+    @include desktop-1440 {
+      top: 370px;
+    }
+    @include desktop-1920 {
+      top: 500px;
+    }
   }
   &__result-heading {
-    font-size: 100px;
     font-weight: 500;
-    margin-bottom: 40px;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
+    @include desktop-1440 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 100px;
+      margin-bottom: 40px;
+    }
   }
   &__result-name {
-    font-size: 40px;
-    margin-bottom: 20px;
     animation-duration: 0.5s;
     animation-delay: 1s;
+    @include desktop-1440 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    @include desktop-1920 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
   }
   &__result-location {
-    font-size: 30px;
-    margin-bottom: 40px;
     animation-duration: 0.5s;
     animation-delay: 1.5s;
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__button {
     animation-duration: 0.5s;
     animation-delay: 2s;
+    @include desktop-1440 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+      height: 60px;
+      font-size: 25px;
+    }
   }
   &__answers {
     position: absolute;
-    bottom: -770px;
     left: 40vw;
     height: 600px;
+    @include desktop-1440 {
+      bottom: -670px;
+    }
+    @include desktop-1920 {
+      bottom: -790px;
+    }
   }
   &__answer {
     &:hover {
@@ -260,36 +319,65 @@
   }
   &--answer-1 {
     top: 50px;
-    left: 50px;
     animation-delay: 0.5s;
+    @include desktop-1440 {
+      left: 35px;
+    }
+    @include desktop-1920 {
+      left: 50px;
+    }
   }
   &--answer-2 {
     top: 160px;
-    left: 370px;
     transform: scale(0.9);
     animation-delay: 1s;
+    @include desktop-1440 {
+      left: 280px;
+    }
+    @include desktop-1920 {
+      left: 370px;
+    }
   }
   &--answer-3 {
     top: -10px;
-    left: 700px;
     animation-delay: 1.5s;
+    @include desktop-1440 {
+      left: 520px;
+    }
+    @include desktop-1920 {
+      left: 700px;
+    }
   }
   &__answer-image {
-    width: 300px;
+    @include desktop-1440 {
+      width: 220px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+    }
   }
   &__answer-text {
     position: absolute;
-    top: 150px;
-    left: 150px;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    width: 180px;
-    height: 108px;
     overflow: hidden;
     text-align: center;
-    font-size: 30px;
     font-weight: 500;
+    @include desktop-1440 {
+      top: 110px;
+      left: 110px;
+      width: 130px;
+      height: 80px;
+      font-size: 20px;
+    }
+    @include desktop-1920 {
+      top: 150px;
+      left: 150px;
+      width: 180px;
+      height: 110px;
+      font-size: 30px;
+    }
   }
   &--answer-text-1 {
     align-items: center;
@@ -298,8 +386,12 @@
     align-items: center;
   }
   &--answer-text-3 {
-    left: 155px;
     align-self: flex-start;
-    margin-top: 45px;
+    @include desktop-1440 {
+      margin-top: 35px;
+    }
+    @include desktop-1920 {
+      margin-top: 45px;
+    }
   }
 }

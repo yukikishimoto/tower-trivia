@@ -20,7 +20,7 @@ function LearnMore(props) {
                 <img className="learn-more__tower-image" src={answer.image} alt="Famous tower" />
                 <h1 className="learn-more__tower-name">{answer.name}</h1>
                 <h2 className="learn-more__tower-location">{answer.correctAnswer}</h2>
-                <p>{answer.description}</p>
+                <p className="learn-more__tower-description">{answer.description}</p>
               </div>
             )
           :

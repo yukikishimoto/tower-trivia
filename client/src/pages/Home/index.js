@@ -13,7 +13,7 @@ function Home() {
       <h1 className="landing__heading">Test your knowledge of the most famous towers around the world.</h1>
       <h2 className="landing__subheading">Answer correctly to build up your tower as high as you can!</h2>
       <Link to="/game">
-        <AwesomeButton className="landing__button" type="primary">PLAY</AwesomeButton>
+        <AwesomeButton className="landing__button" type="primary">PLAY NOW</AwesomeButton>
       </Link>
     </main>
   );

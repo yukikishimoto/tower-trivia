@@ -20,14 +20,15 @@
     font-size: 15px;
     margin-right: 5%;
     margin-bottom: 20px;
-    @include tablet-and-up {
-      height: 220px;
+    @include tablet {
+      min-height: 220px;
+      max-height: 220px;
       font-size: 30px;
       margin-bottom: 40px;
     }
     &::-webkit-scrollbar {
       width: 8px;
-      @include tablet-and-up {
+      @include tablet {
         width: 15px;
       }
     }
@@ -44,18 +45,18 @@
   &__entry {
     z-index: 4;
     margin: 0 20px 5px;
-    @include tablet-and-up {
+    @include tablet {
       margin: 0 40px 10px;
     }
   }
   &__button {
     z-index: 4;
-    width: 100px;
-    height: 27px;
+    width: 120px;
+    height: 30px;
     font-size: 12px;
-    @include tablet-and-up {
-      width: 226px;
-      height: 54px;
+    @include tablet {
+      width: 240px;
+      height: 60px;
       font-size: 25px;
     }
   }

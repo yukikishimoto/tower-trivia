@@ -126,12 +126,12 @@
     opacity: 0.5;
     width: 100px;
     animation: landscapeCloudMobile linear infinite;
-    @include tablet-and-up {
+    @include tablet {
       left: -40%;
       width: 200px;
       animation: landscapeCloudTablet linear infinite;
     }
-    @include desktop-only {
+    @include desktop-1440 {
       left: -25%;
       width: 300px;
       animation: landscapeCloudDesktop linear infinite;
@@ -141,7 +141,7 @@
     top: 2%;
     animation-duration: 35s;
     animation-delay: 0s;
-    @include desktop-only {
+    @include desktop-1440 {
       animation-duration: 40s;
     }
   }
@@ -149,7 +149,7 @@
     top: 10%;
     animation-duration: 25s;
     animation-delay: 3s;
-    @include desktop-only {
+    @include desktop-1440 {
       animation-duration: 30s;
     }
   }
@@ -157,7 +157,7 @@
     top: 20%;
     animation-duration: 20s;
     animation-delay: 5s;
-    @include desktop-only {
+    @include desktop-1440 {
       animation-duration: 25s;
     }
   }
@@ -207,10 +207,10 @@
     transform: scale(0) translateX(-10vw);
     will-change: transform;
     animation: birdFlyMobile linear infinite;
-    @include tablet-and-up {
+    @include tablet {
       animation: birdFlyTablet linear infinite;
     }
-    @include desktop-only {
+    @include desktop-1440 {
       left: 0%;
     }
   }
@@ -218,10 +218,10 @@
     top: 0;
 		animation-duration: 8s;
     animation-delay: 0s;
-    @include tablet-and-up {
+    @include tablet {
       animation-duration: 13s;
     }
-    @include desktop-only {
+    @include desktop-1440 {
       animation-duration: 20s;
     }
   }
@@ -229,10 +229,10 @@
     top: 2%;
 		animation-duration: 10s;
     animation-delay: 4s;
-    @include tablet-and-up {
+    @include tablet {
       animation-duration: 15s;
     }
-    @include desktop-only {
+    @include desktop-1440 {
       animation-duration: 25s;
     }
   }

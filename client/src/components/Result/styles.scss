@@ -27,65 +27,130 @@
     background: linear-gradient($color-red 20%, white);
   }
   &__heading {
-    font-size: 100px;
     font-weight: 500;
-    margin-bottom: 60px;
+    @include desktop-1440 {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1920 {
+      font-size: 100px;
+      margin-bottom: 60px;
+    }
   }
   &__learn-more {
-    font-size: 22px;
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 60px;
     cursor: pointer;
-    animation: flash 2s infinite;
+    animation: flash 1.5s infinite;
+    @include desktop-1440 {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1920 {
+      font-size: 22px;
+      margin-bottom: 60px;
+    }
     &:hover {
       color: black;
       animation: unset;
     }
   }
   &__subheading {
-    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 40px;
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__score {
     z-index: 4;
-    font-size: 30px;
-    margin-bottom: 40px;
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 134px;
+    @include desktop-1440 {
+      margin-bottom: 40px;
+    }
+    @include desktop-1920 {
+      margin-bottom: 80px;
+    }
   }
   &__form-label {
-    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 30px;
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
   &__form-field {
     -webkit-appearance: none;
     background-color: transparent;
-    font-size: 30px;
     color: dimgrey;
     text-align: center;
     border: none;
     padding-bottom: 5px;
     border-bottom: 2px solid dimgrey;
-    margin-bottom: 80px;
+    margin-bottom: 5px;
     outline: none;
+    @include desktop-1440 {
+      font-size: 22px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+    }
   }
   &__form-errors {
-    position: absolute;
-    top: 720px;
-    left: 20vw;
-    transform: translateX(-50%);
-    font-size: 17px;
     color: darkred;
     text-align: center;
+    @include desktop-1440 {
+      font-size: 13px;
+    }
+    @include desktop-1920 {
+      font-size: 17px;
+    }
   }
-  &__button-1 {
+  &__button-submit {
     margin-bottom: 10px;
+    @include desktop-1440 {
+      width: 230px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+      height: 60px;
+      font-size: 25px;
+    }
+  }
+  &__button-play {
+    @include desktop-1440 {
+      width: 140px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1920 {
+      width: 200px;
+      height: 60px;
+      font-size: 25px;
+    }
   }
 }

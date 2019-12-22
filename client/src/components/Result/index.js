@@ -72,8 +72,8 @@ class Result extends React.Component {
             {(this.state.name.length > 10) ? <p>Name cannot exceed 10 characters.</p> : null}
           </div>
         </form>
-        <AwesomeButton className="result__button-1" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
-        <AwesomeButton className="result__button-2" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
+        <AwesomeButton className="result__button-submit" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
+        <AwesomeButton className="result__button-play" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
       </>
     
     return (
