@@ -142,8 +142,7 @@
   width: 60vw;
   height: 100vh;
   background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
   background-position: right;
   &--fade {
     opacity: 0;
@@ -171,6 +170,12 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+    @include desktop-1024 {
+      top: -620px;
+      left: 30px;
+      width: 400px;
+      height: 494px;
+    }
     @include desktop-1440 {
       top: -930px;
       left: 35px;
@@ -189,6 +194,10 @@
     right: 0px;
     font-weight: 500;
     color: grey;
+    @include desktop-1024 {
+      top: 500px;
+      font-size: 16px;
+    }
     @include desktop-1440 {
       top: 685px;
       font-size: 22px;
@@ -200,6 +209,11 @@
   }
   &__tower {
     position: absolute;
+    @include desktop-1024 {
+      top: 252px;
+      width: 400px;
+      height: 230px;
+    }
     @include desktop-1440 {
       top: 346px;
       width: 550px;
@@ -232,6 +246,9 @@
     align-items: center;
     width: 100%;
     color: white;
+    @include desktop-1024 {
+      top: 270px;
+    }
     @include desktop-1440 {
       top: 370px;
     }
@@ -243,6 +260,10 @@
     font-weight: 500;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
+    @include desktop-1024 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
     @include desktop-1440 {
       font-size: 70px;
       margin-bottom: 30px;
@@ -255,6 +276,10 @@
   &__result-name {
     animation-duration: 0.5s;
     animation-delay: 1s;
+    @include desktop-1024 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
     @include desktop-1440 {
       font-size: 30px;
       margin-bottom: 10px;
@@ -267,6 +292,10 @@
   &__result-location {
     animation-duration: 0.5s;
     animation-delay: 1.5s;
+    @include desktop-1024 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
     @include desktop-1440 {
       font-size: 22px;
       margin-bottom: 30px;
@@ -279,6 +308,11 @@
   &__button {
     animation-duration: 0.5s;
     animation-delay: 2s;
+    @include desktop-1024 {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
     @include desktop-1440 {
       width: 200px;
       height: 40px;
@@ -294,6 +328,9 @@
     position: absolute;
     left: 40vw;
     height: 600px;
+    @include desktop-1024 {
+      bottom: -650px;
+    }
     @include desktop-1440 {
       bottom: -670px;
     }
@@ -318,9 +355,13 @@
     animation-duration: 2s;
   }
   &--answer-1 {
-    top: 50px;
     animation-delay: 0.5s;
+    @include desktop-1024 {
+      top: 30px;
+      left: 30px;
+    }
     @include desktop-1440 {
+      top: 50px;
       left: 35px;
     }
     @include desktop-1920 {
@@ -328,10 +369,14 @@
     }
   }
   &--answer-2 {
-    top: 160px;
     transform: scale(0.9);
     animation-delay: 1s;
+    @include desktop-1024 {
+      top: 110px;
+      left: 205px;
+    }
     @include desktop-1440 {
+      top: 160px;
       left: 280px;
     }
     @include desktop-1920 {
@@ -341,6 +386,9 @@
   &--answer-3 {
     top: -10px;
     animation-delay: 1.5s;
+    @include desktop-1024 {
+      left: 380px;
+    }
     @include desktop-1440 {
       left: 520px;
     }
@@ -349,6 +397,9 @@
     }
   }
   &__answer-image {
+    @include desktop-1024 {
+      width: 160px;
+    }
     @include desktop-1440 {
       width: 220px;
     }
@@ -364,6 +415,13 @@
     overflow: hidden;
     text-align: center;
     font-weight: 500;
+    @include desktop-1024 {
+      top: 80px;
+      left: 80px;
+      width: 90px;
+      height: 55px;
+      font-size: 15px;
+    }
     @include desktop-1440 {
       top: 110px;
       left: 110px;
@@ -387,6 +445,9 @@
   }
   &--answer-text-3 {
     align-self: flex-start;
+    @include desktop-1024 {
+      margin-top: 25px;
+    }
     @include desktop-1440 {
       margin-top: 35px;
     }

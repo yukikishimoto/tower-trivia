@@ -28,6 +28,10 @@
   }
   &__heading {
     font-weight: 500;
+    @include desktop-1024 {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
     @include desktop-1440 {
       font-size: 70px;
       margin-bottom: 50px;
@@ -43,6 +47,10 @@
     text-transform: uppercase;
     cursor: pointer;
     animation: flash 1.5s infinite;
+    @include desktop-1024 {
+      font-size: 12px;
+      margin-bottom: 40px;
+    }
     @include desktop-1440 {
       font-size: 15px;
       margin-bottom: 50px;
@@ -58,6 +66,10 @@
   }
   &__subheading {
     font-weight: 500;
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
     @include desktop-1440 {
       font-size: 22px;
       margin-bottom: 30px;
@@ -69,6 +81,10 @@
   }
   &__score {
     z-index: 4;
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
     @include desktop-1440 {
       font-size: 22px;
       margin-bottom: 30px;
@@ -82,16 +98,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 134px;
-    @include desktop-1440 {
+    @include desktop-1024 {
+      height: 79px;
       margin-bottom: 40px;
     }
+    @include desktop-1440 {
+      height: 100px;
+      margin-bottom: 60px;
+    }
     @include desktop-1920 {
+      height: 134px;
       margin-bottom: 80px;
     }
   }
   &__form-label {
     font-weight: 500;
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
     @include desktop-1440 {
       font-size: 22px;
       margin-bottom: 20px;
@@ -107,12 +132,17 @@
     color: dimgrey;
     text-align: center;
     border: none;
-    padding-bottom: 5px;
     border-bottom: 2px solid dimgrey;
-    margin-bottom: 5px;
     outline: none;
+    @include desktop-1024 {
+      font-size: 15px;
+      padding-bottom: 3px;
+      margin-bottom: 3px;
+    }
     @include desktop-1440 {
       font-size: 22px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
     }
     @include desktop-1920 {
       font-size: 30px;
@@ -121,6 +151,9 @@
   &__form-errors {
     color: darkred;
     text-align: center;
+    @include desktop-1024 {
+      font-size: 9px;
+    }
     @include desktop-1440 {
       font-size: 13px;
     }
@@ -130,6 +163,11 @@
   }
   &__button-submit {
     margin-bottom: 10px;
+    @include desktop-1024 {
+      width: 150px;
+      height: 35px;
+      font-size: 12px;
+    }
     @include desktop-1440 {
       width: 230px;
       height: 45px;
@@ -142,6 +180,11 @@
     }
   }
   &__button-play {
+    @include desktop-1024 {
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+    }
     @include desktop-1440 {
       width: 140px;
       height: 45px;

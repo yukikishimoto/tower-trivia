@@ -3,30 +3,32 @@
 @import '../../styles/mixins';
 @import '../../styles/buttons';
 
-@keyframes landscapeCloudMobile {
+@keyframes landscapeCloud {
   0% {
-    left: -100%;
+    left: -35%;
   }
   100% {
-    left: 125%;
+    left: 100%;
   }
 }
-
-@keyframes landscapeCloudTablet {
-  0% {
-    left: -40%;
-  }
-  100% {
-    left: 125%;
+@include tablet {
+  @keyframes landscapeCloud {
+    0% {
+      left: -30%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 }
-
-@keyframes landscapeCloudDesktop {
-  0% {
-    left: -25%;
-  }
-  100% {
-    left: 125%;
+@include desktop-1024 {
+  @keyframes landscapeCloud {
+    0% {
+      left: -15%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 }
 
@@ -64,7 +66,7 @@
 	}
 }
 
-@keyframes birdFlyMobile {
+@keyframes birdFly {
 	0% {
 		transform: scale(0.15) translateX(-10vw);
 	}
@@ -84,37 +86,66 @@
 		transform: translateY(0vh) translateX(90vw) scale(0.3);
 	}
 	60% {
-		transform: translateY(0vh) translateX(110vw) scale(0.3);
+		transform: translateY(0vh) translateX(120vw) scale(0.3);
 	}
 	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.3);
+		transform: translateY(0vh) translateX(120vw) scale(0.3);
   }
 }
-
-@keyframes birdFlyTablet {
-	0% {
-		transform: scale(0.3) translateX(-10vw);
-	}
-	10% {
-		transform: translateY(2vh) translateX(10vw) scale(0.4);
-	}
-	20% {
-		transform: translateY(0vh) translateX(30vw) scale(0.5);
-	}
-	30% {
-		transform: translateY(4vh) translateX(50vw) scale(0.6);
-	}
-	40% {
-		transform: translateY(2vh) translateX(70vw) scale(0.6);
-	}
-	50% {
-		transform: translateY(0vh) translateX(90vw) scale(0.6);
-	}
-	60% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
+@include tablet {
+  @keyframes birdFly {
+    0% {
+      transform: scale(0.3) translateX(-10vw);
+    }
+    10% {
+      transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+      transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+    30% {
+      transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    40% {
+      transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+    50% {
+      transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    60% {
+      transform: translateY(0vh) translateX(120vw) scale(0.6);
+    }
+    100% {
+      transform: translateY(0vh) translateX(120vw) scale(0.6);
+    }
+  }
+}
+@include desktop-1440 {
+  @keyframes birdFly {
+    0% {
+      transform: scale(0.3) translateX(-10vw);
+    }
+    10% {
+      transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+      transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+    30% {
+      transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    40% {
+      transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+    50% {
+      transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    60% {
+      transform: translateY(0vh) translateX(120vw) scale(0.6);
+    }
+    100% {
+      transform: translateY(0vh) translateX(120vw) scale(0.6);
+    }
   }
 }
 
@@ -122,34 +153,44 @@
   &__cloud {
     z-index: 1;
     position: absolute;
-    left: -100%;
+    left: -35%;
     opacity: 0.5;
     width: 100px;
-    animation: landscapeCloudMobile linear infinite;
+    animation: landscapeCloud linear infinite;
     @include tablet {
-      left: -40%;
+      left: -30%;
       width: 200px;
-      animation: landscapeCloudTablet linear infinite;
+    }
+    @include desktop-1024 {
+      left: -15%;
+      width: 150px;
     }
     @include desktop-1440 {
-      left: -25%;
-      width: 300px;
-      animation: landscapeCloudDesktop linear infinite;
+      width: 200px;
+    }
+    @include desktop-1920 {
+      width: 250px;
     }
   }
   &--cloud-1 {
     top: 2%;
-    animation-duration: 35s;
+    animation-duration: 30s;
     animation-delay: 0s;
-    @include desktop-1440 {
+    @include tablet {
+      animation-duration: 35s;
+    }
+    @include desktop-1024 {
       animation-duration: 40s;
     }
   }
   &--cloud-2 {
     top: 10%;
-    animation-duration: 25s;
+    animation-duration: 20s;
     animation-delay: 3s;
-    @include desktop-1440 {
+    @include tablet {
+      animation-duration: 25s;
+    }
+    @include desktop-1024 {
       animation-duration: 30s;
     }
   }
@@ -202,37 +243,31 @@
   // }
   &__bird-container {
     z-index: 3;
-    left: -10%;
+    left: -15%;
     position: absolute;
     transform: scale(0) translateX(-10vw);
     will-change: transform;
-    animation: birdFlyMobile linear infinite;
+    animation: birdFly linear infinite;
     @include tablet {
-      animation: birdFlyTablet linear infinite;
+      left: -5%;
     }
-    @include desktop-1440 {
-      left: 0%;
+    @include desktop-1024 {
+      left: -5%;
     }
   }
   &__bird-container-1 {
     top: 0;
-		animation-duration: 8s;
+		animation-duration: 13s;
     animation-delay: 0s;
-    @include tablet {
-      animation-duration: 13s;
-    }
-    @include desktop-1440 {
+    @include desktop-1024 {
       animation-duration: 20s;
     }
   }
   &__bird-container-2 {
     top: 2%;
-		animation-duration: 10s;
+		animation-duration: 13s;
     animation-delay: 4s;
-    @include tablet {
-      animation-duration: 15s;
-    }
-    @include desktop-1440 {
+    @include desktop-1024 {
       animation-duration: 25s;
     }
   }
