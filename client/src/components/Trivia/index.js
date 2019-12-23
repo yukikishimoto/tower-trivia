@@ -19,7 +19,7 @@ function Trivia(props) {
     <section className="trivia">
       <div className="trivia__question">
         <p className="trivia__question-text">Where is this structure located?</p>
-        <img src={question} alt="Question board" />
+        <img className="trivia__question-board" src={question} alt="Question board" />
         <div className="trivia__tower">
           <img className="trivia__tower-image" src={trivia[currentQuestion - 1] ? trivia[currentQuestion - 1].image : ""} alt="Famous tower" />
           {isQuestionAnswered ? <div className="trivia__tower-overlay trivia--fade trivia--fade-in"></div> : null}

@@ -171,10 +171,10 @@
     animation-duration: 2s;
     animation-delay: 0s;
     @include tablet {
-      top: -380px;
+      top: -780px;
       left: 30px;
       width: 400px;
-      height: 494px;
+      height: 694px;
     }
     @include desktop-1024 {
       top: -620px;
@@ -200,7 +200,7 @@
     font-weight: 500;
     color: grey;
     @include tablet {
-      top: 500px;
+      top: 700px;
       left: 0px;
       width: 200px;
       text-align: left;
@@ -222,10 +222,15 @@
       font-size: 30px;
     }
   }
+  &__question-board {
+    width: 101%;
+    object-fit: cover;
+    object-position: bottom;
+  }
   &__tower {
     position: absolute;
     @include tablet {
-      top: 252px;
+      top: 452px;
       width: 400px;
       height: 230px;
     }
@@ -267,7 +272,7 @@
     width: 100%;
     color: white;
     @include tablet {
-      top: 270px;
+      top: 470px;
     }
     @include desktop-1024 {
       top: 270px;
@@ -369,16 +374,16 @@
     left: 40vw;
     height: 600px;
     @include tablet {
-      bottom: -580px;
+      bottom: -740px;
     }
     @include desktop-1024 {
-      bottom: -650px;
+      bottom: -810px;
     }
     @include desktop-1440 {
-      bottom: -670px;
+      bottom: -890px;
     }
     @include desktop-1920 {
-      bottom: -790px;
+      bottom: -1090px;
     }
   }
   &__answer {
@@ -419,18 +424,19 @@
     transform: scale(0.9);
     animation-delay: 1s;
     @include tablet {
-      top: 130px;
+      top: 150px;
       left: 135px;
     }
     @include desktop-1024 {
-      top: 110px;
+      top: 130px;
       left: 205px;
     }
     @include desktop-1440 {
-      top: 160px;
+      top: 190px;
       left: 280px;
     }
     @include desktop-1920 {
+      top: 200px;
       left: 370px;
     }
   }
