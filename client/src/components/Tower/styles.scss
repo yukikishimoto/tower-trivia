@@ -13,6 +13,24 @@
 }
 
 // Two identical keyframes ("scoreHeight1" and "scoreHeight2") are made because the browser cannot detect that the animation has to restart if the keyframe names are the same
+@include tablet {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
+  }
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
+  }
+}
 @include desktop-1024 {
   @keyframes scoreHeight1 {
     0% {
@@ -68,6 +86,72 @@
   }
 }
 
+@include tablet {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-930px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-830px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-730px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-630px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-930px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-830px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-730px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-630px);
+    }
+  }
+}
 @include desktop-1024 {
   @keyframes dropBlock2 {
     0% {
@@ -277,6 +361,9 @@
     left: -25%;
     opacity: 0.5;
     animation: towerCloud linear infinite;
+    @include tablet {
+      width: 150px;
+    }
     @include desktop-1024 {
       width: 150px;
     }
@@ -319,6 +406,10 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 1s;
+    @include tablet {
+      width: 180px;
+      font-size: 15px;
+    }
     @include desktop-1024 {
       width: 180px;
       font-size: 15px;
@@ -339,6 +430,9 @@
   &__score--200 {
     animation-name: scoreHeight2;
     animation-delay: 2s;
+    @include tablet {
+      bottom: 100px;
+    }
     @include desktop-1024 {
       bottom: 100px;
     }
@@ -352,6 +446,9 @@
   &__score--300 {
     animation-name: scoreHeight1;
     animation-delay: 1.75s;
+    @include tablet {
+      bottom: 200px;
+    }
     @include desktop-1024 {
       bottom: 200px;
     }
@@ -365,6 +462,9 @@
   &__score--400 {
     animation-name: scoreHeight2;
     animation-delay: 1.5s;
+    @include tablet {
+      bottom: 300px;
+    }
     @include desktop-1024 {
       bottom: 300px;
     }
@@ -378,6 +478,9 @@
   &__score--500 {
     animation-name: scoreHeight1;
     animation-delay: 1.25s;
+    @include tablet {
+      bottom: 400px;
+    }
     @include desktop-1024 {
       bottom: 400px;
     }
@@ -392,6 +495,9 @@
     display: block;
     font-weight: 500;
     border-bottom: 1px solid black;
+    @include tablet {
+      padding-bottom: 5px;
+    }
     @include desktop-1024 {
       padding-bottom: 5px;
     }
@@ -401,6 +507,9 @@
   }
   &__score-value {
     display: inline-block;
+    @include tablet {
+      padding-top: 4px;
+    }
     @include desktop-1024 {
       padding-top: 4px;
     }
@@ -414,9 +523,13 @@
     display: flex;
     flex-direction: column;
     bottom: 0;
-    left: 20vw;
     transform: translateX(-50%);
+    @include tablet {
+      left: 25vw;
+      width: 100px;
+    }
     @include desktop-1024 {
+      left: 20vw;
       width: 100px;
     }
     @include desktop-1440 {

@@ -170,6 +170,12 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+    @include tablet {
+      top: -380px;
+      left: 30px;
+      width: 400px;
+      height: 494px;
+    }
     @include desktop-1024 {
       top: -620px;
       left: 30px;
@@ -191,11 +197,20 @@
   }
   &__question-text {
     position: absolute;
-    right: 0px;
     font-weight: 500;
     color: grey;
+    @include tablet {
+      top: 500px;
+      left: 0px;
+      width: 200px;
+      text-align: left;
+      font-size: 16px;
+    }
     @include desktop-1024 {
       top: 500px;
+      left: unset;
+      right: 0px;
+      width: unset;
       font-size: 16px;
     }
     @include desktop-1440 {
@@ -209,6 +224,11 @@
   }
   &__tower {
     position: absolute;
+    @include tablet {
+      top: 252px;
+      width: 400px;
+      height: 230px;
+    }
     @include desktop-1024 {
       top: 252px;
       width: 400px;
@@ -246,6 +266,9 @@
     align-items: center;
     width: 100%;
     color: white;
+    @include tablet {
+      top: 270px;
+    }
     @include desktop-1024 {
       top: 270px;
     }
@@ -260,6 +283,10 @@
     font-weight: 500;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
+    @include tablet {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
     @include desktop-1024 {
       font-size: 50px;
       margin-bottom: 20px;
@@ -276,6 +303,10 @@
   &__result-name {
     animation-duration: 0.5s;
     animation-delay: 1s;
+    @include tablet {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
     @include desktop-1024 {
       font-size: 22px;
       margin-bottom: 5px;
@@ -292,6 +323,10 @@
   &__result-location {
     animation-duration: 0.5s;
     animation-delay: 1.5s;
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
     @include desktop-1024 {
       font-size: 16px;
       margin-bottom: 20px;
@@ -308,6 +343,11 @@
   &__button {
     animation-duration: 0.5s;
     animation-delay: 2s;
+    @include tablet {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
     @include desktop-1024 {
       width: 150px;
       height: 35px;
@@ -328,6 +368,9 @@
     position: absolute;
     left: 40vw;
     height: 600px;
+    @include tablet {
+      bottom: -580px;
+    }
     @include desktop-1024 {
       bottom: -650px;
     }
@@ -356,6 +399,10 @@
   }
   &--answer-1 {
     animation-delay: 0.5s;
+    @include tablet {
+      top: 30px;
+      left: -20px;
+    }
     @include desktop-1024 {
       top: 30px;
       left: 30px;
@@ -371,6 +418,10 @@
   &--answer-2 {
     transform: scale(0.9);
     animation-delay: 1s;
+    @include tablet {
+      top: 130px;
+      left: 135px;
+    }
     @include desktop-1024 {
       top: 110px;
       left: 205px;
@@ -386,6 +437,9 @@
   &--answer-3 {
     top: -10px;
     animation-delay: 1.5s;
+    @include tablet {
+      left: 300px;
+    }
     @include desktop-1024 {
       left: 380px;
     }
@@ -397,6 +451,9 @@
     }
   }
   &__answer-image {
+    @include tablet {
+      width: 160px;
+    }
     @include desktop-1024 {
       width: 160px;
     }
@@ -415,6 +472,13 @@
     overflow: hidden;
     text-align: center;
     font-weight: 500;
+    @include tablet {
+      top: 80px;
+      left: 80px;
+      width: 90px;
+      height: 55px;
+      font-size: 15px;
+    }
     @include desktop-1024 {
       top: 80px;
       left: 80px;
@@ -445,6 +509,9 @@
   }
   &--answer-text-3 {
     align-self: flex-start;
+    @include tablet {
+      margin-top: 25px;
+    }
     @include desktop-1024 {
       margin-top: 25px;
     }
