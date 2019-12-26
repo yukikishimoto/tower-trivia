@@ -7,7 +7,7 @@
   &__modal-close {
     position: absolute;
     cursor: pointer;
-    @include tablet {
+    @include tablet-768 {
       top: 25px;
       right: 25px;
       width: 25px;
@@ -16,6 +16,11 @@
       top: 20px;
       right: 20px;
       width: 20px;
+    }
+    @include tablet-1024 {
+      top: 35px;
+      right: 35px;
+      width: 35px;
     }
     @include desktop-1440 {
       top: 30px;
@@ -33,8 +38,8 @@
   &__tower-image {
     width: 100%;
     object-fit: cover;
-    @include tablet {
-      height: 364px;
+    @include tablet-768 {
+      height: 336px;
       border-radius: 5px;
       margin-bottom: 20px;
     }
@@ -42,6 +47,11 @@
       height: 209px;
       border-radius: 5px;
       margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      height: 450px;
+      border-radius: 10px;
+      margin-bottom: 30px;
     }
     @include desktop-1440 {
       height: 302px;
@@ -53,13 +63,17 @@
     }
   }
   &__tower-name {
-    @include tablet {
+    @include tablet-768 {
       font-size: 30px;
       margin-bottom: 7px;
     }
     @include desktop-1024 {
       font-size: 22px;
       margin-bottom: 7px;
+    }
+    @include tablet-1024 {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
     @include desktop-1440 {
       font-size: 30px;
@@ -71,13 +85,17 @@
   }
   &__tower-location {
     color: grey;
-    @include tablet {
+    @include tablet-768 {
       font-size: 22px;
       margin-bottom: 20px;
     }
     @include desktop-1024 {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 30px;
+      margin-bottom: 30px;
     }
     @include desktop-1440 {
       font-size: 22px;
@@ -88,11 +106,14 @@
     }
   }
   &__tower-description {
-    @include tablet {
+    @include tablet-768 {
       font-size: 12px;
     }
     @include desktop-1024 {
       font-size: 10px;
+    }
+    @include tablet-1024 {
+      font-size: 16px;
     }
     @include desktop-1440 {
       font-size: 13px;
@@ -109,21 +130,29 @@
     background: rgba(0, 0, 0, 0.8) !important;
   }
   &__Content {
-    @include tablet {
-      top: 150px !important;
+    @include tablet-768 {
+      top: 110px !important;
       left: 50px !important;
       right: 50px !important;
-      bottom: 150px !important;
+      bottom: 110px !important;
       padding: 60px 80px !important;
       border-radius: 5px !important;
     }
     @include desktop-1024 {
-      top: 90px !important;
+      top: 60px !important;
       left: 290px !important;
       right: 290px !important;
-      bottom: 90px !important;
+      bottom: 60px !important;
       padding: 50px 60px !important;
       border-radius: 5px !important;
+    }
+    @include tablet-1024 {
+      top: 170px !important;
+      left: 65px !important;
+      right: 65px !important;
+      bottom: 170px !important;
+      padding: 80px 110px !important;
+      border-radius: 10px !important;
     }
     @include desktop-1440 {
       top: 80px !important;
@@ -145,11 +174,14 @@
 
 .slick {
   &-prev, &-next {
-    @include tablet {
+    @include tablet-768 {
       width: 35px !important;
     }
     @include desktop-1024 {
       width: 25px !important;
+    }
+    @include tablet-1024 {
+      width: 45px !important;
     }
     @include desktop-1440 {
       width: 35px !important;
@@ -159,11 +191,14 @@
     }
   }
   &-prev {
-    @include tablet {
+    @include tablet-768 {
       left: -50px !important;
     }
     @include desktop-1024 {
       left: -40px !important;
+    }
+    @include tablet-1024 {
+      left: -60px !important;
     }
     @include desktop-1440 {
       left: -50px !important;
@@ -173,11 +208,14 @@
     }
     &:before {
       color: grey !important;
-      @include tablet {
+      @include tablet-768 {
         font-size: 35px !important;
       }
       @include desktop-1024 {
         font-size: 25px !important;
+      }
+      @include tablet-1024 {
+        font-size: 45px !important;
       }
       @include desktop-1440 {
         font-size: 35px !important;
@@ -188,11 +226,14 @@
     }
   }
   &-next {
-    @include tablet {
+    @include tablet-768 {
       right: -50px !important;
     }
     @include desktop-1024 {
       right: -40px !important;
+    }
+    @include tablet-1024 {
+      right: -60px !important;
     }
     @include desktop-1440 {
       right: -50px !important;
@@ -202,11 +243,14 @@
     }
     &:before {
       color: grey !important;
-      @include tablet {
+      @include tablet-768 {
         font-size: 35px !important;
       }
       @include desktop-1024 {
         font-size: 25px !important;
+      }
+      @include tablet-1024 {
+        font-size: 45px !important;
       }
       @include desktop-1440 {
         font-size: 35px !important;
@@ -217,22 +261,28 @@
     }
   }
   &-dots {
-    @include tablet {
+    @include tablet-768 {
       bottom: -50px !important;
     }
     @include desktop-1024 {
       bottom: -40px !important;
+    }
+    @include tablet-1024 {
+      bottom: -60px !important;
     }
     @include desktop-1920 {
       bottom: -50px !important;
     }
   }
   &-dots li {
-    @include tablet {
+    @include tablet-768 {
       margin: 0 !important;
     }
     @include desktop-1024 {
       margin: 0 !important;
+    }
+    @include tablet-1024 {
+      margin: 0 3px !important;
     }
     @include desktop-1440 {
       margin: 0 2px !important;
@@ -242,11 +292,14 @@
     }
   }
   &-dots li button:before {
-    @include tablet {
+    @include tablet-768 {
       font-size: 10px !important;
     }
     @include desktop-1024 {
       font-size: 8px !important;
+    }
+    @include tablet-1024 {
+      font-size: 13px !important;
     }
     @include desktop-1440 {
       font-size: 11px !important;

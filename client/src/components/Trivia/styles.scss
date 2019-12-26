@@ -170,17 +170,23 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
-    @include tablet {
-      top: -780px;
+    @include tablet-768 {
+      top: -850px;
       left: 30px;
       width: 400px;
       height: 694px;
     }
     @include desktop-1024 {
-      top: -620px;
+      top: -630px;
       left: 30px;
       width: 400px;
       height: 494px;
+    }
+    @include tablet-1024 {
+      top: -1060px;
+      left: 35px;
+      width: 550px;
+      height: 900px;
     }
     @include desktop-1440 {
       top: -930px;
@@ -199,11 +205,11 @@
     position: absolute;
     font-weight: 500;
     color: grey;
-    @include tablet {
+    text-align: left;
+    @include tablet-768 {
       top: 700px;
       left: 0px;
       width: 200px;
-      text-align: left;
       font-size: 16px;
     }
     @include desktop-1024 {
@@ -212,6 +218,12 @@
       right: 0px;
       width: unset;
       font-size: 16px;
+    }
+    @include tablet-1024 {
+      top: 905px;
+      left: 0px;
+      width: 270px;
+      font-size: 22px;
     }
     @include desktop-1440 {
       top: 685px;
@@ -229,7 +241,7 @@
   }
   &__tower {
     position: absolute;
-    @include tablet {
+    @include tablet-768 {
       top: 452px;
       width: 400px;
       height: 230px;
@@ -238,6 +250,11 @@
       top: 252px;
       width: 400px;
       height: 230px;
+    }
+    @include tablet-1024 {
+      top: 567px;
+      width: 550px;
+      height: 317px;
     }
     @include desktop-1440 {
       top: 346px;
@@ -271,11 +288,14 @@
     align-items: center;
     width: 100%;
     color: white;
-    @include tablet {
+    @include tablet-768 {
       top: 470px;
     }
     @include desktop-1024 {
       top: 270px;
+    }
+    @include tablet-1024 {
+      top: 590px;
     }
     @include desktop-1440 {
       top: 370px;
@@ -288,13 +308,17 @@
     font-weight: 500;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
-    @include tablet {
+    @include tablet-768 {
       font-size: 50px;
       margin-bottom: 20px;
     }
     @include desktop-1024 {
       font-size: 50px;
       margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 70px;
+      margin-bottom: 30px;
     }
     @include desktop-1440 {
       font-size: 70px;
@@ -308,13 +332,17 @@
   &__result-name {
     animation-duration: 0.5s;
     animation-delay: 1s;
-    @include tablet {
+    @include tablet-768 {
       font-size: 22px;
       margin-bottom: 5px;
     }
     @include desktop-1024 {
       font-size: 22px;
       margin-bottom: 5px;
+    }
+    @include tablet-1024 {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
     @include desktop-1440 {
       font-size: 30px;
@@ -328,13 +356,17 @@
   &__result-location {
     animation-duration: 0.5s;
     animation-delay: 1.5s;
-    @include tablet {
+    @include tablet-768 {
       font-size: 16px;
       margin-bottom: 20px;
     }
     @include desktop-1024 {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 30px;
     }
     @include desktop-1440 {
       font-size: 22px;
@@ -348,7 +380,7 @@
   &__button {
     animation-duration: 0.5s;
     animation-delay: 2s;
-    @include tablet {
+    @include tablet-768 {
       width: 150px;
       height: 35px;
       font-size: 14px;
@@ -357,6 +389,11 @@
       width: 150px;
       height: 35px;
       font-size: 14px;
+    }
+    @include tablet-1024 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
     }
     @include desktop-1440 {
       width: 200px;
@@ -373,11 +410,14 @@
     position: absolute;
     left: 40vw;
     height: 600px;
-    @include tablet {
-      bottom: -740px;
+    @include tablet-768 {
+      bottom: -780px;
     }
     @include desktop-1024 {
       bottom: -810px;
+    }
+    @include tablet-1024 {
+      bottom: -800px;
     }
     @include desktop-1440 {
       bottom: -890px;
@@ -404,13 +444,17 @@
   }
   &--answer-1 {
     animation-delay: 0.5s;
-    @include tablet {
+    @include tablet-768 {
       top: 30px;
       left: -20px;
     }
     @include desktop-1024 {
       top: 30px;
       left: 30px;
+    }
+    @include tablet-1024 {
+      top: 50px;
+      left: -20px;
     }
     @include desktop-1440 {
       top: 50px;
@@ -423,13 +467,17 @@
   &--answer-2 {
     transform: scale(0.9);
     animation-delay: 1s;
-    @include tablet {
+    @include tablet-768 {
       top: 150px;
       left: 135px;
     }
     @include desktop-1024 {
       top: 130px;
       left: 205px;
+    }
+    @include tablet-1024 {
+      top: 200px;
+      left: 185px;
     }
     @include desktop-1440 {
       top: 190px;
@@ -443,11 +491,14 @@
   &--answer-3 {
     top: -10px;
     animation-delay: 1.5s;
-    @include tablet {
+    @include tablet-768 {
       left: 300px;
     }
     @include desktop-1024 {
       left: 380px;
+    }
+    @include tablet-1024 {
+      left: 400px;
     }
     @include desktop-1440 {
       left: 520px;
@@ -457,11 +508,14 @@
     }
   }
   &__answer-image {
-    @include tablet {
+    @include tablet-768 {
       width: 160px;
     }
     @include desktop-1024 {
       width: 160px;
+    }
+    @include tablet-1024 {
+      width: 210px;
     }
     @include desktop-1440 {
       width: 220px;
@@ -478,7 +532,7 @@
     overflow: hidden;
     text-align: center;
     font-weight: 500;
-    @include tablet {
+    @include tablet-768 {
       top: 80px;
       left: 80px;
       width: 90px;
@@ -491,6 +545,13 @@
       width: 90px;
       height: 55px;
       font-size: 15px;
+    }
+    @include tablet-1024 {
+      top: 105px;
+      left: 105px;
+      width: 120px;
+      height: 75px;
+      font-size: 20px;
     }
     @include desktop-1440 {
       top: 110px;
@@ -515,11 +576,14 @@
   }
   &--answer-text-3 {
     align-self: flex-start;
-    @include tablet {
+    @include tablet-768 {
       margin-top: 25px;
     }
     @include desktop-1024 {
       margin-top: 25px;
+    }
+    @include tablet-1024 {
+      margin-top: 30px;
     }
     @include desktop-1440 {
       margin-top: 35px;

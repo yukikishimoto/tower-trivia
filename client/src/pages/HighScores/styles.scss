@@ -20,7 +20,7 @@
     font-size: 15px;
     margin-right: 5%;
     margin-bottom: 20px;
-    @include tablet {
+    @include tablet-768 {
       min-height: 220px;
       max-height: 220px;
       font-size: 30px;
@@ -28,7 +28,7 @@
     }
     &::-webkit-scrollbar {
       width: 8px;
-      @include tablet {
+      @include tablet-768 {
         width: 15px;
       }
     }
@@ -45,7 +45,7 @@
   &__entry {
     z-index: 4;
     margin: 0 20px 5px;
-    @include tablet {
+    @include tablet-768 {
       margin: 0 40px 10px;
     }
   }
@@ -54,7 +54,7 @@
     width: 120px;
     height: 30px;
     font-size: 12px;
-    @include tablet {
+    @include tablet-768 {
       width: 240px;
       height: 60px;
       font-size: 25px;
