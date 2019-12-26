@@ -188,6 +188,12 @@
       width: 550px;
       height: 900px;
     }
+    @include tablet-1366 {
+      top: -810px;
+      left: 35px;
+      width: 520px;
+      height: 643px;
+    }
     @include desktop-1440 {
       top: -930px;
       left: 35px;
@@ -225,6 +231,10 @@
       width: 270px;
       font-size: 22px;
     }
+    @include tablet-1366 {
+      top: 650px;
+      font-size: 22px;
+    }
     @include desktop-1440 {
       top: 685px;
       font-size: 22px;
@@ -255,6 +265,11 @@
       top: 567px;
       width: 550px;
       height: 317px;
+    }
+    @include tablet-1366 {
+      top: 328px;
+      width: 520px;
+      height: 299px;
     }
     @include desktop-1440 {
       top: 346px;
@@ -297,6 +312,9 @@
     @include tablet-1024 {
       top: 590px;
     }
+    @include tablet-1366 {
+      top: 345px;
+    }
     @include desktop-1440 {
       top: 370px;
     }
@@ -317,6 +335,10 @@
       margin-bottom: 20px;
     }
     @include tablet-1024 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366{
       font-size: 70px;
       margin-bottom: 30px;
     }
@@ -344,6 +366,10 @@
       font-size: 30px;
       margin-bottom: 10px;
     }
+    @include tablet-1366 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
     @include desktop-1440 {
       font-size: 30px;
       margin-bottom: 10px;
@@ -365,6 +391,10 @@
       margin-bottom: 20px;
     }
     @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
       font-size: 22px;
       margin-bottom: 30px;
     }
@@ -395,6 +425,11 @@
       height: 40px;
       font-size: 17px;
     }
+    @include tablet-1366 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
+    }
     @include desktop-1440 {
       width: 200px;
       height: 40px;
@@ -418,6 +453,9 @@
     }
     @include tablet-1024 {
       bottom: -800px;
+    }
+    @include tablet-1366 {
+      bottom: -870px;
     }
     @include desktop-1440 {
       bottom: -890px;
@@ -456,6 +494,10 @@
       top: 50px;
       left: -20px;
     }
+    @include tablet-1366 {
+      top: 50px;
+      left: 35px;
+    }
     @include desktop-1440 {
       top: 50px;
       left: 35px;
@@ -479,6 +521,10 @@
       top: 200px;
       left: 185px;
     }
+    @include tablet-1366 {
+      top: 190px;
+      left: 260px;
+    }
     @include desktop-1440 {
       top: 190px;
       left: 280px;
@@ -500,6 +546,9 @@
     @include tablet-1024 {
       left: 400px;
     }
+    @include tablet-1366{
+      left: 490px;
+    }
     @include desktop-1440 {
       left: 520px;
     }
@@ -516,6 +565,9 @@
     }
     @include tablet-1024 {
       width: 210px;
+    }
+    @include tablet-1366 {
+      width: 220px;
     }
     @include desktop-1440 {
       width: 220px;
@@ -553,6 +605,13 @@
       height: 75px;
       font-size: 20px;
     }
+    @include tablet-1366 {
+      top: 110px;
+      left: 110px;
+      width: 130px;
+      height: 80px;
+      font-size: 20px;
+    }
     @include desktop-1440 {
       top: 110px;
       left: 110px;
@@ -584,6 +643,9 @@
     }
     @include tablet-1024 {
       margin-top: 30px;
+    }
+    @include tablet-1366 {
+      margin-top: 35px;
     }
     @include desktop-1440 {
       margin-top: 35px;

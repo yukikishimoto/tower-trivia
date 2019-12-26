@@ -22,6 +22,11 @@
       right: 35px;
       width: 35px;
     }
+    @include tablet-1366 {
+      top: 30px;
+      right: 30px;
+      width: 30px;
+    }
     @include desktop-1440 {
       top: 30px;
       right: 30px;
@@ -53,6 +58,10 @@
       border-radius: 10px;
       margin-bottom: 30px;
     }
+    @include tablet-1366 {
+      height: 279px;
+      border-radius: 10px;
+    }
     @include desktop-1440 {
       height: 302px;
       border-radius: 10px;
@@ -74,6 +83,9 @@
     @include tablet-1024 {
       font-size: 40px;
       margin-bottom: 10px;
+    }
+    @include tablet-1366 {
+      font-size: 30px;
     }
     @include desktop-1440 {
       font-size: 30px;
@@ -97,6 +109,9 @@
       font-size: 30px;
       margin-bottom: 30px;
     }
+    @include tablet-1366 {
+      font-size: 22px;
+    }
     @include desktop-1440 {
       font-size: 22px;
     }
@@ -114,6 +129,9 @@
     }
     @include tablet-1024 {
       font-size: 16px;
+    }
+    @include tablet-1366 {
+      font-size: 13px;
     }
     @include desktop-1440 {
       font-size: 13px;
@@ -154,6 +172,14 @@
       padding: 80px 110px !important;
       border-radius: 10px !important;
     }
+    @include tablet-1366 {
+      top: 130px !important;
+      left: 390px !important;
+      right: 390px !important;
+      bottom: 130px !important;
+      padding: 60px 80px !important;
+      border-radius: 10px !important;
+    }
     @include desktop-1440 {
       top: 80px !important;
       left: 410px !important;
@@ -183,6 +209,9 @@
     @include tablet-1024 {
       width: 45px !important;
     }
+    @include tablet-1366 {
+      width: 35px !important;
+    }
     @include desktop-1440 {
       width: 35px !important;
     }
@@ -200,6 +229,9 @@
     @include tablet-1024 {
       left: -60px !important;
     }
+    @include tablet-1366 {
+      left: -50px !important;
+    }
     @include desktop-1440 {
       left: -50px !important;
     }
@@ -216,6 +248,9 @@
       }
       @include tablet-1024 {
         font-size: 45px !important;
+      }
+      @include tablet-1366 {
+        font-size: 35px !important;
       }
       @include desktop-1440 {
         font-size: 35px !important;
@@ -235,6 +270,9 @@
     @include tablet-1024 {
       right: -60px !important;
     }
+    @include tablet-1366 {
+      right: -50px !important;
+    }
     @include desktop-1440 {
       right: -50px !important;
     }
@@ -251,6 +289,9 @@
       }
       @include tablet-1024 {
         font-size: 45px !important;
+      }
+      @include tablet-1366 {
+        font-size: 35px !important;
       }
       @include desktop-1440 {
         font-size: 35px !important;
@@ -270,6 +311,12 @@
     @include tablet-1024 {
       bottom: -60px !important;
     }
+    @include tablet-1366 {
+      bottom: -50px !important;
+    }
+    @include desktop-1440 {
+      bottom: -40px !important;
+    }
     @include desktop-1920 {
       bottom: -50px !important;
     }
@@ -283,6 +330,9 @@
     }
     @include tablet-1024 {
       margin: 0 3px !important;
+    }
+    @include tablet-1366 {
+      margin: 0 2px !important;
     }
     @include desktop-1440 {
       margin: 0 2px !important;
@@ -300,6 +350,9 @@
     }
     @include tablet-1024 {
       font-size: 13px !important;
+    }
+    @include tablet-1366 {
+      font-size: 11px !important;
     }
     @include desktop-1440 {
       font-size: 11px !important;

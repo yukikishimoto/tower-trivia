@@ -67,6 +67,24 @@
     }
   }
 }
+@include tablet-1366 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+}
 @include desktop-1440 {
   @keyframes scoreHeight1 {
     0% {
@@ -302,6 +320,72 @@
     }
   }
 }
+@include tablet-1366 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-910px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-790px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-670px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-550px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-910px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-790px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-670px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-550px);
+    }
+  }
+}
 @include desktop-1440 {
   @keyframes dropBlock2 {
     0% {
@@ -454,6 +538,9 @@
     @include tablet-1024 {
       width: 200px;
     }
+    @include tablet-1366 {
+      width: 200px;
+    }
     @include desktop-1440 {
       width: 200px;
     }
@@ -505,6 +592,10 @@
       width: 250px;
       font-size: 20px;
     }
+    @include tablet-1366 {
+      width: 230px;
+      font-size: 20px;
+    }
     @include desktop-1440 {
       width: 240px;
       font-size: 20px;
@@ -530,6 +621,9 @@
     @include tablet-1024 {
       bottom: 135px;
     }
+    @include tablet-1366 {
+      bottom: 120px;
+    }
     @include desktop-1440 {
       bottom: 120px;
     }
@@ -548,6 +642,9 @@
     }
     @include tablet-1024 {
       bottom: 270px;
+    }
+    @include tablet-1366 {
+      bottom: 240px;
     }
     @include desktop-1440 {
       bottom: 240px;
@@ -568,6 +665,9 @@
     @include tablet-1024 {
       bottom: 405px;
     }
+    @include tablet-1366 {
+      bottom: 360px;
+    }
     @include desktop-1440 {
       bottom: 360px;
     }
@@ -586,6 +686,9 @@
     }
     @include tablet-1024 {
       bottom: 540px;
+    }
+    @include tablet-1366 {
+      bottom: 480px;
     }
     @include desktop-1440 {
       bottom: 480px;
@@ -607,6 +710,9 @@
     @include tablet-1024 {
       padding-bottom: 5px;
     }
+    @include tablet-1366 {
+      padding-bottom: 7px;
+    }
     @include desktop-1440 {
       padding-bottom: 7px;
     }
@@ -621,6 +727,9 @@
     }
     @include tablet-1024 {
       padding-top: 4px;
+    }
+    @include tablet-1366 {
+      padding-top: 6px;
     }
     @include desktop-1440 {
       padding-top: 6px;
@@ -644,6 +753,9 @@
     @include tablet-1024 {
       left: 25vw;
       width: 135px;
+    }
+    @include tablet-1366 {
+      width: 120px;
     }
     @include desktop-1440 {
       width: 120px;
