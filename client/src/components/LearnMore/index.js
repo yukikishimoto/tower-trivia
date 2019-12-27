@@ -17,7 +17,9 @@ function LearnMore(props) {
           questionsSeen[0] ? 
             questionsSeen.map(answer => 
               <div className="learn-more__tower-carousel-tab" key={answer.id}>
-                <img className="learn-more__tower-image" src={answer.image} alt="Famous tower" />
+                <div className="learn-more__tower-image-container">
+                  <img className="learn-more__tower-image" src={answer.image} alt="Famous tower" />
+                </div>
                 <h1 className="learn-more__tower-name">{answer.name}</h1>
                 <h2 className="learn-more__tower-location">{answer.correctAnswer}</h2>
                 <p className="learn-more__tower-description">{answer.description}</p>

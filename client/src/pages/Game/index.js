@@ -23,7 +23,8 @@ class Game extends React.Component {
       hook2Class: "tower__hook tower__hook-down tower--hook-2-down",
       hook3Class: "tower__hook tower__hook-down tower--hook-3-down",
       hook4Class: "tower__hook tower__hook-down tower--hook-4-down",
-      hook5Class: "tower__hook tower__hook-down tower--hook-5-down"
+      hook5Class: "tower__hook tower__hook-down tower--hook-5-down",
+      windowWidth: window.innerWidth
     }
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -127,16 +128,28 @@ class Game extends React.Component {
     }
   }
 
+  windowResizeHandler = () => {
+    this.setState({
+      windowWidth: window.innerWidth
+    })
+  }
+
   componentDidMount() {
+    window.addEventListener('resize', this.windowResizeHandler);
+
     // Bind modal to element with className="game":
     Modal.setAppElement('.game');
 
     this.gameGetRequest();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.windowResizeHandler);
+  }
+
   render() {
     const {history} = this.props;
-    const {trivia, currentQuestion, isQuestionAnswered, optionSelected, isAnswerCorrect, isGameOver, didPlayerWin, score, showModal, hook2Class, hook3Class, hook4Class, hook5Class} = this.state;
+    const {trivia, currentQuestion, isQuestionAnswered, optionSelected, isAnswerCorrect, isGameOver, didPlayerWin, score, showModal, hook2Class, hook3Class, hook4Class, hook5Class, windowWidth} = this.state;
 
     const questionsSeen = [];
     for (let i = 1; i <= this.state.currentQuestion; i++) {
@@ -145,9 +158,27 @@ class Game extends React.Component {
 
     return (
       <main className="game">
-        {isGameOver ? <Result history={history} currentQuestion={currentQuestion} didPlayerWin={didPlayerWin} score={score} playAgainClickHandler={this.playAgainClickHandler} handleOpenModal={this.handleOpenModal} /> : <Tower score={score} hook2Class={hook2Class} hook3Class={hook3Class} hook4Class={hook4Class} hook5Class={hook5Class} />}
-        <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} optionSelected={optionSelected} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
-        <LearnMore showModal={showModal} questionsSeen={questionsSeen} handleCloseModal={this.handleCloseModal}/>
+        {
+          (windowWidth < 768) ? 
+            (isGameOver ? 
+              <Result history={history} currentQuestion={currentQuestion} didPlayerWin={didPlayerWin} score={score} playAgainClickHandler={this.playAgainClickHandler} handleOpenModal={this.handleOpenModal} /> 
+              : 
+              <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} optionSelected={optionSelected} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
+            )
+            : 
+            (isGameOver ? 
+              <>
+                <Result history={history} currentQuestion={currentQuestion} didPlayerWin={didPlayerWin} score={score} playAgainClickHandler={this.playAgainClickHandler} handleOpenModal={this.handleOpenModal} />
+                <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} optionSelected={optionSelected} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
+              </> 
+              : 
+              <>
+                <Tower score={score} hook2Class={hook2Class} hook3Class={hook3Class} hook4Class={hook4Class} hook5Class={hook5Class} />
+                <Trivia trivia={trivia} currentQuestion={currentQuestion} isQuestionAnswered={isQuestionAnswered} optionSelected={optionSelected} isAnswerCorrect={isAnswerCorrect} answerClickHandler={this.answerClickHandler} nextQuestionClickHandler={this.nextQuestionClickHandler} />
+              </>
+            )
+        }
+        <LearnMore showModal={showModal} questionsSeen={questionsSeen} handleCloseModal={this.handleCloseModal} />
       </main>
     )
   }

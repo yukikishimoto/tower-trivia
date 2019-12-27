@@ -6,6 +6,9 @@
 .learn-more {
   &__modal-close {
     position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
     cursor: pointer;
     @include tablet-768 {
       top: 25px;
@@ -40,23 +43,43 @@
     text-align: center;
     padding: 0 10px;
   }
-  &__tower-image {
+  &__tower-image-container {
+    position: relative;
     width: 100%;
+    padding-top: 69.06%;
+    margin-bottom: 20px;
+    @include tablet-768 {
+      margin-bottom: 20px;
+    }
+    @include desktop-1024 {
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      margin-bottom: 30px;
+    }
+  }
+  &__tower-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 5px;
     @include tablet-768 {
       height: 336px;
       border-radius: 5px;
-      margin-bottom: 20px;
     }
     @include desktop-1024 {
       height: 209px;
       border-radius: 5px;
-      margin-bottom: 20px;
     }
     @include tablet-1024 {
       height: 450px;
       border-radius: 10px;
-      margin-bottom: 30px;
     }
     @include tablet-1366 {
       height: 279px;
@@ -68,10 +91,11 @@
     }
     @include desktop-1920 {
       height: 413px;
-      margin-bottom: 30px;
     }
   }
   &__tower-name {
+    font-size: 22px;
+    margin-bottom: 7px;
     @include tablet-768 {
       font-size: 30px;
       margin-bottom: 7px;
@@ -97,6 +121,8 @@
   }
   &__tower-location {
     color: grey;
+    font-size: 16px;
+    margin-bottom: 20px;
     @include tablet-768 {
       font-size: 22px;
       margin-bottom: 20px;
@@ -121,6 +147,7 @@
     }
   }
   &__tower-description {
+    font-size: 10px;
     @include tablet-768 {
       font-size: 12px;
     }
@@ -148,6 +175,12 @@
     background: rgba(0, 0, 0, 0.8) !important;
   }
   &__Content {
+    top: 11% !important;
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 11% !important;
+    padding: 35px 25px !important;
+    border-radius: 5px !important;
     @include tablet-768 {
       top: 110px !important;
       left: 50px !important;
@@ -200,6 +233,7 @@
 
 .slick {
   &-prev, &-next {
+    width: 25px !important;
     @include tablet-768 {
       width: 35px !important;
     }
@@ -220,6 +254,7 @@
     }
   }
   &-prev {
+    left: -20px !important;
     @include tablet-768 {
       left: -50px !important;
     }
@@ -240,6 +275,7 @@
     }
     &:before {
       color: grey !important;
+      font-size: 20px !important;
       @include tablet-768 {
         font-size: 35px !important;
       }
@@ -261,6 +297,7 @@
     }
   }
   &-next {
+    right: -20px !important;
     @include tablet-768 {
       right: -50px !important;
     }
@@ -281,6 +318,7 @@
     }
     &:before {
       color: grey !important;
+      font-size: 20px !important;
       @include tablet-768 {
         font-size: 35px !important;
       }
@@ -322,6 +360,7 @@
     }
   }
   &-dots li {
+    margin: -4px !important;
     @include tablet-768 {
       margin: 0 !important;
     }
@@ -342,6 +381,7 @@
     }
   }
   &-dots li button:before {
+    font-size: 6px !important;
     @include tablet-768 {
       font-size: 10px !important;
     }

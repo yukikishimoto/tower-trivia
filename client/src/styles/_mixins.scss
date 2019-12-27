@@ -5,7 +5,7 @@
 }
 
 @mixin desktop-1024 { // For 1024x768 screens (iPad landscape and desktop)
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) and (min-height: 650px) { // min-height accounts for approx. height of browser toolbar
     @content;
   }
 }

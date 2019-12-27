@@ -139,11 +139,27 @@
 
 .trivia {
   z-index: 3;
-  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
   background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
   background-size: cover;
   background-position: right;
+  padding: 0 20px;
+  @include tablet-768 {
+    display: unset;
+    justify-content: unset;
+    width: 60vw;
+    padding: unset;
+  }
+  @include desktop-1024 {
+    display: unset;
+    justify-content: unset;
+    width: 60vw;
+    padding: unset;
+  }
   &--fade {
     opacity: 0;
     animation-timing-function: linear;
@@ -161,22 +177,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     text-align: center;
     transform: translateY(0%);
     will-change: transform;
-    animation-name: elasticDown;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
     @include tablet-768 {
+      animation-name: elasticDown;
       top: -850px;
       left: 30px;
       width: 400px;
       height: 694px;
     }
     @include desktop-1024 {
+      animation-name: elasticDown;
       top: -630px;
       left: 30px;
       width: 400px;
@@ -208,22 +226,37 @@
     }
   }
   &__question-text {
-    position: absolute;
+    width: 100%;
     font-weight: 500;
-    color: grey;
-    text-align: left;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     @include tablet-768 {
+      position: absolute;
       top: 700px;
       left: 0px;
       width: 200px;
+      text-align: left;
+      color: grey;
       font-size: 16px;
+      background-color: unset;
+      padding: unset;
     }
     @include desktop-1024 {
+      position: absolute;
       top: 500px;
       left: unset;
       right: 0px;
       width: unset;
+      text-align: left;
+      color: grey;
       font-size: 16px;
+      background-color: unset;
+      padding: unset;
     }
     @include tablet-1024 {
       top: 905px;
@@ -245,21 +278,36 @@
     }
   }
   &__question-board {
+    display: none;
+    position: relative;
     width: 101%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: bottom;    
+    @include tablet-768 {
+      display: unset;
+    }
+    @include desktop-1024 {
+      display: unset;
+    }
   }
   &__tower {
-    position: absolute;
+    position: relative;
+    width: 100%;
+    padding-top: 57.6%;
+    margin-bottom: 20px;
     @include tablet-768 {
+      position: absolute;
       top: 452px;
       width: 400px;
       height: 230px;
+      padding-top: unset;
     }
     @include desktop-1024 {
+      position: absolute;
       top: 252px;
       width: 400px;
       height: 230px;
+      padding-top: unset;
     }
     @include tablet-1024 {
       top: 567px;
@@ -283,9 +331,24 @@
     }
   }
   &__tower-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
     object-fit: cover;
+    @include tablet-768 {
+      position: unset;
+      border: unset;
+      border-radius: unset;
+    }
+    @include desktop-1024 {
+      position: unset;
+      border: unset;
+      border-radius: unset;
+    }
   }
   &__tower-overlay {
     position: absolute;
@@ -298,6 +361,7 @@
   }
   &__result {
     position: absolute;
+    top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,7 +387,9 @@
     }
   }
   &__result-heading {
+    font-size: 35px;
     font-weight: 500;
+    margin-bottom: 10px;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     @include tablet-768 {
@@ -352,6 +418,8 @@
     }
   }
   &__result-name {
+    font-size: 18px;
+    margin-bottom: 5px;
     animation-duration: 0.5s;
     animation-delay: 1s;
     @include tablet-768 {
@@ -380,6 +448,8 @@
     }
   }
   &__result-location {
+    font-size: 13px;
+    margin-bottom: 10px;
     animation-duration: 0.5s;
     animation-delay: 1.5s;
     @include tablet-768 {
@@ -408,6 +478,9 @@
     }
   }
   &__button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
     animation-duration: 0.5s;
     animation-delay: 2s;
     @include tablet-768 {
@@ -442,14 +515,17 @@
     }
   }
   &__answers {
-    position: absolute;
-    left: 40vw;
-    height: 600px;
     @include tablet-768 {
+      position: absolute;
+      left: 40vw;
       bottom: -780px;
+      height: 600px;
     }
     @include desktop-1024 {
+      position: absolute;
+      left: 40vw;
       bottom: -810px;
+      height: 600px;
     }
     @include tablet-1024 {
       bottom: -800px;
@@ -465,20 +541,37 @@
     }
   }
   &__answer {
-    &:hover {
-      filter: brightness(150%);
-      cursor: pointer;
-    }
-  }
-  &--answer {
-    position: absolute;
+    background-color: $color-orange;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
     transform: translateY(0%);
     will-change: transform;
-    animation-name: elasticUp;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 2s;
+    @include tablet-768 {
+      position: absolute;
+      background-color: unset;
+      padding: unset;
+      border: unset;
+      border-radius: unset;
+      animation-name: elasticUp;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      background-color: unset;
+      padding: unset;
+      border: unset;
+      border-radius: unset;
+      animation-name: elasticUp;
+    }
+    &:hover {
+      filter: brightness(150%);
+      cursor: pointer;
+    }
   }
   &--answer-1 {
     animation-delay: 0.5s;
@@ -507,13 +600,14 @@
     }
   }
   &--answer-2 {
-    transform: scale(0.9);
     animation-delay: 1s;
     @include tablet-768 {
+      transform: scale(0.9);
       top: 150px;
       left: 135px;
     }
     @include desktop-1024 {
+      transform: scale(0.9);
       top: 130px;
       left: 205px;
     }
@@ -557,10 +651,13 @@
     }
   }
   &__answer-image {
+    display: none;
     @include tablet-768 {
+      display: unset;
       width: 160px;
     }
     @include desktop-1024 {
+      display: unset;
       width: 160px;
     }
     @include tablet-1024 {
@@ -577,14 +674,14 @@
     }
   }
   &__answer-text {
-    position: absolute;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     overflow: hidden;
     text-align: center;
     font-weight: 500;
     @include tablet-768 {
+      position: absolute;
+      transform: translate(-50%, -50%);
       top: 80px;
       left: 80px;
       width: 90px;
@@ -592,6 +689,8 @@
       font-size: 15px;
     }
     @include desktop-1024 {
+      position: absolute;
+      transform: translate(-50%, -50%);
       top: 80px;
       left: 80px;
       width: 90px;
