@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
+@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 @keyframes flash {
@@ -17,8 +18,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 100vw;
   height: 100vh;
+  @include tablet-768 {
+    width: 40vw;
+  }
+  @include desktop-1024 {
+    width: 40vw;
+  }
   &--won {
     background: linear-gradient($color-green 20%, white);
   }
@@ -26,65 +33,321 @@
     background: linear-gradient($color-red 20%, white);
   }
   &__heading {
-    font-size: 100px;
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    @include tablet-768 {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1024 {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+    @include tablet-1024 {
+      font-size: 60px;
+      margin-bottom: 50px;
+    }
+    @include tablet-1366 {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1440 {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1920 {
+      font-size: 100px;
+      margin-bottom: 60px;
+    }
   }
   &__learn-more {
-    font-size: 22px;
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    font-size: 12px;
+    margin-bottom: 30px;
     cursor: pointer;
-    animation: flash 2s infinite;
+    animation: flash 1.5s infinite;
+    @include tablet-768 {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1024 {
+      font-size: 12px;
+      margin-bottom: 40px;
+    }
+    @include tablet-1024 {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+    @include tablet-1366 {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1440 {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+    @include desktop-1920 {
+      font-size: 22px;
+      margin-bottom: 60px;
+    }
     &:hover {
       color: black;
       animation: unset;
     }
   }
   &__subheading {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+    @include tablet-768 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__score {
     z-index: 4;
-    font-size: 30px;
-    margin-bottom: 40px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    @include tablet-768 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70px;
+    margin-bottom: 40px;
+    @include tablet-768 {
+      height: 70px;
+      margin-bottom: 40px;
+    }
+    @include desktop-1024 {
+      height: 70px;
+      margin-bottom: 40px;
+    }
+    @include tablet-1024 {
+      height: 100px;
+      margin-bottom: 60px;
+    }
+    @include tablet-1366 {
+      height: 100px;
+      margin-bottom: 60px;
+    }
+    @include desktop-1440 {
+      height: 100px;
+      margin-bottom: 60px;
+    }
+    @include desktop-1920 {
+      height: 134px;
+      margin-bottom: 80px;
+    }
   }
   &__form-label {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    @include tablet-768 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    @include desktop-1024 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
   &__form-field {
     -webkit-appearance: none;
     background-color: transparent;
-    font-size: 30px;
     color: dimgrey;
     text-align: center;
+    font-size: 15px;
     border: none;
-    padding-bottom: 5px;
     border-bottom: 2px solid dimgrey;
-    margin-bottom: 80px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
     outline: none;
+    @include tablet-768 {
+      font-size: 15px;
+      padding-bottom: 3px;
+      margin-bottom: 3px;
+    }
+    @include desktop-1024 {
+      font-size: 15px;
+      padding-bottom: 3px;
+      margin-bottom: 3px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+    }
   }
   &__form-errors {
-    position: absolute;
-    top: 720px;
-    left: 20vw;
-    transform: translateX(-50%);
-    font-size: 17px;
     color: darkred;
     text-align: center;
+    font-size: 9px;
+    @include tablet-768 {
+      font-size: 9px;
+    }
+    @include desktop-1024 {
+      font-size: 9px;
+    }
+    @include tablet-1024 {
+      font-size: 13px;
+    }
+    @include tablet-1366 {
+      font-size: 13px;
+    }
+    @include desktop-1440 {
+      font-size: 13px;
+    }
+    @include desktop-1920 {
+      font-size: 17px;
+    }
   }
-  &__button-1 {
+  &__button-submit {
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
     margin-bottom: 10px;
+    @include tablet-768 {
+      width: 150px;
+      height: 35px;
+      font-size: 12px;
+    }
+    @include desktop-1024 {
+      width: 150px;
+      height: 35px;
+      font-size: 12px;
+    }
+    @include tablet-1024 {
+      width: 230px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include tablet-1366 {
+      width: 230px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1440 {
+      width: 230px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+      height: 60px;
+      font-size: 25px;
+    }
+  }
+  &__button-play {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    @include tablet-768 {
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+    }
+    @include desktop-1024 {
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+    }
+    @include tablet-1024 {
+      width: 140px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include tablet-1366 {
+      width: 140px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1440 {
+      width: 140px;
+      height: 45px;
+      font-size: 18px;
+    }
+    @include desktop-1920 {
+      width: 200px;
+      height: 60px;
+      font-size: 25px;
+    }
   }
 }

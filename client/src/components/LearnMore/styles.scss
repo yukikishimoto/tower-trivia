@@ -1,34 +1,171 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
+@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 .learn-more {
   &__modal-close {
     position: absolute;
-    width: 40px;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
+    width: 20px;
     cursor: pointer;
+    @include tablet-768 {
+      top: 25px;
+      right: 25px;
+      width: 25px;
+    }
+    @include desktop-1024 {
+      top: 20px;
+      right: 20px;
+      width: 20px;
+    }
+    @include tablet-1024 {
+      top: 35px;
+      right: 35px;
+      width: 35px;
+    }
+    @include tablet-1366 {
+      top: 30px;
+      right: 30px;
+      width: 30px;
+    }
+    @include desktop-1440 {
+      top: 30px;
+      right: 30px;
+      width: 30px;
+    }
+    @include desktop-1920 {
+      width: 40px;
+    }
   }
   &__tower-carousel-tab {
     text-align: center;
     padding: 0 10px;
   }
-  &__tower-image {
+  &__tower-image-container {
+    position: relative;
     width: 100%;
-    height: 413px;
+    padding-top: 69.06%;
+    margin-bottom: 20px;
+    @include tablet-768 {
+      margin-bottom: 20px;
+    }
+    @include desktop-1024 {
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      margin-bottom: 30px;
+    }
+  }
+  &__tower-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    border-radius: 5px;
+    @include tablet-768 {
+      height: 336px;
+      border-radius: 5px;
+    }
+    @include desktop-1024 {
+      height: 209px;
+      border-radius: 5px;
+    }
+    @include tablet-1024 {
+      height: 450px;
+      border-radius: 10px;
+    }
+    @include tablet-1366 {
+      height: 279px;
+      border-radius: 10px;
+    }
+    @include desktop-1440 {
+      height: 302px;
+      border-radius: 10px;
+    }
+    @include desktop-1920 {
+      height: 413px;
+    }
   }
   &__tower-name {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 7px;
+    @include tablet-768 {
+      font-size: 30px;
+      margin-bottom: 7px;
+    }
+    @include desktop-1024 {
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+    @include tablet-1024 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    @include tablet-1366 {
+      font-size: 30px;
+    }
+    @include desktop-1440 {
+      font-size: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
   }
   &__tower-location {
     color: grey;
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    @include tablet-768 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1024 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &__tower-description {
+    font-size: 10px;
+    @include tablet-768 {
+      font-size: 12px;
+    }
+    @include desktop-1024 {
+      font-size: 10px;
+    }
+    @include tablet-1024 {
+      font-size: 16px;
+    }
+    @include tablet-1366 {
+      font-size: 13px;
+    }
+    @include desktop-1440 {
+      font-size: 13px;
+    }
+    @include desktop-1920 {
+      font-size: 16px;
+    }
   }
 }
 
@@ -38,38 +175,230 @@
     background: rgba(0, 0, 0, 0.8) !important;
   }
   &__Content {
-    top: 100px !important;
-    left: 550px !important;
-    right: 550px !important;
-    bottom: 100px !important;
-    padding: 80px 100px !important;
-    border-radius: 10px !important;
+    top: 11% !important;
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 11% !important;
+    padding: 35px 25px !important;
+    border-radius: 5px !important;
+    @include tablet-768 {
+      top: 110px !important;
+      left: 50px !important;
+      right: 50px !important;
+      bottom: 110px !important;
+      padding: 60px 80px !important;
+      border-radius: 5px !important;
+    }
+    @include desktop-1024 {
+      top: 60px !important;
+      left: 290px !important;
+      right: 290px !important;
+      bottom: 60px !important;
+      padding: 50px 60px !important;
+      border-radius: 5px !important;
+    }
+    @include tablet-1024 {
+      top: 170px !important;
+      left: 65px !important;
+      right: 65px !important;
+      bottom: 170px !important;
+      padding: 80px 110px !important;
+      border-radius: 10px !important;
+    }
+    @include tablet-1366 {
+      top: 130px !important;
+      left: 390px !important;
+      right: 390px !important;
+      bottom: 130px !important;
+      padding: 60px 80px !important;
+      border-radius: 10px !important;
+    }
+    @include desktop-1440 {
+      top: 80px !important;
+      left: 410px !important;
+      right: 410px !important;
+      bottom: 80px !important;
+      padding: 60px 80px !important;
+      border-radius: 10px !important;
+    }
+    @include desktop-1920 {
+      top: 70px !important;
+      left: 550px !important;
+      right: 550px !important;
+      bottom: 70px !important;
+      padding: 70px 100px !important;
+    }
   }
 }
 
 .slick {
   &-prev, &-next {
-    width: 50px !important;
-    height: 50px !important;
+    width: 25px !important;
+    @include tablet-768 {
+      width: 35px !important;
+    }
+    @include desktop-1024 {
+      width: 25px !important;
+    }
+    @include tablet-1024 {
+      width: 45px !important;
+    }
+    @include tablet-1366 {
+      width: 35px !important;
+    }
+    @include desktop-1440 {
+      width: 35px !important;
+    }
+    @include desktop-1920 {
+      width: 50px !important;
+    }
   }
   &-prev {
-    left: -65px !important;
+    left: -20px !important;
+    @include tablet-768 {
+      left: -50px !important;
+    }
+    @include desktop-1024 {
+      left: -40px !important;
+    }
+    @include tablet-1024 {
+      left: -60px !important;
+    }
+    @include tablet-1366 {
+      left: -50px !important;
+    }
+    @include desktop-1440 {
+      left: -50px !important;
+    }
+    @include desktop-1920 {
+      left: -65px !important;
+    }
     &:before {
-      font-size: 50px !important;
       color: grey !important;
+      font-size: 20px !important;
+      @include tablet-768 {
+        font-size: 35px !important;
+      }
+      @include desktop-1024 {
+        font-size: 25px !important;
+      }
+      @include tablet-1024 {
+        font-size: 45px !important;
+      }
+      @include tablet-1366 {
+        font-size: 35px !important;
+      }
+      @include desktop-1440 {
+        font-size: 35px !important;
+      }
+      @include desktop-1920 {
+        font-size: 50px !important;
+      }
     }
   }
   &-next {
-    right: -65px !important;
+    right: -20px !important;
+    @include tablet-768 {
+      right: -50px !important;
+    }
+    @include desktop-1024 {
+      right: -40px !important;
+    }
+    @include tablet-1024 {
+      right: -60px !important;
+    }
+    @include tablet-1366 {
+      right: -50px !important;
+    }
+    @include desktop-1440 {
+      right: -50px !important;
+    }
+    @include desktop-1920 {
+      right: -65px !important;
+    }
     &:before {
-      font-size: 50px !important;
       color: grey !important;
+      font-size: 20px !important;
+      @include tablet-768 {
+        font-size: 35px !important;
+      }
+      @include desktop-1024 {
+        font-size: 25px !important;
+      }
+      @include tablet-1024 {
+        font-size: 45px !important;
+      }
+      @include tablet-1366 {
+        font-size: 35px !important;
+      }
+      @include desktop-1440 {
+        font-size: 35px !important;
+      }
+      @include desktop-1920 {
+        font-size: 50px !important;
+      }
     }
   }
   &-dots {
-    bottom: -50px !important;
+    @include tablet-768 {
+      bottom: -50px !important;
+    }
+    @include desktop-1024 {
+      bottom: -40px !important;
+    }
+    @include tablet-1024 {
+      bottom: -60px !important;
+    }
+    @include tablet-1366 {
+      bottom: -50px !important;
+    }
+    @include desktop-1440 {
+      bottom: -40px !important;
+    }
+    @include desktop-1920 {
+      bottom: -50px !important;
+    }
+  }
+  &-dots li {
+    margin: -4px !important;
+    @include tablet-768 {
+      margin: 0 !important;
+    }
+    @include desktop-1024 {
+      margin: 0 !important;
+    }
+    @include tablet-1024 {
+      margin: 0 3px !important;
+    }
+    @include tablet-1366 {
+      margin: 0 2px !important;
+    }
+    @include desktop-1440 {
+      margin: 0 2px !important;
+    }
+    @include desktop-1920 {
+      margin: 0 5px !important;
+    }
   }
   &-dots li button:before {
-    font-size: 13px !important;
+    font-size: 6px !important;
+    @include tablet-768 {
+      font-size: 10px !important;
+    }
+    @include desktop-1024 {
+      font-size: 8px !important;
+    }
+    @include tablet-1024 {
+      font-size: 13px !important;
+    }
+    @include tablet-1366 {
+      font-size: 11px !important;
+    }
+    @include desktop-1440 {
+      font-size: 11px !important;
+    }
+    @include desktop-1920 {
+      font-size: 13px !important;
+    }
   }
 }

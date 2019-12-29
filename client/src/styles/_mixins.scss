@@ -1,0 +1,82 @@
+@mixin over-568-high { // For mobile and tablet screens taller than 568px
+  @media screen and (min-height: 568px) {
+    @content;
+  }
+}
+
+@mixin tablet-768 { // For 768x1024 screens (iPad portrait)
+  @media screen and (min-width: 768px) and (min-height: 900px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin desktop-1024 { // For 1024x768 screens (iPad landscape and desktop)
+  @media screen and (min-width: 1024px) and (min-height: 650px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin tablet-1024 { // For 1024x1366 screens (iPad Pro portrait)
+  @media screen and (min-width: 1024px) and (min-height: 1240px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin tablet-1366 { // For 1366x1024 screens (iPad Pro landscape)
+  @media screen and (min-width: 1366px) and (min-height: 900px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin desktop-1440 { // For 1440x900 screens (desktop)
+  @media screen and (min-width: 1440px) and (min-height: 800px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin desktop-1920 { // For 1920x1080 screens (desktop)
+  @media screen and (min-width: 1920px) and (min-height: 1000px) { // min-height accounts for approx. height of browser toolbar
+    @content;
+  }
+}
+
+@mixin skyline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../assets/images/skyline.png"), linear-gradient($color-blue 20%, white);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+@mixin logo {
+  z-index: 4;
+  width: 250px;
+  margin-bottom: 10px;
+  @include over-568-high {
+    margin-bottom: 20px;
+  }
+  @include tablet-768 {
+    width: 450px;
+    margin-bottom: 50px;
+  }
+}
+
+@mixin heading {
+  z-index: 4;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  @include over-568-high {
+    margin-bottom: 20px;
+  }
+  @include tablet-768 {
+    font-size: 40px;
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+}

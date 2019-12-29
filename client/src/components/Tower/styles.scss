@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
+@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 @keyframes towerCloud {
@@ -11,116 +12,510 @@
   }
 }
 
-@keyframes scoreHeight100 {
-  0% {
-    transform: translateY(43px);
+// Two identical keyframes ("scoreHeight1" and "scoreHeight2") are made because the browser cannot detect that the animation has to restart if the keyframe names are the same
+@include tablet-768 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
   }
-  100% {
-    transform: translateY(-117px);
-  }
-}
-@keyframes scoreHeight200 {
-  0% {
-    transform: translateY(43px);
-  }
-  100% {
-    transform: translateY(-117px);
-  }
-}
-@keyframes scoreHeight300 {
-  0% {
-    transform: translateY(43px);
-  }
-  100% {
-    transform: translateY(-117px);
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
   }
 }
-@keyframes scoreHeight400 {
-  0% {
-    transform: translateY(43px);
+@include desktop-1024 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
   }
-  100% {
-    transform: translateY(-117px);
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(23px);
+    }
+    100% {
+      transform: translateY(-77px);
+    }
   }
 }
-@keyframes scoreHeight500 {
-  0% {
-    transform: translateY(43px);
+@include tablet-1024 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(29px);
+    }
+    100% {
+      transform: translateY(-106px);
+    }
   }
-  100% {
-    transform: translateY(-117px);
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(29px);
+    }
+    100% {
+      transform: translateY(-106px);
+    }
+  }
+}
+@include tablet-1366 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+}
+@include desktop-1440 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(31px);
+    }
+    100% {
+      transform: translateY(-89px);
+    }
+  }
+}
+@include desktop-1920 {
+  @keyframes scoreHeight1 {
+    0% {
+      transform: translateY(43px);
+    }
+    100% {
+      transform: translateY(-117px);
+    }
+  }
+  @keyframes scoreHeight2 {
+    0% {
+      transform: translateY(43px);
+    }
+    100% {
+      transform: translateY(-117px);
+    }
   }
 }
 
-@keyframes dropBlock2 {
-  0% {
-    transform: translateY(-840px);
+@include tablet-768 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-930px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(0);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-830px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-730px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-630px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-930px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-830px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-730px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-630px);
+    }
   }
 }
-
-@keyframes dropBlock3 {
-  0% {
-    transform: translateY(-680px);
+@include desktop-1024 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-670px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(0);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-570px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-470px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-370px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-670px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-570px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-470px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-370px);
+    }
   }
 }
-
-@keyframes dropBlock4 {
-  0% {
-    transform: translateY(-520px);
+@include tablet-1024 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-1240px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(0);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-1105px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-970px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-835px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1240px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1105px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-970px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-835px);
+    }
   }
 }
-
-@keyframes dropBlock5 {
-  0% {
-    transform: translateY(-360px);
+@include tablet-1366 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-910px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(0);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-790px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-670px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-550px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-910px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-790px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-670px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-550px);
+    }
   }
 }
-
-@keyframes upBlock2 {
-  0% {
-    transform: translateY(0);
+@include desktop-1440 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-780px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(-840px);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-660px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-540px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-420px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-780px);
+    }
+  }
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-660px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-540px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-420px);
+    }
   }
 }
-
-@keyframes upBlock3 {
-  0% {
-    transform: translateY(0);
+@include desktop-1920 {
+  @keyframes dropBlock2 {
+    0% {
+      transform: translateY(-920px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(-680px);
+  @keyframes dropBlock3 {
+    0% {
+      transform: translateY(-760px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-}
-
-@keyframes upBlock4 {
-  0% {
-    transform: translateY(0);
+  @keyframes dropBlock4 {
+    0% {
+      transform: translateY(-600px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: translateY(-520px);
+  @keyframes dropBlock5 {
+    0% {
+      transform: translateY(-440px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-}
-
-@keyframes upBlock5 {
-  0% {
-    transform: translateY(0);
+  @keyframes upBlock2 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-920px);
+    }
   }
-  100% {
-    transform: translateY(-360px);
+  @keyframes upBlock3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-760px);
+    }
+  }
+  @keyframes upBlock4 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-600px);
+    }
+  }
+  @keyframes upBlock5 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-440px);
+    }
   }
 }
 
@@ -133,8 +528,25 @@
     position: absolute;
     left: -25%;
     opacity: 0.5;
-    width: 250px;
     animation: towerCloud linear infinite;
+    @include tablet-768 {
+      width: 150px;
+    }
+    @include desktop-1024 {
+      width: 150px;
+    }
+    @include tablet-1024 {
+      width: 200px;
+    }
+    @include tablet-1366 {
+      width: 200px;
+    }
+    @include desktop-1440 {
+      width: 200px;
+    }
+    @include desktop-1920 {
+      width: 250px;
+    }
   }
   &--cloud-1 {
     top: 5%;
@@ -164,46 +576,164 @@
     position: absolute;
     left: 7vw;
     transform: translateY(+50%);
-    width: 200px;
-    font-size: 30px;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 1s;
+    @include tablet-768 {
+      width: 180px;
+      font-size: 15px;
+    }
+    @include desktop-1024 {
+      width: 180px;
+      font-size: 15px;
+    }
+    @include tablet-1024 {
+      width: 250px;
+      font-size: 20px;
+    }
+    @include tablet-1366 {
+      width: 230px;
+      font-size: 20px;
+    }
+    @include desktop-1440 {
+      width: 240px;
+      font-size: 20px;
+    }
+    @include desktop-1920 {
+      width: 330px;
+      font-size: 30px;
+    }
   }
   &__score--100 {
     bottom: 0px;
-    animation-name: scoreHeight100;
+    animation-name: scoreHeight1;
   }
   &__score--200 {
-    bottom: 160px;
-    animation-name: scoreHeight200;
+    animation-name: scoreHeight2;
     animation-delay: 2s;
+    @include tablet-768 {
+      bottom: 100px;
+    }
+    @include desktop-1024 {
+      bottom: 100px;
+    }
+    @include tablet-1024 {
+      bottom: 135px;
+    }
+    @include tablet-1366 {
+      bottom: 120px;
+    }
+    @include desktop-1440 {
+      bottom: 120px;
+    }
+    @include desktop-1920 {
+      bottom: 160px;
+    }
   }
   &__score--300 {
-    bottom: 320px;
-    animation-name: scoreHeight300;
+    animation-name: scoreHeight1;
     animation-delay: 1.75s;
+    @include tablet-768 {
+      bottom: 200px;
+    }
+    @include desktop-1024 {
+      bottom: 200px;
+    }
+    @include tablet-1024 {
+      bottom: 270px;
+    }
+    @include tablet-1366 {
+      bottom: 240px;
+    }
+    @include desktop-1440 {
+      bottom: 240px;
+    }
+    @include desktop-1920 {
+      bottom: 320px;
+    }
   }
   &__score--400 {
-    bottom: 480px;
-    animation-name: scoreHeight400;
+    animation-name: scoreHeight2;
     animation-delay: 1.5s;
+    @include tablet-768 {
+      bottom: 300px;
+    }
+    @include desktop-1024 {
+      bottom: 300px;
+    }
+    @include tablet-1024 {
+      bottom: 405px;
+    }
+    @include tablet-1366 {
+      bottom: 360px;
+    }
+    @include desktop-1440 {
+      bottom: 360px;
+    }
+    @include desktop-1920 {
+      bottom: 480px;
+    }
   }
   &__score--500 {
-    bottom: 640px;
-    animation-name: scoreHeight500;
+    animation-name: scoreHeight1;
     animation-delay: 1.25s;
+    @include tablet-768 {
+      bottom: 400px;
+    }
+    @include desktop-1024 {
+      bottom: 400px;
+    }
+    @include tablet-1024 {
+      bottom: 540px;
+    }
+    @include tablet-1366 {
+      bottom: 480px;
+    }
+    @include desktop-1440 {
+      bottom: 480px;
+    }
+    @include desktop-1920 {
+      bottom: 640px;
+    }
   }
   &__score-label {
     display: block;
     font-weight: 500;
-    padding-bottom: 7px;
     border-bottom: 1px solid black;
+    @include tablet-768 {
+      padding-bottom: 5px;
+    }
+    @include desktop-1024 {
+      padding-bottom: 5px;
+    }
+    @include tablet-1024 {
+      padding-bottom: 5px;
+    }
+    @include tablet-1366 {
+      padding-bottom: 7px;
+    }
+    @include desktop-1440 {
+      padding-bottom: 7px;
+    }
   }
   &__score-value {
     display: inline-block;
-    padding-top: 6px;
+    @include tablet-768 {
+      padding-top: 4px;
+    }
+    @include desktop-1024 {
+      padding-top: 4px;
+    }
+    @include tablet-1024 {
+      padding-top: 4px;
+    }
+    @include tablet-1366 {
+      padding-top: 6px;
+    }
+    @include desktop-1440 {
+      padding-top: 6px;
+    }
   }
   &__block-container {
     z-index: 3;
@@ -211,12 +741,34 @@
     display: flex;
     flex-direction: column;
     bottom: 0;
-    left: 20vw;
     transform: translateX(-50%);
-    width: 160px;
+    @include tablet-768 {
+      left: 25vw;
+      width: 100px;
+    }
+    @include desktop-1024 {
+      left: 20vw;
+      width: 100px;
+    }
+    @include tablet-1024 {
+      left: 25vw;
+      width: 135px;
+    }
+    @include tablet-1366 {
+      left: 20vw;
+      width: 120px;
+    }
+    @include desktop-1440 {
+      left: 20vw;
+      width: 120px;
+    }
+    @include desktop-1920 {
+      width: 160px;
+    }
   }
   &__hook {
     position: relative;
+    bottom: -13px;
     width: 100%;
     animation-iteration-count: 1;
   }

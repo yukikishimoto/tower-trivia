@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
+@import '../../styles/mixins';
 @import '../../styles/buttons';
 
 @keyframes elasticDown {
@@ -138,12 +139,35 @@
 
 .trivia {
   z-index: 3;
-  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
   height: 100vh;
-  background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
+  background: linear-gradient($color-yellow 20%, white);
+  padding: 0 20px;
+  @include over-568-high {
+    flex-direction: column;
+    flex-wrap: unset;
+    background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
+    background-size: cover;
+    background-position: right;
+  }
+  @include tablet-768 {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: 60vw;
+    padding: unset;
+  }
+  @include desktop-1024 {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: 60vw;
+    padding: unset;
+  }
   &--fade {
     opacity: 0;
     animation-timing-function: linear;
@@ -161,38 +185,197 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -1250px;
-    left: 50px;
-    width: 750px;
-    height: 927px;
+    width: 60%;
+    max-width: 340px;
     text-align: center;
+    padding-right: 10px;
     transform: translateY(0%);
     will-change: transform;
-    animation-name: elasticDown;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+    @include over-568-high {
+      width: 100%;
+      max-width: 450px;
+      padding-right: unset;
+    }
+    @include tablet-768 {
+      animation-name: elasticDown;
+      top: -850px;
+      left: 30px;
+      width: 400px;
+      max-width: unset;
+      height: 694px;
+    }
+    @include desktop-1024 {
+      animation-name: elasticDown;
+      top: -630px;
+      left: 30px;
+      width: 400px;
+      max-width: unset;
+      height: 494px;
+    }
+    @include tablet-1024 {
+      top: -1060px;
+      left: 35px;
+      width: 550px;
+      height: 900px;
+    }
+    @include tablet-1366 {
+      top: -810px;
+      left: 35px;
+      width: 520px;
+      height: 643px;
+    }
+    @include desktop-1440 {
+      top: -930px;
+      left: 35px;
+      width: 550px;
+      height: 680px;
+    }
+    @include desktop-1920 {
+      top: -1290px;
+      left: 50px;
+      width: 750px;
+      height: 927px;
+    }
   }
   &__question-text {
-    position: absolute;
-    top: 935px;
-    right: 0px;
-    font-size: 31px;
+    width: 100%;
     font-weight: 500;
-    color: grey;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    @include over-568-high {
+      padding: 20px 10px;
+      margin-bottom: 20px;
+    }
+    @include tablet-768 {
+      position: absolute;
+      top: 700px;
+      left: 0px;
+      width: 200px;
+      text-align: left;
+      color: grey;
+      font-size: 16px;
+      background-color: unset;
+      padding: unset;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      top: 500px;
+      left: unset;
+      right: 0px;
+      width: unset;
+      text-align: left;
+      color: grey;
+      font-size: 16px;
+      background-color: unset;
+      padding: unset;
+    }
+    @include tablet-1024 {
+      top: 905px;
+      left: 0px;
+      width: 270px;
+      font-size: 22px;
+    }
+    @include tablet-1366 {
+      top: 650px;
+      left: unset;
+      width: unset;
+      font-size: 22px;
+    }
+    @include desktop-1440 {
+      top: 685px;
+      left: unset;
+      width: unset;
+      font-size: 22px;
+    }
+    @include desktop-1920 {
+      top: 935px;
+      font-size: 30px;
+    }
+  }
+  &__question-board {
+    display: none;
+    position: relative;
+    width: 101%;
+    object-fit: cover;
+    object-position: bottom;    
+    @include tablet-768 {
+      display: unset;
+    }
+    @include desktop-1024 {
+      display: unset;
+    }
   }
   &__tower {
-    position: absolute;
-    top: 472px;
-    width: 750px;
-    height: 432px;
+    position: relative;
+    width: 100%;
+    padding-top: 57.6%;
+    @include over-568-high {
+      margin-bottom: 20px;
+    }
+    @include tablet-768 {
+      position: absolute;
+      top: 452px;
+      width: 400px;
+      height: 230px;
+      padding-top: unset;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      top: 252px;
+      width: 400px;
+      height: 230px;
+      padding-top: unset;
+    }
+    @include tablet-1024 {
+      top: 567px;
+      width: 550px;
+      height: 317px;
+    }
+    @include tablet-1366 {
+      top: 328px;
+      width: 520px;
+      height: 299px;
+    }
+    @include desktop-1440 {
+      top: 346px;
+      width: 550px;
+      height: 317px;
+    }
+    @include desktop-1920 {
+      top: 472px;
+      width: 750px;
+      height: 432px;
+    }
   }
   &__tower-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
     object-fit: cover;
+    @include tablet-768 {
+      position: unset;
+      border: unset;
+      border-radius: unset;
+    }
+    @include desktop-1024 {
+      position: unset;
+      border: unset;
+      border-radius: unset;
+    }
   }
   &__tower-overlay {
     position: absolute;
@@ -205,90 +388,383 @@
   }
   &__result {
     position: absolute;
-    top: 500px;
+    top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: white;
+    @include tablet-768 {
+      top: 470px;
+    }
+    @include desktop-1024 {
+      top: 270px;
+    }
+    @include tablet-1024 {
+      top: 590px;
+    }
+    @include tablet-1366 {
+      top: 345px;
+    }
+    @include desktop-1440 {
+      top: 370px;
+    }
+    @include desktop-1920 {
+      top: 500px;
+    }
   }
   &__result-heading {
-    font-size: 100px;
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     animation-duration: 0.5s;
     animation-delay: 0.5s;
+    @include tablet-768 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1024 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1440 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 100px;
+      margin-bottom: 40px;
+    }
   }
   &__result-name {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
     animation-duration: 0.5s;
     animation-delay: 1s;
+    @include tablet-768 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    @include desktop-1024 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    @include tablet-1024 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    @include tablet-1366 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    @include desktop-1440 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    @include desktop-1920 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
   }
   &__result-location {
-    font-size: 30px;
-    margin-bottom: 40px;
+    font-size: 13px;
+    margin-bottom: 10px;
     animation-duration: 0.5s;
     animation-delay: 1.5s;
+    @include tablet-768 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    @include desktop-1024 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    @include tablet-1024 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include tablet-1366 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1440 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    @include desktop-1920 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
     animation-duration: 0.5s;
     animation-delay: 2s;
+    @include tablet-768 {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
+    @include desktop-1024 {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
+    @include tablet-1024 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
+    }
+    @include tablet-1366 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
+    }
+    @include desktop-1440 {
+      width: 200px;
+      height: 40px;
+      font-size: 17px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+      height: 60px;
+      font-size: 25px;
+    }
   }
   &__answers {
-    position: absolute;
-    bottom: -770px;
-    left: 40vw;
-    height: 600px;
+    width: 40%;
+    max-width: 250px;
+    padding-left: 5px;
+    @include over-568-high {
+      width: 100%;
+      max-width: 450px;
+      padding-left: unset;
+    }
+    @include tablet-768 {
+      position: absolute;
+      left: 40vw;
+      bottom: -780px;
+      width: unset;
+      max-width: unset;
+      height: 600px;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      left: 40vw;
+      bottom: -810px;
+      width: unset;
+      max-width: unset;
+      height: 600px;
+    }
+    @include tablet-1024 {
+      bottom: -800px;
+    }
+    @include tablet-1366 {
+      bottom: -870px;
+    }
+    @include desktop-1440 {
+      bottom: -890px;
+    }
+    @include desktop-1920 {
+      bottom: -1090px;
+    }
   }
   &__answer {
+    background-color: $color-orange;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transform: translateY(0%);
+    will-change: transform;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    @include tablet-768 {
+      position: absolute;
+      background-color: unset;
+      padding: unset;
+      border: unset;
+      border-radius: unset;
+      animation-name: elasticUp;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      background-color: unset;
+      padding: unset;
+      border: unset;
+      border-radius: unset;
+      animation-name: elasticUp;
+    }
     &:hover {
       filter: brightness(150%);
       cursor: pointer;
     }
   }
-  &--answer {
-    position: absolute;
-    transform: translateY(0%);
-    will-change: transform;
-    animation-name: elasticUp;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-  }
   &--answer-1 {
-    top: 50px;
-    left: 50px;
     animation-delay: 0.5s;
+    @include tablet-768 {
+      top: 30px;
+      left: -20px;
+    }
+    @include desktop-1024 {
+      top: 30px;
+      left: 30px;
+    }
+    @include tablet-1024 {
+      top: 50px;
+      left: -20px;
+    }
+    @include tablet-1366 {
+      top: 50px;
+      left: 35px;
+    }
+    @include desktop-1440 {
+      top: 50px;
+      left: 35px;
+    }
+    @include desktop-1920 {
+      left: 50px;
+    }
   }
   &--answer-2 {
-    top: 160px;
-    left: 370px;
-    transform: scale(0.9);
     animation-delay: 1s;
+    @include tablet-768 {
+      transform: scale(0.9);
+      top: 150px;
+      left: 135px;
+    }
+    @include desktop-1024 {
+      transform: scale(0.9);
+      top: 130px;
+      left: 205px;
+    }
+    @include tablet-1024 {
+      top: 200px;
+      left: 185px;
+    }
+    @include tablet-1366 {
+      top: 190px;
+      left: 260px;
+    }
+    @include desktop-1440 {
+      top: 190px;
+      left: 280px;
+    }
+    @include desktop-1920 {
+      top: 200px;
+      left: 370px;
+    }
   }
   &--answer-3 {
     top: -10px;
-    left: 700px;
+    margin-bottom: 0;
     animation-delay: 1.5s;
+    @include tablet-768 {
+      left: 300px;
+    }
+    @include desktop-1024 {
+      left: 380px;
+    }
+    @include tablet-1024 {
+      left: 400px;
+    }
+    @include tablet-1366 {
+      left: 490px;
+    }
+    @include desktop-1440 {
+      left: 520px;
+    }
+    @include desktop-1920 {
+      left: 700px;
+    }
   }
   &__answer-image {
-    width: 300px;
+    display: none;
+    @include tablet-768 {
+      display: unset;
+      width: 160px;
+    }
+    @include desktop-1024 {
+      display: unset;
+      width: 160px;
+    }
+    @include tablet-1024 {
+      width: 210px;
+    }
+    @include tablet-1366 {
+      width: 220px;
+    }
+    @include desktop-1440 {
+      width: 220px;
+    }
+    @include desktop-1920 {
+      width: 300px;
+    }
   }
   &__answer-text {
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    width: 180px;
-    height: 108px;
     overflow: hidden;
     text-align: center;
-    font-size: 30px;
     font-weight: 500;
+    @include tablet-768 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 80px;
+      left: 80px;
+      width: 90px;
+      height: 55px;
+      font-size: 15px;
+    }
+    @include desktop-1024 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 80px;
+      left: 80px;
+      width: 90px;
+      height: 55px;
+      font-size: 15px;
+    }
+    @include tablet-1024 {
+      top: 105px;
+      left: 105px;
+      width: 120px;
+      height: 75px;
+      font-size: 20px;
+    }
+    @include tablet-1366 {
+      top: 110px;
+      left: 110px;
+      width: 130px;
+      height: 80px;
+      font-size: 20px;
+    }
+    @include desktop-1440 {
+      top: 110px;
+      left: 110px;
+      width: 130px;
+      height: 80px;
+      font-size: 20px;
+    }
+    @include desktop-1920 {
+      top: 150px;
+      left: 150px;
+      width: 180px;
+      height: 110px;
+      font-size: 30px;
+    }
   }
   &--answer-text-1 {
     align-items: center;
@@ -297,8 +773,24 @@
     align-items: center;
   }
   &--answer-text-3 {
-    left: 155px;
     align-self: flex-start;
-    margin-top: 45px;
+    @include tablet-768 {
+      margin-top: 25px;
+    }
+    @include desktop-1024 {
+      margin-top: 25px;
+    }
+    @include tablet-1024 {
+      margin-top: 30px;
+    }
+    @include tablet-1366 {
+      margin-top: 35px;
+    }
+    @include desktop-1440 {
+      margin-top: 35px;
+    }
+    @include desktop-1920 {
+      margin-top: 45px;
+    }
   }
 }

@@ -57,7 +57,7 @@ class Result extends React.Component {
 
   render() {
     const {didPlayerWin, score, playAgainClickHandler, handleOpenModal} = this.props;
-    const {blankNameError} = this.state;
+    const {name, blankNameError} = this.state;
 
     const resultHTML = 
       <>
@@ -69,11 +69,11 @@ class Result extends React.Component {
           <input className="result__form-field" type="text" id="name" onChange={this.nameChangeHandler} />
           <div className="result__form-errors">
             {blankNameError ? <p>Name cannot be blank.</p> : null}
-            {(this.state.name.length > 10) ? <p>Name cannot exceed 10 characters.</p> : null}
+            {(name.length > 10) ? <p>Name cannot exceed 10 characters.</p> : null}
           </div>
         </form>
-        <AwesomeButton className="result__button-1" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
-        <AwesomeButton className="result__button-2" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
+        <AwesomeButton className="result__button-submit" type="secondary" onPress={this.submitScoreClickHandler}>SUBMIT YOUR SCORE</AwesomeButton>
+        <AwesomeButton className="result__button-play" type="primary" onPress={playAgainClickHandler}>PLAY AGAIN</AwesomeButton>
       </>
     
     return (
