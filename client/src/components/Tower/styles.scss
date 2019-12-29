@@ -755,9 +755,11 @@
       width: 135px;
     }
     @include tablet-1366 {
+      left: 20vw;
       width: 120px;
     }
     @include desktop-1440 {
+      left: 20vw;
       width: 120px;
     }
     @include desktop-1920 {

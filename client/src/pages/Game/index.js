@@ -24,7 +24,8 @@ class Game extends React.Component {
       hook3Class: "tower__hook tower__hook-down tower--hook-3-down",
       hook4Class: "tower__hook tower__hook-down tower--hook-4-down",
       hook5Class: "tower__hook tower__hook-down tower--hook-5-down",
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight
     }
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -130,7 +131,8 @@ class Game extends React.Component {
 
   windowResizeHandler = () => {
     this.setState({
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight
     })
   }
 
@@ -149,7 +151,7 @@ class Game extends React.Component {
 
   render() {
     const {history} = this.props;
-    const {trivia, currentQuestion, isQuestionAnswered, optionSelected, isAnswerCorrect, isGameOver, didPlayerWin, score, showModal, hook2Class, hook3Class, hook4Class, hook5Class, windowWidth} = this.state;
+    const {trivia, currentQuestion, isQuestionAnswered, optionSelected, isAnswerCorrect, isGameOver, didPlayerWin, score, showModal, hook2Class, hook3Class, hook4Class, hook5Class, windowWidth, windowHeight} = this.state;
 
     const questionsSeen = [];
     for (let i = 1; i <= this.state.currentQuestion; i++) {
@@ -159,7 +161,7 @@ class Game extends React.Component {
     return (
       <main className="game">
         {
-          (windowWidth < 768) ? 
+          ((windowWidth < 768) || (windowWidth < 1024 && windowHeight < 900) || (windowHeight < 650)) ? 
             (isGameOver ? 
               <Result history={history} currentQuestion={currentQuestion} didPlayerWin={didPlayerWin} score={score} playAgainClickHandler={this.playAgainClickHandler} handleOpenModal={this.handleOpenModal} /> 
               : 

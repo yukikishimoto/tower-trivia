@@ -140,23 +140,31 @@
 .trivia {
   z-index: 3;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
-  background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
-  background-size: cover;
-  background-position: right;
+  background: linear-gradient($color-yellow 20%, white);
   padding: 0 20px;
+  @include over-568-high {
+    flex-direction: column;
+    flex-wrap: unset;
+    background: url("../../assets/images/crane.svg"), linear-gradient($color-yellow 20%, white);
+    background-size: cover;
+    background-position: right;
+  }
   @include tablet-768 {
     display: unset;
     justify-content: unset;
+    align-items: unset;
     width: 60vw;
     padding: unset;
   }
   @include desktop-1024 {
     display: unset;
     justify-content: unset;
+    align-items: unset;
     width: 60vw;
     padding: unset;
   }
@@ -177,8 +185,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 60%;
+    max-width: 340px;
     text-align: center;
+    padding-right: 10px;
     transform: translateY(0%);
     will-change: transform;
     animation-timing-function: ease-out;
@@ -186,11 +196,17 @@
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 0s;
+    @include over-568-high {
+      width: 100%;
+      max-width: 450px;
+      padding-right: unset;
+    }
     @include tablet-768 {
       animation-name: elasticDown;
       top: -850px;
       left: 30px;
       width: 400px;
+      max-width: unset;
       height: 694px;
     }
     @include desktop-1024 {
@@ -198,6 +214,7 @@
       top: -630px;
       left: 30px;
       width: 400px;
+      max-width: unset;
       height: 494px;
     }
     @include tablet-1024 {
@@ -232,9 +249,13 @@
     color: white;
     font-size: 20px;
     background-color: black;
-    padding: 20px 10px;
+    padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @include over-568-high {
+      padding: 20px 10px;
+      margin-bottom: 20px;
+    }
     @include tablet-768 {
       position: absolute;
       top: 700px;
@@ -266,10 +287,14 @@
     }
     @include tablet-1366 {
       top: 650px;
+      left: unset;
+      width: unset;
       font-size: 22px;
     }
     @include desktop-1440 {
       top: 685px;
+      left: unset;
+      width: unset;
       font-size: 22px;
     }
     @include desktop-1920 {
@@ -294,7 +319,9 @@
     position: relative;
     width: 100%;
     padding-top: 57.6%;
-    margin-bottom: 20px;
+    @include over-568-high {
+      margin-bottom: 20px;
+    }
     @include tablet-768 {
       position: absolute;
       top: 452px;
@@ -404,7 +431,7 @@
       font-size: 70px;
       margin-bottom: 30px;
     }
-    @include tablet-1366{
+    @include tablet-1366 {
       font-size: 70px;
       margin-bottom: 30px;
     }
@@ -515,16 +542,28 @@
     }
   }
   &__answers {
+    width: 40%;
+    max-width: 250px;
+    padding-left: 5px;
+    @include over-568-high {
+      width: 100%;
+      max-width: 450px;
+      padding-left: unset;
+    }
     @include tablet-768 {
       position: absolute;
       left: 40vw;
       bottom: -780px;
+      width: unset;
+      max-width: unset;
       height: 600px;
     }
     @include desktop-1024 {
       position: absolute;
       left: 40vw;
       bottom: -810px;
+      width: unset;
+      max-width: unset;
       height: 600px;
     }
     @include tablet-1024 {
@@ -630,6 +669,7 @@
   }
   &--answer-3 {
     top: -10px;
+    margin-bottom: 0;
     animation-delay: 1.5s;
     @include tablet-768 {
       left: 300px;
@@ -640,7 +680,7 @@
     @include tablet-1024 {
       left: 400px;
     }
-    @include tablet-1366{
+    @include tablet-1366 {
       left: 490px;
     }
     @include desktop-1440 {
