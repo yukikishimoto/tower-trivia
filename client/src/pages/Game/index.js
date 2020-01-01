@@ -33,7 +33,7 @@ class Game extends React.Component {
 
   gameGetRequest = () => {
     axios
-    .get("http://localhost:8080/game")
+    .get(`${process.env.REACT_APP_SERVER || ''}/game`)
     .then((response) => {
       this.setState({
         trivia: response.data

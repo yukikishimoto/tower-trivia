@@ -46,7 +46,7 @@ class Result extends React.Component {
     };
 
     axios
-    .post("http://localhost:8080/highscores", newHighScore)
+    .post(`${process.env.REACT_APP_SERVER || ''}/highscores`, newHighScore)
     .then(() => {
       this.props.history.push('/highscores');
     })

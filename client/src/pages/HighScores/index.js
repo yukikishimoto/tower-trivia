@@ -13,7 +13,7 @@ class HighScores extends React.Component {
 
   componentDidMount() {
     axios
-    .get("http://localhost:8080/highscores")
+    .get(`${process.env.REACT_APP_SERVER || ''}/highscores`)
     .then((response) => {
       this.setState({
         highScores: response.data
