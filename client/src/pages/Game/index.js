@@ -78,13 +78,22 @@ class Game extends React.Component {
     if (this.state.isQuestionAnswered) {
       return;
     }
+    console.log(event.target);
+    let optionSelected;
+    if ((this.state.windowWidth < 768) || (this.state.windowWidth < 1024 && this.state.windowHeight < 900) || (this.state.windowHeight < 650)) {
+      // On small screens, the user's click targets the <div> or <span> tag that holds the text for the selected answer:
+      optionSelected = event.target.innerText;
+    } else {
+      // On large screens, the user's click targets the <img> or <span> tag, but the <img> doesn't hold the text for the selected answer, so the text of the parent element (i.e. the <div>) is used:
+      optionSelected = event.target.parentElement.innerText;
+    }
 
     this.setState({
       isQuestionAnswered: true,
-      optionSelected: event.target.parentElement.innerText
+      optionSelected: optionSelected
     });
 
-    if (event.target.parentElement.innerText === this.state.trivia[this.state.currentQuestion - 1].correctAnswer) {
+    if (optionSelected === this.state.trivia[this.state.currentQuestion - 1].correctAnswer) {
       this.setState({
         isAnswerCorrect: true,
         score: this.state.score + 100

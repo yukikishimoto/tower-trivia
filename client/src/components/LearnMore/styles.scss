@@ -47,8 +47,8 @@
     position: relative;
     width: 100%;
     padding-top: 69.06%;
-    margin-bottom: 20px;
-    @include tablet-768 {
+    margin-bottom: 10px;
+    @include over-568-high {
       margin-bottom: 20px;
     }
     @include desktop-1024 {
@@ -70,32 +70,28 @@
     object-fit: cover;
     border-radius: 5px;
     @include tablet-768 {
-      height: 336px;
       border-radius: 5px;
     }
     @include desktop-1024 {
-      height: 209px;
       border-radius: 5px;
     }
     @include tablet-1024 {
-      height: 450px;
       border-radius: 10px;
     }
     @include tablet-1366 {
-      height: 279px;
       border-radius: 10px;
     }
     @include desktop-1440 {
-      height: 302px;
       border-radius: 10px;
-    }
-    @include desktop-1920 {
-      height: 413px;
     }
   }
   &__tower-name {
-    font-size: 22px;
-    margin-bottom: 7px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    @include over-568-high {
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
     @include tablet-768 {
       font-size: 30px;
       margin-bottom: 7px;
@@ -121,8 +117,12 @@
   }
   &__tower-location {
     color: grey;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 6px;
+    @include over-568-high {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
     @include tablet-768 {
       font-size: 22px;
       margin-bottom: 20px;
@@ -147,7 +147,10 @@
     }
   }
   &__tower-description {
-    font-size: 10px;
+    font-size: 7px;
+    @include over-568-high {
+      font-size: 10px;
+    }
     @include tablet-768 {
       font-size: 12px;
     }
@@ -175,57 +178,51 @@
     background: rgba(0, 0, 0, 0.8) !important;
   }
   &__Content {
-    top: 11% !important;
-    left: 20px !important;
-    right: 20px !important;
-    bottom: 11% !important;
-    padding: 35px 25px !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 250px;
+    height: 270px;
+    padding: 15px 25px !important;
     border-radius: 5px !important;
+    @include over-568-high {
+      width: 230px !important;
+      height: 400px !important;
+      padding: 35px 25px !important;
+    }
     @include tablet-768 {
-      top: 110px !important;
-      left: 50px !important;
-      right: 50px !important;
-      bottom: 110px !important;
+      width: 500px !important;
+      height: 560px !important;
       padding: 60px 80px !important;
       border-radius: 5px !important;
     }
     @include desktop-1024 {
-      top: 60px !important;
-      left: 290px !important;
-      right: 290px !important;
-      bottom: 60px !important;
+      width: 320px !important;
+      height: 430px !important;
       padding: 50px 60px !important;
       border-radius: 5px !important;
     }
     @include tablet-1024 {
-      top: 170px !important;
-      left: 65px !important;
-      right: 65px !important;
-      bottom: 170px !important;
+      width: 670px !important;
+      height: 740px !important;
       padding: 80px 110px !important;
       border-radius: 10px !important;
     }
     @include tablet-1366 {
-      top: 130px !important;
-      left: 390px !important;
-      right: 390px !important;
-      bottom: 130px !important;
+      width: 430px !important;
+      height: 520px !important;
       padding: 60px 80px !important;
       border-radius: 10px !important;
     }
     @include desktop-1440 {
-      top: 80px !important;
-      left: 410px !important;
-      right: 410px !important;
-      bottom: 80px !important;
+      width: 460px !important;
+      height: 550px !important;
       padding: 60px 80px !important;
       border-radius: 10px !important;
     }
     @include desktop-1920 {
-      top: 70px !important;
-      left: 550px !important;
-      right: 550px !important;
-      bottom: 70px !important;
+      width: 620px !important;
+      height: 720px !important;
       padding: 70px 100px !important;
     }
   }
@@ -275,7 +272,10 @@
     }
     &:before {
       color: grey !important;
-      font-size: 20px !important;
+      font-size: 18px !important;
+      @include over-568-high {
+        font-size: 20px !important;
+      }
       @include tablet-768 {
         font-size: 35px !important;
       }
@@ -318,7 +318,10 @@
     }
     &:before {
       color: grey !important;
-      font-size: 20px !important;
+      font-size: 18px !important;
+      @include over-568-high {
+        font-size: 20px !important;
+      }
       @include tablet-768 {
         font-size: 35px !important;
       }
@@ -340,6 +343,10 @@
     }
   }
   &-dots {
+    bottom: -20px !important;
+    @include over-568-high {
+      bottom: unset !important;
+    }
     @include tablet-768 {
       bottom: -50px !important;
     }
@@ -381,7 +388,10 @@
     }
   }
   &-dots li button:before {
-    font-size: 6px !important;
+    font-size: 5px !important;
+    @include over-568-high {
+      font-size: 6px !important;
+    }
     @include tablet-768 {
       font-size: 10px !important;
     }

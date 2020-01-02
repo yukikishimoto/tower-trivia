@@ -33,9 +33,13 @@
     background: linear-gradient($color-red 20%, white);
   }
   &__heading {
-    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    @include over-568-high {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
     @include tablet-768 {
       font-size: 45px;
       margin-bottom: 30px;
@@ -65,10 +69,14 @@
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 30px;
+    font-size: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
     animation: flash 1.5s infinite;
+    @include over-568-high {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
     @include tablet-768 {
       font-size: 12px;
       margin-bottom: 30px;
@@ -99,9 +107,13 @@
     }
   }
   &__subheading {
-    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    @include over-568-high {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
     @include tablet-768 {
       font-size: 15px;
       margin-bottom: 15px;
@@ -129,8 +141,12 @@
   }
   &__score {
     z-index: 4;
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    @include over-568-high {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
     @include tablet-768 {
       font-size: 15px;
       margin-bottom: 15px;
@@ -160,8 +176,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70px;
-    margin-bottom: 40px;
+    height: 56px;
+    margin-bottom: 20px;
     @include tablet-768 {
       height: 70px;
       margin-bottom: 40px;
@@ -188,9 +204,13 @@
     }
   }
   &__form-label {
-    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    @include over-568-high {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
     @include tablet-768 {
       font-size: 15px;
       margin-bottom: 15px;
@@ -221,12 +241,15 @@
     background-color: transparent;
     color: dimgrey;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     border: none;
     border-bottom: 2px solid dimgrey;
     padding-bottom: 3px;
     margin-bottom: 3px;
     outline: none;
+    @include over-568-high {
+      font-size: 15px;
+    }
     @include tablet-768 {
       font-size: 15px;
       padding-bottom: 3px;
@@ -259,11 +282,8 @@
   &__form-errors {
     color: darkred;
     text-align: center;
-    font-size: 9px;
-    @include tablet-768 {
-      font-size: 9px;
-    }
-    @include desktop-1024 {
+    font-size: 8px;
+    @include over-568-high {
       font-size: 9px;
     }
     @include tablet-1024 {
@@ -280,10 +300,16 @@
     }
   }
   &__button-submit {
-    width: 150px;
-    height: 35px;
-    font-size: 12px;
-    margin-bottom: 10px;
+    width: 130px;
+    height: 30px;
+    font-size: 10px;
+    margin-bottom: 5px;
+    @include over-568-high {
+      width: 150px;
+      height: 35px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
     @include tablet-768 {
       width: 150px;
       height: 35px;
@@ -316,9 +342,14 @@
     }
   }
   &__button-play {
-    width: 100px;
-    height: 35px;
-    font-size: 12px;
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    @include over-568-high {
+      width: 100px;
+      height: 35px;
+      font-size: 12px;
+    }
     @include tablet-768 {
       width: 100px;
       height: 35px;
