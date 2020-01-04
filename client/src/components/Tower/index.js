@@ -15,16 +15,17 @@ function Tower(props) {
   const {score, hook2Class, hook3Class, hook4Class, hook5Class} = props;
 
   const towerScoreClass = () => {
-    if (score === 100) {
-      return "tower__score tower__score--100";
-    } else if (score === 200) {
-      return "tower__score tower__score--200";
-    } else if (score === 300) {
-      return "tower__score tower__score--300";
-    } else if (score === 400) {
-      return "tower__score tower__score--400";
-    } else if (score === 500) {
-      return "tower__score tower__score--500";
+    switch (score) {
+      case 100:
+        return "tower__score tower__score--100";
+      case 200:
+        return "tower__score tower__score--200";
+      case 300:
+        return "tower__score tower__score--300";
+      case 400:
+        return "tower__score tower__score--400";
+      case 500:
+        return "tower__score tower__score--500";
     }
   }
 

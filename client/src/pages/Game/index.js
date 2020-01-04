@@ -78,7 +78,7 @@ class Game extends React.Component {
     if (this.state.isQuestionAnswered) {
       return;
     }
-    console.log(event.target);
+    
     let optionSelected;
     if ((this.state.windowWidth < 768) || (this.state.windowWidth < 1024 && this.state.windowHeight < 900) || (this.state.windowHeight < 650)) {
       // On small screens, the user's click targets the <div> or <span> tag that holds the text for the selected answer:

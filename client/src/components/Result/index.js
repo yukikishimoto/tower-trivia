@@ -10,7 +10,7 @@ class Result extends React.Component {
   }
 
   formKeyDownHandler = (event) => {
-    // Prevent the page from refreshing when the player if focused on an input form field and presses "enter" on the keyboard:
+    // Prevent the page from refreshing when the player is editing the input form field and presses "enter" on the keyboard:
     if (event.key === "Enter") {
       event.preventDefault();
     };

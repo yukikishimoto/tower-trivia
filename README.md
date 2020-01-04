@@ -4,7 +4,7 @@
 
 **Tower Trivia** is a responsive web game that tests players’ geographical knowledge of popular world landmarks through multiple-choice trivia questions. The bright and whimsical user interface features cheerful animations that are designed to guide children through an entertaining educational journey. A large library of trivia questions contributes to the game’s replay value, allowing players many chances to earn a top spot on the high scores list.
 
-**Play the game here: [http://tower-trivia.herokuapp.com/](http://tower-trivia.herokuapp.com/).** Note that the site has been optimized for Google Chrome on desktop computers in full-screen mode. Because the site is hosted on Heroku, the site goes to "sleep" after 1 hour of inactivity; please allow the site 5 minutes to "wake up" after opening the link for the first time, then reload the page.
+**Play the game here: [http://tower-trivia.herokuapp.com/](http://tower-trivia.herokuapp.com/).** Note that the site has been optimized for Google Chrome on desktop computers in full-screen mode. Because the site is hosted on Heroku, it goes to "sleep" after 1 hour of inactivity; please allow the site 5 minutes to "wake up" after opening the link for the first time, then reload the page.
 
 ## Screenshots
 
